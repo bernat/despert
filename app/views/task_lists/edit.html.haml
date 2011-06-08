@@ -1,0 +1,6 @@
+- title "Modifica Llista de Tasques"
+
+%h1 Modifica Llista de Tasques
+.standard-form
+  = simple_form_for [@project, @task_list], :html => { :class => :form } do |f|
+    = render :partial => "form", :locals => {:f => f}

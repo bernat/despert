@@ -1,0 +1,12 @@
+La tasca <%= @task %> ha estat completada per <%= @actor.name %>.
+
+<% if @task.comments %>
+A continuacio es mostren els seus comentaris:
+
+  <% @task.comments.each do |c| %>
+    <%= c.user %> ha escrit: 
+        <%= c.content %> 
+  <% end %>
+<% end %>
+
+<%= render 'footer' %>

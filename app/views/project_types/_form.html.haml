@@ -1,0 +1,8 @@
+.standard-form
+  = simple_form_for(@project_type) do |f|
+    = f.input :name
+    = f.input :description
+    = f.input :monthly_fee
+    = f.input :internal
+    = f.input :color
+    = f.submit :class => "button"

@@ -1,0 +1,33 @@
+#project-title{:style => "background-color: #{@project.to_color}"}
+  %h2
+    = @project.name
+    [#{@project.get_status}]
+    = "- #{resume_text(@project.status_description, 75)}" unless @project.status_description.blank?
+
+  .right
+    - if can? :update, @project
+      = link_to image_tag("editicon.png"), edit_project_url(@project)
+
+  Project Manager:
+  %b #{@project.manager.to_s}
+  |
+  Hores de treball:
+  %b #{@project.total_hours} h
+  - if @project.variable?
+    | ROI / mes:
+    %b= number_to_currency @project.variable_part
+
+
+#project-menu
+  %nav
+    %ul
+      %li
+        = link_to "Principal", @project
+      %li
+        = link_to "Tasques", project_task_lists_path(@project)
+      %li
+        = link_to "Milestones", project_milestones_path(@project)
+      %li
+        = link_to "Missatges", project_messages_path(@project)
+      %li
+        = link_to "Documents", project_attachments_path(@project)

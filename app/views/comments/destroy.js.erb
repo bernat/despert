@@ -1,0 +1,3 @@
+$('#comment_<%= @comment.id %>').fadeOut();
+
+$("#comments-count").html("<%= pluralize(@commentable.comments.count, 'Comentari') %>");

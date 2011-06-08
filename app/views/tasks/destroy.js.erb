@@ -1,0 +1,8 @@
+$('#task_item_<%= @task.id %>').nextAll().children(".position").html(function(index, oldhtml) {
+  var html = parseInt(oldhtml) - 1;
+  return html;
+});
+
+$('#task_item_<%= @task.id %>').fadeOut('slow', function () {
+  $(this).remove();
+});

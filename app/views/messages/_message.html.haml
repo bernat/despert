@@ -1,0 +1,27 @@
+#message
+  .message-header{:style => "background-color:##{message.get_background_color}"}
+    .right= raw gravatar_for(message.user, :size => 100) if message.user.present? && message.user.email.present?
+    - if can? :destroy, message
+      .right= link_to image_tag("deleteicon.png"), [@project, message], :confirm => 'Segur?', :method => :delete, :class => "button"
+    - if message.subject
+      %h2= message.subject
+      %p
+        %b Autor:
+        - if message.user.present?
+          = link_to message.user.name, message.user
+        - else
+          = message.author
+      %p
+        %b Data:
+        = I18n.l message.updated_at
+
+  .clearboth
+
+  .message-body
+    - if message.from_email
+      - if message.html
+        = raw message.body
+      - else
+        %pre= message.body
+    - else
+      = raw markdown message.body

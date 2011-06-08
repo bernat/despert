@@ -1,0 +1,8 @@
+= render "shared/error_messages", :target => @message
+.group
+  = f.label :subject, "Subject"
+  = f.text_field :subject, :class => 'text_field'
+  %span.description Ex: a simple text
+= f.wmd_tag(:body)
+.group.navform
+  = f.submit :class => "button"

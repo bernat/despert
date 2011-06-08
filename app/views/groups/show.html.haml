@@ -1,0 +1,13 @@
+- title "Grups"
+.block
+  .content
+    .inner
+      %h2
+        = @group.name
+        (#{@group.ref})
+      = raw markdown @group.description
+    - if can? :update, @group
+      = link_to 'Edit', edit_group_path(@group)
+    \#{link_to 'Back', groups_path}
+    - if can? :destroy, @group
+      \#{link_to 'Delete', @group, :confirm => 'Segur?', :method => :delete}

@@ -1,0 +1,149 @@
+- date_ini = Date.today.beginning_of_month
+- date_end = Date.today.end_of_month
+- rows_project_hours = {}
+- rows_project_money = {}
+- rows_employee_hours = {}
+- columnstring1 = ""
+- columnstring2 = ""
+- columnstring3 = ""
+- columnstring4 = ""
+- number_of_months = 5
+#status
+  #status-preheader
+    ITNIG PANEL
+  %table
+    %tr
+      %th Rellevància
+      %th Projecte
+      %th Ha pagat?
+      %th Hores
+      %th Prioritat
+      %th Estat
+      %th Pròxim milestone
+    - @projects.each do |project|
+      %tr{:class => "status_#{project.status}"}
+        %td
+          - if project.project_type.name == "basic"
+            = image_tag("star.png")
+          - if project.project_type.name == "standard"
+            = image_tag("two_star.png")
+          - if project.project_type.name == "advanced"
+            = image_tag("three_star.png")
+        %td
+          = link_to "#" + project.ref, project
+        %td
+          - if project.has_debts?
+            = image_tag("nomoney.png")
+          - else
+            = image_tag("money.png")
+        %td
+          = project.tasks.sum(:duration).to_i.to_s + "h"
+        %td
+          - if can? :update, project
+            = best_in_place project, :status, :type => :select, :collection => Project::STATUS_LIST
+          - else
+            = project.status
+        %td
+          - if can? :update, project
+            = best_in_place project, :status_description, :type => :textarea
+          - else
+            = project.status_description
+
+        - columnstring1 << "data.addColumn('number', '#{project.ref}');"
+        - for i in 0..number_of_months
+          - if rows_project_hours[i]
+            - rows_project_hours[i] << ", #{project.tasks.completed_between(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).sum(:duration)}"
+          - else
+            - rows_project_hours[i] = ", #{project.tasks.completed_between(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).sum(:duration)}"
+
+        - columnstring2 << "data2.addColumn('number', '#{project.ref}');"
+        - for i in 0..number_of_months
+          - money = 0
+          - project.invoices.paid_within(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).each do |invoice|
+            - money += invoice.base
+          - if rows_project_money[i]
+            - rows_project_money[i] << ", #{money}"
+          - else
+            - rows_project_money[i] = ", #{money}"
+        %td
+          - mile = project.milestones.upcoming.first
+          - unless mile.blank?
+            = link_to mile, project_milestone_path(project, mile)
+            = mile.friendly_date
+          - else
+            No n'hi ha
+  #hours_project
+  #money_project
+  #money_month
+  #hours_person
+
+  -# - @employees.each do |e|
+  -#   - columnstring3 << 'data3.addColumn("number", "' + "#{e.name.split(' ')[0]}" + '");'
+  -#   - for i in 0..number_of_months
+  -#     - if rows_employee_hours[i]
+  -#       - rows_employee_hours[i] << ", #{e.tasks.completed_between(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).sum(:duration)}"
+  -#     - else
+  -#       - rows_employee_hours[i] = ", #{e.tasks.completed_between(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).sum(:duration)}"
+  -# 
+  -# - columnstring4 << "data4.addColumn('number', 'Revenue');"
+  -# - columnstring4 << "data4.addColumn('number', 'Costs');"
+  -# 
+  -# - rowstring1 = "data.addRows(["
+  -# - rowstring2 = "data2.addRows(["
+  -# - rowstring3 = "data3.addRows(["
+  -# - rowstring4 = "data4.addRows(["
+  -# - for i in 0..number_of_months
+  -#   - rowstring1 << "['#{(Date.today.beginning_of_month - (number_of_months - i).months).strftime("%B")}'"
+  -#   - rowstring2 << "['#{(Date.today.beginning_of_month - (number_of_months - i).months).strftime("%B")}'"
+  -#   - rowstring3 << "['#{(Date.today.beginning_of_month - (number_of_months - i).months).strftime("%B")}'"
+  -#   - rowstring4 << "['#{(Date.today.beginning_of_month - (number_of_months - i).months).strftime("%B")}', "
+  -#   - rowstring1 << "#{rows_project_hours[i]}"
+  -#   - rowstring2 << "#{rows_project_money[i]}"
+  -#   - rowstring3 << "#{rows_employee_hours[i]}"
+  -#   - rowstring4 << "#{@invoices.paid_within(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).sum(:base) || 0}"
+  -#   - rowstring4 << ", #{@payments.paid_within(date_ini - (number_of_months - i).months, date_end - (number_of_months - i).months).sum(:base).round(2) || 0}"
+  -#   - rowstring1 << "]"
+  -#   - rowstring2 << "]"
+  -#   - rowstring3 << "]"
+  -#   - rowstring4 << "]"
+  -#   - rowstring1 << "," if i < number_of_months
+  -#   - rowstring2 << "," if i < number_of_months
+  -#   - rowstring3 << "," if i < number_of_months
+  -#   - rowstring4 << "," if i < number_of_months
+  -# - rowstring1 << "]);"
+  -# - rowstring2 << "]);"
+  -# - rowstring3 << "]);"
+  -# - rowstring4 << "]);"
+
+
+-# - content_for :custom_js do
+-#   %script{:src => "https://www.google.com/jsapi?key=ABQIAAAALy3hj-F80ucolZq1sevJGxQCcYhKN4-w9Qi0TTnyLxsHturb-xR6-E30eA2eSlQEJYbU0Elqru5leA", :type => "text/javascript"}
+-#   :javascript
+-#     google.load("visualization", "1", {packages:["corechart"]});
+-#     google.setOnLoadCallback(drawChart);
+-#     function drawChart() {
+-#       var data = new google.visualization.DataTable();
+-#       var data2 = new google.visualization.DataTable();
+-#       var data3 = new google.visualization.DataTable();
+-#       var data4 = new google.visualization.DataTable();
+-#       data.addColumn('string', 'Month');
+-#       data2.addColumn('string', 'Month');
+-#       data3.addColumn('string', 'Month');
+-#       data4.addColumn('string', 'Month');
+-#       #{columnstring1}
+-#       #{columnstring2}
+-#       #{columnstring3}
+-#       #{columnstring4}
+-#       #{rowstring1}
+-#       #{rowstring2}
+-#       #{rowstring3}
+-#       #{rowstring4}
+-#       var chart = new google.visualization.AreaChart(document.getElementById('hours_project'));
+-#       chart.draw(data, {width: "100%", height: 240, title: 'Hours per project', backgroundColor: "transparent"});
+-#       var chart2 = new google.visualization.AreaChart(document.getElementById('money_project'));
+-#       chart2.draw(data2, {width: "100%", height: 240, title: 'Money per project', backgroundColor: "transparent"});
+-#       var chart3 = new google.visualization.AreaChart(document.getElementById('hours_person'));
+-#       chart3.draw(data3, {width: "100%", height: 240, title: 'Hours per person', backgroundColor: "transparent"});
+-#       var chart4 = new google.visualization.AreaChart(document.getElementById('money_month'));
+-#       chart4.draw(data4, {width: "100%", height: 240, colors:['yellow', 'red'], title: 'Money by month', backgroundColor: "transparent"});
+-#     }

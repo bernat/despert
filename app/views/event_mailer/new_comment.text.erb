@@ -1,0 +1,13 @@
+<%= @comment.user %> ha creat un nou comentari sobre <%= @comment.commentable %>. Pots consultar-lo en el següent enllaç:
+
+<% if ["Task", "Client"].include?(@comment.commentable_type) %>
+  <%= url_for @comment.commentable %>
+<% else %>
+  <%= url_for [@event.background, @event.context] %>
+<% end %>
+
+El comentari diu:
+
+<%= @comment.content %>
+
+<%= render 'footer' %>

@@ -1,0 +1,22 @@
+= simple_form_for @project, :html => { :class => :form } do |f|
+  = f.input :name, :label => "Nom"
+
+  = f.input :ref, :label => "Referència"
+
+  = f.association :project_type, :include_blank => false, :label => "Tipus de projecte"
+
+  = f.input :state, :collection => Project::STATES_LIST, :include_blank => false, :label => "Estat del projecte"
+
+  = f.input :starting_date, :as => :string, :input_html => {:class => "datepicker", :value => ( @project.starting_date || Date.today )}, :label => "Data d'inici"
+
+  %p Atenció, el camp d'informació serà públic, ha d'estar escrit en la llengua del client i formarà part del contracte, sigueu explícit i formal.
+
+  = f.wmd_tag(:info)
+
+  %h3 Gestiona els usuaris del projecte
+
+  = f.association :employees, :label => "Participants al projecte", :include_blank => false
+
+  = f.association :manager, :collection => Employee.all, :label => "Manager", :include_blank => false
+
+  = f.submit :class => "button"

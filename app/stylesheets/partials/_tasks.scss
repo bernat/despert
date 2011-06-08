@@ -1,0 +1,169 @@
+/**********************************************/
+/******************* Tasks ********************/
+/**********************************************/
+
+.task-form {
+  background-color: #EEE;
+  border: 10px solid #DDD;
+  margin-top: 1em;
+  padding: .5em;
+  text-align: left;
+  max-width: 80em;
+  input {
+    border: none;
+  }
+  .title-input {
+    padding: .5em 1em .5em .1em;
+    input {
+      padding: .4em .2em;
+      font-size: 1.2em;
+      width: 52%;
+    }
+  }
+  .user-selector {
+    border: 1px solid #FFF;
+    float: right;
+    margin-top: .5em;
+    background-color: #FFF;
+    height: 30px;
+    width: 45%;
+    a {
+      border-bottom: 5px solid transparent;
+      &:focus, &.selected {
+        border-bottom: 5px solid black;
+      }
+    }
+    .responsible {
+      margin-top: 1.5em;
+      height: 2em;
+      color: #333;
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      span {
+        float:left;
+        padding-top: .5em;
+      }
+      img {
+        float: left;
+        padding-right: .5em;
+      }
+    }
+    img {
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid #AAA;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+  .description-input {
+    textarea {
+      padding: .6em;
+      width: 50.5%;
+      height: 20em;
+      border: none;
+    }
+    p {
+      color: #888;
+      margin-top: .5em;
+    }
+  }
+  .time-selector {
+    margin-top: 2em;
+    margin-left: 1em;
+    float: right;
+    text-align: right;
+    width: 45%;
+    input {
+      width: 6em;
+      font-size: 1.5em;
+      float: right;
+      padding: .3em .3em;
+      margin-bottom: 1em;
+      text-align: right;
+    }
+    .time-icon {
+      width: 30px;
+      float: right;
+      height: 30px;
+      padding-top: .5em;
+    }
+    h3 {
+      color: #555;
+      margin-top: .6em;
+      font-size: 1.3em;
+      border-bottom: 1px solid #CCC;
+      margin-bottom: .4em;
+      padding-top: .6em;
+    }
+  }
+  .submit-task-form {
+    text-align: right;
+    input[type=submit] {
+      height: 2em;
+      width: 12em;
+      font-size: 1em;
+      &:hover {
+        background-color: #888;
+        color: #FFF;
+        cursor: hand;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.task-show {
+  @include one-centered-container(90%);
+}
+.task-body {
+  padding: 1em 2em 2em 2em;
+  background-color: #CCC;
+  min-height: 10em;
+  border: 10px solid #DDD;
+  h2 {
+    border-bottom: 1px solid #999;
+    padding-bottom: .2em;
+  }
+  table {
+    width: 40%;
+    background-color: #DDD;
+    margin: 0 0 1em 0;
+    font-size: 1.1em;
+    border-top: 1px solid #FFF;
+    tr {
+      background-color: transparent;
+      height: 3em;
+      &:hover {
+        background-color: #EEE;
+      }
+    }
+    td {
+      &:first-child {
+        text-align: right;
+        width: 8em;
+        border-right: none;
+      }
+      border: 1px solid #FFF;
+      border-top: none;
+      text-align: left;
+    }
+  }
+  .best_in_place input {
+    font-size: 1.1em;
+    width: 2.5em;
+  }
+  h3 {
+    border-bottom: 1px solid #999;
+    padding-bottom: .5em;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+  .action-buttons {
+    padding-right: 1.2em;
+    float: right;
+  }
+}

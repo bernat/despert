@@ -1,0 +1,11 @@
+S'ha generat una nova factura per ser cobrada per cyberpac.
+
+Numero de factura: <%= @invoice.number %>
+Projecte: <%= @invoice.project %>
+Quantiat: <%= @invoice.total %>
+
+Cobrala apretant el boto "Cobrament" en el seguent enllaç:
+
+<%= invoices_url %>
+
+<%= render 'footer' %>

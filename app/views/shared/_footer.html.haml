@@ -1,0 +1,26 @@
+#footer
+  .container{:style => "z-index: 1;"}
+    .span-8.first
+      %h3= t('news_feed')
+      %ul.news_list
+        %li Post al blog
+        %li
+          Post al blog II (2 #{"#{t('comment')}s"})
+        %li Post al blog III
+        - ##for post in @posts
+          %li
+    .span-7
+      %h3= t('talktous')
+      %p= t('talktous_text')
+      %h3= t('follow_us')
+      %a{:href => "#", :title => "RSS Feeds"}
+        %img.share_footer{:alt => "RSS logo", :src => "/images/rss.png"}/
+      %a{:href => "https://twitter.com/itnig", :title => "Twitter Account"}
+        %img.share_footer{:alt => "Twitter logo", :src => "/images/twitter.png"}/
+      %a{:href => "http://www.facebook.com/pages/Itnig/302506280728?ref=search&sid=1245973310.2482837461..1", :title => "Facebook Webpage"}
+        %img.share_footer{:alt => "Facebook logo", :src => "/images/facebook.png"}/
+    #footer_background_right
+      %img{:src => "/images/background_footer.png"}/
+    .span-8.last
+      %h3= t('aboutus')
+      %p= t('aboutus_text')

@@ -1,0 +1,159 @@
+/**********************************************/
+/***************** Task Lists *****************/
+/**********************************************/
+
+#task-lists {
+  .sidebar {
+    border: 2px dashed #DDD;
+    min-height: 10em;
+    padding: .5em;
+    padding-bottom: 1em;
+    margin-bottom: .6em;
+    background-color: #FFF;
+    position:fixed;
+    width: 22%;
+    right: 2em;
+    .task {
+      cursor: move;
+      margin-top: .2em;
+      border: 1px dotted #EEE;
+      padding: .4em;
+      &:hover {
+        border: 1px dotted #AAA;
+      }
+    }
+    .task-list-link {
+      padding:.5em;
+      margin:.5em 0;
+      width:97%;
+      a {
+        text-decoration: none;
+      }
+      img {
+        float:left;
+        margin-top:-.3em;
+        padding-right: .3em;
+      }
+    }
+    .button {
+      margin-top: .4em;
+    }
+    h3 {
+      border-bottom: 1px solid #EEE;
+    }
+    input {
+      width: 98%;
+      font-size: 1em;
+      padding: .5em .3em;
+      border-color: #EEE;
+    }
+  }
+  h3 {
+    margin-top: .6em;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: .5em;
+    a, a:visited, a:hover {
+      text-decoration: none;
+      color: #111;
+    }
+  }
+  #show-archived {
+    margin-bottom: 1em;
+  }
+}
+
+.task_list {
+  &:first-child {
+    margin-top: 0;
+  }
+  h4 {
+    margin: 1em 0;
+    font-size: 1.2em;
+  }
+  margin: 1em .4em;
+  padding: .5em;
+  .task-data {
+    margin: 1em 0;
+    clear: both;
+    margin-bottom: 1em;
+    height: 2em;
+    border: 1px solid #DDD;
+    background-color: #EEE;
+    padding: 1em 1em 0 .5em;
+    img {
+      margin: 0 .4em;
+      margin-top: -.2em;
+    }
+  }
+}
+
+.task-item {
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid #CCC;
+    @include box-shadow(#555, .06em, .06em, .2em);
+  }
+  height: 1.3em;
+  margin-bottom: .2em;
+  padding: .6em .1em .4em .2em;
+  background-color: #EEE;
+  font-size: 1em;
+  img {
+    margin-top: -.3em;
+  }
+  .button {
+    margin-top: -.35em;
+  }
+  .duration {
+    float: right;
+  }
+  .action-label {
+    .button {
+      margin-top: -.5em;
+      padding: .5em .3em 0 .3em;
+    }
+  }
+  .task-buttons {
+    .button {
+      padding: .4em .2em 0 .2em;
+    }
+  }
+  .task-comments {
+    .comment-globe {
+      @include opacity(0.9);
+      background: url(/images/comments.png) no-repeat;
+      height: 20px;
+      width: 20px;
+      color: #FFF;
+      margin-top: -.1em;
+      padding: .13em .2em 0 .45em;
+    }
+  }
+  .completion-date {
+    color: #666;
+  }
+  .position {
+    color: #777;
+    padding-left: .2em;
+  }
+  .gravatar {
+    float: right;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    .author {
+      float: right;
+      @include opacity(0.3);
+      margin-right: 5px;
+    }
+  }
+  .project-label {
+    padding: .3em !important;
+    margin: -.2em .5em .1em 0;
+    float: left;
+  }
+}
+

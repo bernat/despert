@@ -1,0 +1,20 @@
+- title "Grups"
+- if can? :create, Group
+  = link_to "+ Nou Grup", new_group_path, :class => "button right"
+%h1 Grups
+%table
+  %tr
+    %th Nom
+    %th Referència interna
+    %th Gent
+    %th
+  - @groups.each do |group|
+    %tr{:style => "background-color:##{soft_color(group.color)}"}
+      %td= link_to group.name, group
+      %td= group.ref
+      %td= group.employees.to_sentence
+      %td
+        - if can? :update, group
+          = link_to image_tag("editicon.png"), edit_group_path(group)
+        - if can? :destroy, group
+          = link_to image_tag("deleteicon.png"), group, :confirm => 'Estàs segur?', :method => :delete

@@ -1,0 +1,7 @@
+<% if @milestone.completed %>
+  $("#milestone-link-<%= @milestone.id %>").addClass("completed");
+  $("#toggle-link-<%= @milestone.id %> img").attr("src", "/images/reopen10.png");
+<% else %>
+  $("#milestone-link-<%= @milestone.id %>").removeClass("completed");
+  $("#toggle-link-<%= @milestone.id %> img").attr("src", "/images/approve10.png");
+<% end %>

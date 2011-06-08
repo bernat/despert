@@ -1,0 +1,6 @@
+- title "Document #{@project.client.name}"
+#heading= link_to "Descarrega en PDF", contract_project_path(@contract, :lang => @lang, :format => :pdf)
+- if @lang.blank?
+  = render "contract_ca"
+- else
+  = render (@lang.to_s == "es" ?  "contract_es" : "contract_ca")

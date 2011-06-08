@@ -1,0 +1,10 @@
+- tasks = unassigned.blank? ? [] : unassigned.tasks
+-# = form_for [@project, Task.new] do |f|
+-#   = f.text_field :title, :placeholder => "Nova tasca no assignada"
+- if tasks.size < 1
+  .separator
+  %p.center No hi ha cap tasca a la llista
+  .separator
+- else
+  - tasks.each do |t|
+    .task= t.title

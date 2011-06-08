@@ -1,0 +1,22 @@
+- content_for :custom_js do
+  :javascript
+    $(function() {
+      $("#milestone_name").focus();
+    });
+    /* Date Picker */
+    if (!jQuery.isEmptyObject($(".datepicker")[0]))
+    {
+       $(".datepicker").datepicker($.datepicker.regional['ca']);
+       $(".datepicker").datepicker();
+    }
+
+.milestone-form
+  = simple_form_for [@project, @milestone], :html => { :class => :form } do |f|
+    = f.label :name, "Nom", :class => :label
+    = f.text_field :name, :class => 'text_field'
+    - if @date.blank?
+      = f.label :finishes_at, "Data d'acabament", :class => :label
+      = f.text_field :finishes_at, :class => "datepicker"
+    - else
+      = f.hidden_field :finishes_at, :value => @date
+    = f.submit :class => "button"

@@ -1,0 +1,47 @@
+- title "Missatges"
+
+#message-index
+  #pagination_display_section
+    %h1 Missatges
+    = form_for [@project, Message.new], :html => { :class => :form } do |f|
+      = f.text_area :body, :placeholder => "Escriu el teu missatge"
+      = f.text_field :subject, :placeholder => "Assumpte"
+      = label_tag "send-client-checkbox", "Enviar al client?"
+      = check_box_tag "send-client-checkbox"
+      = f.submit "Enviar", :class => "button right"
+    %hr
+    - if @messages.empty?
+      .separator
+      %p.center Aquest projecte no té cap missatge.
+      .separator
+    - else
+      - @messages.each do |message|
+        - border = (message.user == @project.manager ? "#666" : "transparent")
+        - background = message.get_background_color
+        .message{:style => "background-color:##{background};border:2px solid #{border}"}
+          .left= raw gravatar_for(message.user, :size => 70) if message.user.present? && message.user.email.present?
+          .message-header
+            .comments-num= link_to "# " + message.comments.count.to_s, project_message_path(@project, message, :anchor => "comments-count")
+            - if message.subject
+              %h2= link_to message.subject, project_message_path( @project, message )
+              %p
+                %b From:
+                - if message.user.present?
+                  = link_to message.user.name, message.user
+                - else
+                  = message.author
+              %p
+                %b Data:
+                = I18n.l message.updated_at
+          .clearboth
+          .separator
+          .message-body
+            - if message.from_email
+              - if message.html
+                = raw message.body
+              - else
+                %pre= message.body
+            - else
+              = raw markdown message.body
+
+

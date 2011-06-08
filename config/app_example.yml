@@ -1,0 +1,39 @@
+production:
+  mail:
+    account:
+      user_name: some@address.com
+      password: password
+    smtp:
+      address: smtp.example.com
+      port: 555
+      domain: domain.com
+      authentication: plain
+      enable_starttls_auto: true
+    imap:
+      host: imap.example.com
+      port: 554
+
+  access_key_id: key
+  secret_access_key: key
+  bucket: your_bucket
+  storage: :s3
+  hostname: intranet.itnig.net
+
+development:
+  mail:
+    account:
+      user_name: some@address.com
+      password: password
+    smtp:
+      address: smtp.example.com
+      port: 555
+      domain: domain.com
+      authentication: plain
+      enable_starttls_auto: true
+    imap:
+      host: imap.example.com
+      port: 554
+
+  merge_events: false
+  storage: :file
+  hostname: localhost:3000

@@ -1,0 +1,6 @@
+<% # Needs to be an ERB template in order to make nested layouts work %>
+<%= render 'shared/project-menu' %>
+
+<%= yield %>
+
+<% parent_layout "application" %>

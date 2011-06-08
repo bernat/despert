@@ -1,0 +1,15 @@
+development:
+  backend_url: https://sis-t.sermepa.es:25443/canales/lacaixa
+  api_url: https://sis-t.sermepa.es:25443/sis/realizarPago
+
+  fuc: 874124
+  term_number: 99
+  term_currency: eur
+  encrypt_key: bas9odg917b98cfas
+  key_type: :expanded
+
+  notify_url: http://your_public_ip:3000/cyberpac_ipn
+  url_ok: http://localhost:3000/cyberpac/ok
+  url_error: http://localhost:3000/cyberpac/error
+
+  date_frequency: 30

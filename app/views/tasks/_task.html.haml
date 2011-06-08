@@ -1,0 +1,40 @@
+.task-item{:data_task => task.id, :id => "task_item_#{task.id}", :"data-task_list_id" => task.task_list.id}
+  - if ["tasks", "task_lists", "milestones", "overview"].include?(controller_name)
+    .position{:id => "task_position_#{task.id}"}
+      - if task.completed_at.blank?
+        - if defined? task_counter
+          = task_counter + 1
+        - else
+          = task.position
+      - else
+        = "-"
+    .action-label
+      - if can? :toggle_task, task
+        - if task.completed_at.blank?
+          = link_to image_tag("checked.png"), toggle_project_task_path(task.project, task), :remote => true, :class => "button"
+        - else
+          = link_to image_tag("reopen.png"), toggle_project_task_path(task.project, task), :remote => true, :class => "button"
+      - else
+        &nbsp;
+  .completion-date
+    - unless task.completed_at.blank?
+      = pretty_date task.completed_at
+    - else
+      = pretty_date task.updated_at
+  .task-title
+    = link_to(task.title[0..70], [task.project, task])
+    - unless ["task_lists", "tasks", "milestones"].include?(controller_name)
+      = project_link(task.project)
+  .task-comments
+    .comment-globe= task.comments.size.to_s if task.comments
+  .task-buttons{:id => "task_buttons_#{task.id}"}
+    - if can? :update, task
+      .button{:id => "task-edit-#{task.id}"}= link_to image_tag("editicon.png"), edit_project_task_path(task.project, task), :rel => "facebox"
+    - if can? :destroy, task
+      = link_to image_tag("deleteicon.png"), [task.project, task], :method => :delete, :remote => true, :confirm => 'Segur?', :class => "button"
+  .gravatar
+    = raw task.employee ? gravatar_for(task.employee, :size => 40, :title => "Responsable") : "&nbsp;"
+    .author= raw task.author ? gravatar_for(task.author, :size => 40, :title => "Autor") : "&nbsp;"
+  .duration
+    = task.duration
+-#.clearboth

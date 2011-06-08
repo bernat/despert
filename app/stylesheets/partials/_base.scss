@@ -1,0 +1,246 @@
+@import "compass/css3";
+@import "fancy-buttons";
+
+$background-body: #cfcfcf;
+
+
+// Color codes
+// ===========
+// #18485c Strong Blue => Basic Project
+$basic-project-color: #18485c;
+// #e06441 Regular Orange => Standard Project
+$standard-project-color: #e06441;
+// #a32500 Brownie Red => Advanced Project
+$advanced-project-color: #a32500;
+
+@mixin one-centered-container($width) {
+  width: $width;
+  padding: 1em 2em 2em 2em;
+  margin: 1px auto;
+}
+
+@mixin opacity-no-hover($op) {
+  @include opacity($op);
+  &:hover {
+    @include opacity(1);
+  }
+}
+
+@mixin standard-lists {
+  ul {
+    margin-left: 2.5em;
+    list-style: square;
+    li {
+      padding-left: 1em;
+      line-height: 1.8em;
+    }
+  }
+}
+
+button, .button {
+  padding-top: .1em;
+  margin: 0 .2em;
+  min-height: 1.5em;
+  @include fancy-button(#DDD, 1em);
+  &.small {
+    @include fancy-button(#DDD, .8em);
+  }
+  &.medium {
+    @include fancy-button(#DDD, 1.2em);
+  }
+  &.big {
+    @include fancy-button(#DDD, 2em);
+  }
+}
+
+.center {
+  text-align:center;
+}
+
+.right {
+  float: right;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.left {
+  float: left;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: .8em;
+  @include text-shadow;
+  border-bottom: 1px solid #999;
+  padding-bottom: .3em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: .5em 0;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #DDD;
+  margin-bottom: 2em;
+  tr {
+    &:first-child {
+      &, &:hover {
+        background-color: #EEE;
+      }
+    }
+    &:hover {
+      background-color: #FFE;
+    }
+  }
+  th, td {
+    text-align: center;
+    padding: .4em;
+    border-bottom: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  th {
+    font-weight: bold;
+    border: 1px solid #DDD;
+    border-top: none;
+    border-left: none;
+  }
+}
+
+a {
+  color: #222;
+  &:hover {
+    color: #666;
+  }
+}
+
+input {
+  border: 1px solid #AAA;
+  &:focus {
+    border: 1px solid #666;
+  }
+}
+
+.clearboth {
+  clear: both;
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  line-height: 0;
+  width: 100%;
+  overflow:hidden;
+}
+
+.separator {
+  height: 2em;
+}
+
+/* Purr Flash Notices and Errors */
+
+.flash, #error_explanation {
+  display: none;
+}
+
+.notice {
+  position: fixed;
+  width: 20em;
+  top: 20em;
+  right: 39%;
+  padding: 3em;
+  background-color: #111;
+  color: #DDD;
+  @include border-radius(3px);
+  box-shadow: 1px #666;
+  filter:alpha(opacity=90);
+  opacity: 0.9;
+  -moz-opacity:0.9;
+}
+.notice:hover .close {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background: url("/images/close-button.gif") no-repeat;
+}
+
+.show_next_div {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* Pagination with Will Paginate */ 
+.pagination
+{
+  background: #F1F1F1;
+  border: 1px solid #E5E5E5;
+  text-align: center;
+  padding: 0.5em;
+	position: relative;
+	height: 18px;
+}
+.pagination a, .pagination span
+{
+	padding: .2em .3em;
+}
+.pagination span.disabled
+{
+	color: #AAA;
+}
+.pagination em
+{
+	font-weight: bold;
+	background: #C9C9C9;
+	padding: 3px;
+  @include border-radius(3px)
+}
+.pagination a
+{
+	text-decoration: none;
+  color: black;
+}
+.pagination a:hover, .pagination a:focus
+{
+	text-decoration: underline;
+}
+
+.best_in_place {
+  padding: .1em;
+  @include border-radius(5px);
+  &:hover {
+    background-color: #FFE;
+  }
+  cursor: pointer;
+  cursor: hand;
+  input {
+    background-color: transparent;
+    border: none;
+    padding: .3em;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}

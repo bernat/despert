@@ -1,0 +1,23 @@
+-# preheader classes can be { employee , accountable , administrative, collaborator }
+#preheader{:class => "#{current_user.role.presence}"}
+  .right
+    %ul#project-menu
+      %li.current
+        %a{:href => "#"} Accés ràpid a projectes
+        %ul
+          - @projs = current_user.admin? ? Project.running.recent : current_user.projects.recent
+          - @projs.each do |p|
+            %li
+              = link_to_if(@project != p, "#" + p.ref, project_task_lists_path(p)) {"<span id='current'>##{p.ref}</span>"}
+
+  .upper-title
+    = link_to "ITNIG INTRANET", root_url
+    - if can? :read, :status
+      = link_to "(status)", "/status"
+  #user-menu
+    = link_to "Home", root_path
+    |
+    = link_to current_user, current_user
+    (#{current_user.role})
+    |
+    = link_to "Sortir", destroy_user_session_path

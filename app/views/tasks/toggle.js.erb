@@ -1,0 +1,25 @@
+$("#contentbox").find(".notice").remove();
+<% unless @task.errors.any? %>
+  <% if !@task.completed_at.nil? %>
+    $('#task_item_<%= @task.id %>').nextAll().children(".position").html(function(index, oldhtml) {
+      var html = parseInt(oldhtml) - 1;
+      return html;
+    });
+    $("#task_item_<%= @task.id %>").fadeOut().remove();
+    $("#task_list_completed_<%= @task.task_list.id %>").prepend("<%= escape_javascript(render(@task, :task_list => @task_list)) %>").fadeIn().effect("highlight", {}, 3000);
+    $('#comptasks_<%= @task.task_list.id %>').html(function(index, oldhtml) {
+      var html = parseInt(oldhtml) + 1;
+      return html;
+    });
+  <% else %>
+    $("#task_item_<%= @task.id %>").fadeOut().remove();
+  $("#task_list_uncompleted_<%= @task.task_list.id %>").append("<%= escape_javascript(render(@task, :task_list => @task_list)) %>").fadeIn().effect("highlight", {}, 3000);
+    $('#task_item_<%= @task.id %>').children(".position").html(<%= (@task.position - 1).to_s %>);
+    $('#comptasks_<%= @task.task_list.id %>').html(function(index, oldhtml) {
+      var html = parseInt(oldhtml) - 1;
+      return html;
+    });
+  <% end %>
+<% else %>
+    $("<span><%= escape_javascript @task.errors.full_messages.join("\n") %></span>").purr();
+<% end %>

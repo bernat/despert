@@ -1,0 +1,90 @@
+.task_list{:id => "full_task_list_#{task_list.id}", :style => "background-color:##{task_list.group ? soft_color(task_list.group.color) : "FEFEFF"};"}
+  - if can? :destroy, task_list
+    = link_to image_tag("deleteicon.png"), project_task_list_path(@project, task_list), :confirm => 'Segur?', :method => :delete, :class => "button right"
+  - if can? :update, task_list
+    = link_to image_tag("editicon.png"), edit_project_task_list_path(@project, task_list), :class => "button right"
+    - icon = task_list.archived? ? "archive.png" : "emptyfolder.png"
+    = link_to image_tag(icon), toggle_archive_project_task_list_path(@project, task_list), :class => "button right", :method => :post, :title => "Arxivar/Desarxivar"
+  %h2
+    = link_to task_list.name, [@project, task_list]
+    - if task_list.archived?
+      [Arxivat #{pretty_date task_list.updated_at}]
+  - if task_list.archived? && action_name != "show"
+    Milestone:
+    = task_list.milestone.blank? ? "Cap" : link_to(task_list.milestone.name, [task_list.project, task_list.milestone])
+    |
+    Tasques: ##{task_list.tasks.size} | Hores planificades #{task_list.hours} h | Hores efectuades #{task_list.total_hours} h
+  - else
+    .task-data
+      .right
+        - unless task_list.hours.blank?
+          Hores planificades:
+          %b #{task_list.hours} h
+          |
+        Hores efectuades:
+        %b #{task_list.total_hours} h
+      - unless task_list.description.blank?
+        .left= link_to image_tag("lupa.png"), "#task-list-#{task_list.id}-description", :rel => "facebox"
+        %div{:id => "task-list-#{task_list.id}-description", :style => "display:none;"}
+          %h1 Descripció de la feina
+          %span{:style => "font-size:1.2em;"}= task_list.description
+      - if task_list.group
+        .left= image_tag("group.png")
+        .left= link_to task_list.group.name, task_list.group if task_list.group
+      - if task_list.milestone
+        .left= image_tag("calendar.png")
+        .left
+          = link_to task_list.milestone, [@project, task_list.milestone], :title => task_list.milestone
+          = task_list.milestone.friendly_date
+    .task_list_items_uncompleted{:id => "task_list_uncompleted_#{task_list.id}", :"data-id" => task_list.id}
+      = render task_list.tasks.active.select{|x| !x.completed?}, :task_list => task_list
+    .separator{:style => "height:.5em"}
+    - unless action_name == "show"
+      .right
+        +
+        %span{:id => "comptasks_#{task_list.id}"}= task_list.completed_tasks_done
+        = link_to "tasques completades", completed_tasks_project_task_list_path(@project, task_list), :remote => true, :id => "completed_link_#{task_list.id}"
+    .completed_tasks{:style => "#{action_name == 'show' ? '' : 'display:none'}"}
+      %h4 Tasques completades
+      .task_list_items_completed{:id => "task_list_completed_#{task_list.id}"}
+        = render task_list.tasks.active.select{|x| x.completed?}, :task_list => task_list if action_name == "show"
+      - if action_name == "show" && @closed_tasks && @closed_tasks.size > 0
+        .right= link_to "Veure tasques tancades", "#closed-tasks", :id => "show-closed"
+        #closed-tasks{:style => "display:none"}
+          %h4 Tasques tancades
+          = render @closed_tasks
+    .separator
+    .button.show_next_div{:id => "task_list_#{task_list.id}_add_text"}
+      + Afegir tasca
+    .add_item_form{:id => "task_list_#{task_list.id}_add_form", :style => "display:none;"}
+      = form_for [@project, task_list, Task.new], :remote => true,  :html => { :class => :form, :id => "task_list_#{task_list.id}_new_task" }, :index => task_list.id do |f|
+        = render "tasks/form", :f => f, :task_list => task_list
+
+= content_for :custom_js do
+  :javascript
+    $(document).ready(function() {
+      $("#show-closed").click(function() {
+        $("#closed-tasks").fadeIn();
+      });
+    });
+    $('#task_list_uncompleted_#{task_list.id}').sortable({
+      axis: 'y',
+      cursor: 'crosshair',
+      connectWith: '.task_list_items_uncompleted',
+      opacity: 0.8,
+      scroll: true,
+      update: function(event, ui){
+        var res = ui.sender == null ? "nohay" : ui.sender.attr('data-id');
+        $.ajax({
+          type: 'post',
+          data: '&from_task_list=#{task_list.id}' +
+            '&to_task_list=' + ui.item.parent().attr('data-id') +
+            '&from='+ui.item.attr("data_task") +
+            '&to='+ui.item.prev().attr("data_task") +
+            '&cuca='+res,
+
+          dataType: 'script',
+          url: '#{reorder_task_project_task_lists_path(@project)}'
+        })
+      }
+    });

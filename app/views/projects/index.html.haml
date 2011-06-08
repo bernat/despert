@@ -1,0 +1,31 @@
+- title "Projects"
+- if can? :create, Project
+  = link_to "+ Nou projecte", new_project_path, :class => "button right"
+- if can? :read, ProjectType
+  = link_to 'Tipus projecte', project_types_path, :class => "button right"
+
+%h1 Llista de projectes
+%table.listing_projects
+  %tr
+    %th Projecte
+    %th PM
+    %th Refèrencia
+    %th Tipus
+    %th Estat
+    %th.last Manager Actions
+  - @projects.each do |project|
+    - opts = []
+    - opts << "managed" if project.manager == current_user
+    %tr{:class => opts.join(" "), :style => "color: #{project.to_color};"}
+      %td= link_to project.name, project
+      %td= project.manager
+      %td= project_link(project, :label => :ref)
+      %td
+        - if project.project_type
+          = t("#{project.project_type}")
+      %td= project.state
+      %td
+        - if can? :update, project
+          = link_to image_tag("editicon.png"), edit_project_path(project), :class => "button"
+
+= will_paginate @events, :previous_label => "&laquo; Anterior", :next_label => "Següent &raquo;"

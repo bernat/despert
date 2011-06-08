@@ -1,0 +1,5 @@
+%table.overview
+  %tr
+  = render :partial => 'events/event', :collection => @events
+= will_paginate @events, :previous_label => "&laquo; Anterior", :next_label => "Següent &raquo;"
+= javascript_tag "formatLinkForPaginationURL();"

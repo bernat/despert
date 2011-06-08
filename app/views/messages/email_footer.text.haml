@@ -1,0 +1,6 @@
+Aquest email ha estat originalment enviar via email per #{@email.from}
+en la data #{I18n.l @email.date} i ha estat automàticament afegit aquí.
+- if @attachs.present?
+  L'email conté fitxers adjunts:
+  %br/
+  = @attachs.map{|x| project_attachment_url(x.project, x)}.join(" | ")

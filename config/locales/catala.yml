@@ -1,0 +1,150 @@
+ca:
+  date_ago: fa
+  date_future: "d'aquí a"
+  new_task: "Nova tasca creada"
+  modified_task: "Tasca modificada"
+  destroyed_task: "Tasca eliminada"
+  completed_task: "Tasca completada"
+  reopened_task: "Tasca reoberta"
+  reordered_task: "Tasca reordenada"
+  archived_task: "Tasca arxivada"
+  unarchived_task: "Tasca desarxivada"
+  reassigned_user_task: "Tasca reassignada"
+  moved_task: "Tasca moguda"
+
+  Task: "Tasca"
+  Milestone: "Milestone"
+  Project: "Projecte"
+  Attachment: "Document"
+  TaskList: "Llista de tasques"
+  Message: "Missatge"
+
+  new_milestone: "Nou milestone creat"
+  modified_milestone: "Milestone modificat"
+  destroyed_milestone: "Milestone eliminat"
+
+  new_task_list: "Llista de tasques creada"
+  modified_task_list: "Llista de tasques modificada"
+  destroyed_task_list: "Llista de tasques eliminada"
+
+  new_message: "Nou missatge"
+  destroyed_message: "Missatge eliminat"
+
+  new_comment: "Nou comentari"
+  destroyed_comment: "Comentari esborrat"
+
+  new_attachment: "Nou adjunt"
+  modified_attachment: "Adjunt modificat"
+  destroyed_attachment: "Adjunt eliminat"
+
+  new_project: "Nou projecte"
+  modified_project: "Projecte modificat"
+  destroyed_project: "Projecte eliminat"
+
+  new_client: "Nou client"
+  modified_client: "Client modificat"
+  destroyed_client: "Client eliminat"
+
+  tasks: "Tasques"
+  messages: "Missatges"
+
+  basic: "bàsic"
+  standard: "estàndard"
+  advanced: "avançat"
+  noplan: "cap pla"
+  maintenance: "manteniment"
+  custom: "personalitzat"
+  internal: "intern"
+  intern: Intern
+  closed: "tancat"
+  plan: pla
+
+  project: projecte
+  download: descarrega
+  state: estat
+  date_label: data
+  name: nom
+  main_email: "Email principal"
+  phone: "Telèfon"
+  secondary_phone: "Telèfon secondari"
+  address: Adreça
+  invoicing: "Facturació"
+  back_to_project: "Tornar al projecte"
+  workgroups: "Grups de treball"
+
+  flash:
+      actions:
+        create:
+          notice: "Nova %{resource_name} creada"
+        update:
+          notice: "%{resource_name} modificat"
+        destroy:
+          notice: "%{resource_name} esborrat"
+          alert: "%{resource_name} could not be destroyed"
+
+  helpers:
+      submit:
+          update: "Salvar"
+          create: "Salvar"
+
+      label:
+          project:
+              info: "Informació del projecte"
+          group:
+              description: "Descripció"
+          message:
+              body: "Text del cos"
+          client:
+              information: "Informació"
+          attachment:
+              description: "Descripció de l'arxiu"
+          user:
+            receive_emails: "Rebre emails"
+
+
+  preview: "Previsualització"
+
+  crm:
+    unpaid_invoices: "Té factures per pagar. Si us plau, faci el pagament abans de continuar."
+    tasks:
+      show:
+        task_list: "Llista de tasques"
+        responsible: Responsable
+
+    client_users:
+      show:
+        your_data: "Les teves dades"
+        click_to_modify: "Clica sobre la dada incorrecte per modificar-la"
+        change_photo: "Vols canviar la foto?"
+        company_info: "Informació de l'empresa"
+
+    invoices:
+      invoice:
+        invoice: Factura
+        way_of_payment_label: "Mètode de pagament"
+        way_of_payment: "Mitjançant VISA, VISA ELECTRON o MASTER CARD des de la intranet de Itnig"
+        invoice_number: "Número de factura"
+        invoice_concept: "Concepte"
+      index:
+        your_invoices: "Les teves factures"
+        invoice_number: "Número de factura"
+        payed: Pagada
+        to_be_payed: "Pendent de pagar"
+
+    projects:
+      index:
+        welcome_to_intranet: "Benvingut a la Intranet de Itnig"
+        introduction: "Aqui podràs veure l'evolució dels projectes que tens amb nosaltres. Pots veure els projectes a continuació:"
+        no_pending_invoices: "Cap factura pendent de pagar"
+        pay_invoices: "Pagar factures"
+        invoice_payment: "Pagament de factures"
+        payment_terms: "<p><strong>Atenció! Si us plau, llegiu atentament:</strong></p><p>Itnig posa a la seva disposició la passarel·la segura de <strong>La Caixa</strong> per realitzar els pagaments de forma còmode a través d'Internet. Per fer-ho li caldrà una targeta de crèdit <strong>VISA, VISA ELECTRON o MASTER CARD</strong>. Si la seva targeta té activat el sistema de seguretat per número CIP caldrà que el tingui a mà en el moment de fer la transacció.</p><p>La passarel·la permet realitzar pagaments de dos tipus: pagaments puntuals i pagaments per subscripció. </p><p><strong>Pagaments puntuals:</strong></p><p>Els pagaments puntuals es poden realitzar mitjançant transferència o targeta de crèdit si són inferiors a <strong>500€</strong> i només per transferència si són superiors a aquest valor. El procediment és igual que els altres, cal prémer el botó pagar i seguir els passos de la interfície de La Caixa. El sistema l'informarà si té pagaments puntuals a realitzar. Aquests pagaments es produeixen només quan es negocia amb el client un projecte personalitzat i no és gens habitual a Itnig.</p><p><strong>Pagament per subscripció:</strong></p><p>La transacció per activar un pagament per subscripció es realitza una vegada, generalment a l'inici del projecte i es renova automàticament cada mes sense que requereixi cap acció per part del client. Les quotes mensuals de Itnig es carreguen el mateix dia del mes en que s'ha realitzat la subscripció per primer cop. La subscripció es realitza per un període de 2 anys tot i que <u>el client pot cancel·lar-la en qualsevol moment posant-se en contacte amb nosaltres, una vegada completada la permanència mínima del seu pla</u>. Al cap de 2 anys, la subscripció es cancel·larà automàticament i el client l'haurà de reactivar des d'aquesta mateixa pàgina.</p><p>Cal tenir en compte que les quotes mensuals són modificables per part de Itnig amb prèvia notificació i acceptació del client i sempre que s'hagi superat el període de permanència mínima.</p>  <p>Tal com especifiquen els plans de Itnig, la primera quota serà superior a totes les altres perquè inclou el pagament de l'entrada del projecte (equivalent a 3 mesos).</p>"
+        read_and_accepted: "He llegit i accepto les condicions"
+        projects_pending_to_subscribe: "Projects pendents de subscripció"
+        remember_before_paying: "Cada mes rebrà la seva factura per correu electrònic. Recordi que malgrat que la subscripció es programa automàticament durant 24 mesos, la pot cancel·lar en qualsevol moment passats els mesos de permanència mínima posant-se en contacte amb nosaltres."
+        pending_invoices: "Factures pendents"
+        invoices_will_be_emailed: "Un cop pagades, rebrà les factures per correu electrònic."
+        subscribe: "Subscriure's"
+        pay_now: "Paga ara"
+        cash_payment: "Cobrament"
+        months: mesos

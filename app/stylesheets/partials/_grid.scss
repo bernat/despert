@@ -1,0 +1,91 @@
+$total-cols: 25;
+$col-width: 3em;
+$gutter-width: 1em;
+$side-gutter-width: 3em;
+
+@import "susy/susy";
+// Grid --------------------------------------------------------------
+
+
+.container {
+  @include container;
+  @include box-shadow;
+}
+
+nav {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.footer {
+  padding-top: .8em;
+}
+
+.main {
+  padding: 1em;
+}
+
+#task-lists {
+  .regular-task-lists {
+    @include columns(20);
+  }
+}
+
+.task-item {
+  @include full(20);
+  .position {
+    @include columns(1);
+  }
+  .action-label {
+    @include columns(2);
+  }
+  .completion-date {
+    @include columns(5);
+  }
+  .task-title {
+    @include columns(11);
+  }
+  .task-comments {
+    @include columns(1);
+  }
+  .task-buttons {
+    @include columns(2);
+  }
+  .duration {
+    @include columns(1);
+  }
+  .gravatar {
+    @include columns(3);
+  }
+}
+
+#dashboard {
+  .projects-pannel {
+    @include columns(13);
+  }
+  .milestones-pannel {
+    @include columns(13);
+  }
+}
+
+.user-show {
+  .table-data {
+    @include columns(20);
+  }
+  .user-gravatar {
+    @include columns(6);
+  }
+}
+
+.project-stats {
+  .first-table {
+    @include columns(13);
+  }
+  .second-table {
+    @include columns(13);
+  }
+}
+
+.one-half {
+  @include columns(13);
+}

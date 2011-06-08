@@ -1,0 +1,7 @@
+.comments-block
+  .comments
+    %h3#comments-count= pluralize(referer.comments.count, "Comentari") if referer.comments
+    = render :partial => 'comments/comment', :collection => referer.comments, :locals => {:referer  => referer}
+  .comment-notice
+  .form-comments
+    = render :partial => 'comments/form', :locals => {:referer  => referer}

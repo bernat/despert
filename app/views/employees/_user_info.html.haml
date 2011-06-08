@@ -1,0 +1,42 @@
+.user-info
+  %h2 Dades de l'usuari
+  .table-data
+    %table
+      %tr
+        %td Nom complet:
+        %td= user.name
+      %tr
+        %td Nom d'usuari:
+        %td= user.username
+      %tr
+        %td Comptador de logins:
+        %td= maybe user.sign_in_count
+      %tr
+        %td Grup al que pertany:
+        %td= maybe user.group
+      %tr
+        %td
+          Última identificació feta:
+        %td= (pretty_date user.last_sign_in_at if user.last_sign_in_at) || "Cap"
+      %tr
+        %td Actual identificació feta:
+        %td= (pretty_date user.current_sign_in_at if user.current_sign_in_at) || "Cap"
+      %tr
+        %td Última IP usada:
+        %td= maybe user.last_sign_in_ip
+      %tr
+        %td IP Actual:
+        %td= maybe user.current_sign_in_ip
+      %tr
+        %td Vol rebre emails?:
+        %td= maybe user.receive_emails
+      %tr
+        %td Email
+        %td= maybe user.email
+
+  .user-gravatar
+    .right= raw gravatar_for(user, :size => 235)
+    .clearboth
+    .right
+
+  .clearboth

@@ -1,0 +1,79 @@
+#events {
+  h2 {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: .3em;
+  }
+  h3 {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: .5em;
+    padding-bottom: .3em;
+    span {
+      color: #555;
+    }
+  }
+  .event {
+    min-height: 5em;
+    border: 1px solid #EEE;
+    margin-bottom: 1em;
+    padding: 1em;
+    .item {
+      img {
+        margin-right: 1.2em;
+        margin-top: -.35em;
+      }
+      margin: 1em 1.5em;
+    }
+  }
+  .comment {
+    img {
+      margin-right: 1.2em;
+      margin-top: .35em;
+    }
+    .left {
+      height: 40px;
+    }
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    padding: .4em 1em .3em 1em;
+    margin: .2em .4em;
+    line-height: 1.6em;
+    @include border-radius(2px);
+  }
+  textarea {
+    margin: .5em 0 .2em 1em;
+    font-size: 1.1em;
+    width: 97%;
+    height: 4em;
+    padding: .5em;
+    border: 1px solid #EEE;
+  }
+  input[type=submit] {
+    margin-left: 1em;
+  }
+  .comment {
+    border: 1px solid #DDD;
+    margin-bottom: .4em;
+    background-color: #EEE;
+  }
+  .comments-gravatar {
+    float: left;
+    margin-bottom: 1em;
+    width: 50px;
+  }
+  .comment-body {
+    margin-top: .1em;
+    p {
+      margin: 0;
+    }
+  }
+  .comment-by {
+    color: #555;
+  }
+  .comment-delete {
+    float: right;
+    display: none;
+  }
+  .item-list {
+    padding-bottom: .2em;
+  }
+}

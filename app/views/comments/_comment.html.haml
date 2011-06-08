@@ -1,0 +1,12 @@
+.comment{:id => "comment_#{comment.id}"}
+  .comments-gravatar
+    = raw gravatar_for(comment.user, :size => 35) if comment.user.email.present?
+  .comment-delete
+    - if can? :destroy, comment
+      = link_to image_tag("deleteicon.png"), comment, :method => :delete, :remote => true, :confirm => "Segur?", :class => "button"
+  .comment-by
+    = link_to comment.user.name, comment.user
+    = pretty_date comment.created_at
+    ha escrit:
+  .comment-body= raw markdown(comment.content)
+  .clearboth

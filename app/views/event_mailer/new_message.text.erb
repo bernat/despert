@@ -1,0 +1,5 @@
+S'ha creat un nou missatge amb l'assumpte [<%= @message.subject %>] en el projecte <%= @message.project%> on tu participes. Pots consultar-lo en el seguent enllaç:
+
+<%= project_message_url(@message.project, @message) %>
+
+<%= render 'footer' %>

@@ -1,0 +1,197 @@
+- I18n.locale = "es"
+.page.shadow
+  %div{:style => "height:20em;"}
+  %div{:style => "margin-left:2em"}
+    %h1
+      Documento #{@project}
+    %h2.right{:style => "margin-right:5em"} Plan Básico
+  %div{:style => "height:20em;"}
+  %div{:style => "font-size:1.3em;margin-left:3em;"}
+    %p
+      Itnig Solutions, S.L.
+      %br/
+    %p
+      Barcelona, #{I18n.l(@project.starting_date, :format => :long)}
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 1
+    Proyecto #{@project}
+  %h2 Descripción del documento
+  %p Este documento es una descripción del producto ofrecido y una guía de uso para nuestros clientes. En primer lugar describimos en qué consiste el producto en todos los niveles: tecnología, instalaciones, alojamiento, diseño, y el servicio de promoción y marketing que lleva incorporado. También se explica en este documento la naturaleza de nuestro contrato y cuales son nuestros compromisos con el cliente. Por último, facilitamos la forma de contactar con nuestros departamentos.
+  %h2 Descripción general del producto
+  %p
+    Se trata de un producto web integral dentro del marco del
+    %strong Plan Básico
+    de Itnig. Entendemos por integral el hecho que comprende todos los servicios accesorios que acompaña la presencia en internet. En concreto son los siguientes:
+  %ul
+    %li Diseño personalizado y a medida
+    %li Ingeniería de software y de sistemas que hay detrás de la creación de la página web.
+    %li Mantenimiento técnico de la página
+    %li Monitoraje, seguimiento y promoción en su mercado dentro de la red.
+    %li Alquiler de los servidores donde se aloja la página web.
+    %li Alquiler del dominio
+  %p El seguimiento de la página es permanente. Se ofrecerá la información adecuada, fácilmente recuperable por los usuarios. Para ello se harán comprobaciones periódicas para ver si estos realmente llegan hacía su página y como llegan exactamente. Si algo falla, le asesoramos por tal de modificar y actualizar los contenidos de forma que tenga más salida.
+  %h2 Tecnologia
+  %p
+    La tecnología utilizada es
+    = succeed "." do
+      %strong Ruby on Rails
+    Se trata de uno de los frameworks de programación web mas potentes del mundo. Es una tecnología libre y abierta, con una enorme comunidad que la sostiene. Twitter.com, basecampphq.com, Yellowpages.com, Github.com son algunas de las aplicaciones web líderes que la utilizan. Itnig es pionera en España en el uso de esta tecnología. Diseñamos las interfícies de usuario de nuestras aplicaciones mediante el entorno
+    %strong jQuery
+    de Javascript. El sistema gestor de bases de dades que usamos es
+    = succeed "." do
+      %strong MySQL
+  %p La página creada le permitirá identificarse como administrador y modificar los contenidos internos en cualquier momento de manera simple y eficaz, de forma que pueda ser actualizada sin la necesidad de técnicos.
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 2
+    Proyecto #{@project}
+  %h2 Servidores
+  %p
+    Nuestros servidores privados y virtuales estan contratados a
+    %strong Linode Europa
+    (http://www.linode.com/). Linode es una de las empresas que ofrece infraestructura para ejecutar aplicaciones ruby más rápidas del mundo. El tiempo de respuesta de los sitios alojados son increíblemente más rápidos que su competencia. Además, el hecho de situar la infraestructura en Europa nos beneficia porque ganamos un 30% de velocidad por proximidad geográfica.
+  %p Nuestro mantenimiento se concentra en que el servidor nunca se quede corto en responder adecuadamente el volumen de visitas de la página. Aumentamos la contratación de memoria RAM o transferencia a nuestras máquinas cuando así lo creemos oportuno.
+  %h2 Diseño
+  %p
+    Somos especialistas en el
+    = succeed "." do
+      %strong diseño funcional, usable y accesible
+    Nuestro diseñador se pondrá en contacto con usted para captar sus preferencias gráficas en un diseño adecuado, que sea de su gusto y a la vez funcional. Si durante la vida de la página quiere modificar este diseño, podrá solicitarlo y se hará tan rápido como tenga disponibilidad. Si la métrica de usuario indica que alguna parte del diseño no está orientado bien a los usuarios, se modificará de forma inmediata.
+  %p
+    Los estándares seguidos son de momento
+    = succeed "." do
+      %strong XHTML 1.0 y CSS2
+    Estamos a la espera de que evolucione definitivamente el estándar en todos los navegadores y podamos empezar a usar plenamente los mucho más potentes
+    = succeed "." do
+      %strong HTML5 y CSS3
+  %h2 Marketing online
+  %p
+    %strong 1.
+    Crear y renovar periódicamente anuncios en portales de anuncios generalistas: Se crearan y renovaran anuncios en directorios como Páginas Amarillas o clasificados que permitan anunciar la página web y los servicios de nuestro cliente. La mayoría de los portales no admiten enlaces, pero los que lo permitan será importante conseguirlos.
+  %p
+    %strong 2.
+    Registrar la página en directorios web generalistas: Se registrará la web, con información corporativa y personal en los directorios generalistas más importantes, como Dmoz, Vulka o Hotfrog, entre otros. Los directorios que lo permitan se añadirá información gráfica y un enlace.
+  %p
+    %strong 3.
+    Crear y renovar anuncios en directorios y portales específicos del sector: La misión de este punto es conseguir enlaces de portales, foros, blogs y páginas de anuncios relacionadas con el sitio web, o sea, del mundo de la limpieza y el mantenimiento integral de oficinas, jardines, etc. Estos anuncios en páginas relacionadas deberán controlarse para saber el número de visitas, y en el caso que el portal lo permita, que valoración hacen los usuarios o si han dejado comentarios positivos o negativos, responder con rapidez sobre la página de nuestro cliente.
+  %p
+    %strong 4.
+    Asesoramiento de los nuevos contenidos creados: A lo largo de la vida del sitio web se puede ir actualizando la información relativa a proyectos concretos, servicios o información personal. Si se producen eventos concretos, podemos usar-los para promocionar individualmente por medio de páginas de aterrizaje (Landing Pages).En el caso de anuncios o directorios donde existe la posibilidad de mostrar imágenes, se irán actualizando en función de su importancia y calidad. A nivel de optimización interna, se crearan los metadatos (Keywords, description, geotags, etc.) para posicionar adecuadamente todos los contenidos nuevos.
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 3
+    Proyecto #{@project}
+  %p
+    %strong 5.
+    Medir las visitas y las respuestas que tienen las páginas y enviar informes mensuales al cliente. Mensualmente (aproximadamente el día 30 de cada mes) el cliente recibirá los informes con las conclusiones generales.
+  %p
+    %strong 6.
+    Extraer todos los datos posibles que ayuden a hacer una idea global del estado del sitio web y su evolución comparando mes a mes.
+  %p
+    %strong 7.
+    Saber si los cambios que se van aplicando tienen éxito, por tal de perfeccionar y ajustar los contenidos, valorar el tráfico más cualificado, etc. Una vez hecha la extracción, se crearan unas conclusiones que faciliten la comprensión de los diferentes informes, que todo y ser muy visuales, presentan dificultades para comprender la evolución y el funcionamiento del sitio web.
+  %h2 Contrato
+  %p Este producto se ofrece por medio de nuestro plan básico, que incluye todos los servicios anteriormente descritos para una página de dimensiones reducidas, como es su caso. Entendemos como página de dimensiones reducidas aquella que no se genera abundante contenido nuevo, o que no permite la venta directa en la red. Evidentemente, se puede cambiar de plan en cualquier momento y ampliar las funcionalidades y servicios ofrecidos a sus usuarios.
+  %p
+    El producto tiene un precio mensual de
+    %strong 65€ + IVA al mes
+    y una cuota de entrada de
+    = succeed "." do
+      %strong 195€ + IVA
+    La forma de pago es personalizable, aunque recomendamos la domiciliación bancaria o pago por bloques de seis meses.
+  %p
+    Si no obtiene los resultados esperados y quiere rescindir el contrato, puede hacerlo sin compromiso pasados seis meses de la contratación. El código de su página web se le entregará por medio de un repositorio público de Github. Puede ver su código en cualquier momento visitando http://github.com/itnig. Evidentemente, es libre de reutilizarlo en un futuro. Tiene a su disposición nuestro
+    %strong plan de alojamiento + dominio
+    solo para ex-clientes, que tiene un coste de 25€/mes + IVA y contempla el mantenimiento de la web online, pero no incluye ningún servicio de seguimiento, promoción, mantenimiento o rediseño de la web. Ahora bien, le da la oportunidad de volver a contratar un plan básico en el momento que lo crea oportuno.
+  %h2 Forma de pago
+  %p
+    El importe inicial exacto es:
+    %br/
+    Plan básico: 195€ (Entrada) + 65€ (Primer mes) + 46.8€ (IVA) - 18.2€ (Ret IRPF) =
+    %strong 288,6€
+  %p La cuenta donde realizar los pagos es la siguiente:
+  .wrapped_box
+    %p
+      %strong> Titular
+      todo
+      %br/
+      %strong Entidad
+      todoe >
+      %br/
+      %strong Número cuenta
+      todoo
+  %p Tan pronto como recibamos el primer pago, le enviaremos la factura por correo electrónico y empezaremos a trabajar en su proyecto.
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 3
+    Projecte #{@project}
+  %h2 Contacto con Itnig
+  %p Puede contactar con nosotros siempre que quiera dentro de nuestros horarios de trabajo. Nuestro medio de contacto preferido es el correo electrónico. Nuestras direcciones son las siguientes:
+  .wrapped_box
+    %p
+      %strong info@itnig.net
+      \- Cuestiones generales
+      %br/
+      %strong design@itnig.net
+      \- Cuestiones de diseño
+      %br/
+      %strong it@itnig.net
+      \- Cuestiones de ingenieria
+      %br/
+  %p
+    Horario de trabajo de Itnig:
+    %strong De 10 a 14h de la mañana y de 16 a 20h de la tarde.
+  %p
+    También puede hablar telefónicamente con
+    %strong Sergi
+    al
+    = succeed "." do
+      %strong 668 819 184
+.page.last_page.shadow
+  .headnote
+    %div{:style => "float:right"}> 4
+    Proyecto #{@project}
+  %h2 Contrato de servicios
+  %br/
+  %br/
+  %p
+    De una parte
+    %strong= @client.name
+    con DNI/CIF #{raw  @client.nif.blank? ? "....................................." : "<strong>" + @client.nif + "</strong>"} representando la parte del cliente y por la otra parte
+    %strong Itnig SOlutions
+    con DNI
+    %strong algo
+    representando la parte del prestador de servicio.
+  %h3.center CLÁUSULAS
+  %p PRIMERA. Este contrato es vigente des del momento en que sea firmado por ambas partes y tiene una validez mínima de 6 meses e indefinida a partir de entonces mientras el cliente lo desee.
+  %p SEGUNDA. Todas las páginas del documento anterior han sido aceptadas y firmadas por ambas partes y forman parte del presente contrato.
+  %p TERCERA. El prestador de servicios se compromete a defender el interés del negocio del cliente y no va a actuar en ningún caso de forma negligente, de mala fe o bajo presión de terceras partes.
+  %p
+    CUARTA. El cliente autoriza cargar en su cuenta la cantidad correspondiente al
+    %strong
+      Plan #{t(@project.type).capitalize!}
+    que ha contratado.
+  %h3.center SERVICIOS
+  %p
+    QUINTA. Los servicios ofrecidos incluyen la construcción de la aplicación web, el diseño, alojamiento, dominio y promoción en Internet con la intensidad descrita en el
+    %strong
+      Plan #{t(@project.type).capitalize!}
+    de Itnig y en el documento anterior, firmado por ambas partes.
+  %h3.center MODIFICACIONES
+  %p SEXTA. Se podran hacer modificaciones de este contrato en cualquier momento, siempre que sean negociadas y aceptadas por escrito por ambas partes.
+  %h3.center CUMPLIMENTO
+  %p SÉPTIMA. Las partes ejecutaran y velaran por el cumplimiento de todo aquello especificado en este documento.
+  %br/
+  %br/
+  %p
+    Firmado en
+    %strong Barcelona
+    , el día
+    %strong= I18n.l(Date.today, :format => :long)
+  %br/
+  %div{:style => "float:right;margin-right:12em"}
+    %p
+      %u El Cliente
+  %p{:style => "margin-left:5em;"}
+    %u El Prestador

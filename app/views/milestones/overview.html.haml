@@ -1,0 +1,10 @@
+%h1 Milestones de Itnig
+
+- current_page = ( params[:page] || 0 ).to_i
+
+= link_to "Següents mesos", overview_milestones_path(:page => current_page + 1), :class => "button right"
+= link_to "Anteriors mesos", overview_milestones_path(:page => current_page - 1), :class => "button"
+
+- info = fill_calendar_info_with_milestones(@milestones, true)
+
+.full-calendar= calendar(Date.today + (current_page * 2).months, Date.today + 2.months + (current_page * 2).months, info)

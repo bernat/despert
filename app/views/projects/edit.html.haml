@@ -1,0 +1,6 @@
+- title "Modifica Project"
+= link_to image_tag("deleteicon.png"), @project, :confirm => 'COMPTE! Perdràs tota la informació del projecte. Vols prendre aquesta decisió?', :method => :delete, :class => "button right"
+%h1 Modifica Projecte
+.standard-form
+  = render "form"
+

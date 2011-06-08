@@ -1,0 +1,90 @@
+- title "Projecte " + @project.ref
+%h1 Vista general de #{@project}
+
+#project-show
+  .project-stats
+    %h2 Estadístiques del projecte
+    .first-table
+      %table
+        %tr
+          %td Nom del projecte
+          %td= @project.name
+        %tr
+          %td Referència projecte
+          %td ##{@project.ref}
+        %tr
+          %td Número de projecte
+          %td= @project.id
+        %tr
+          %td Project Manager
+          %td= link_to @project.manager, @project.manager
+        %tr
+          %td Data d'inici
+          %td= @project.created_at.strftime("%d/%m/%Y") + " (#{pretty_date @project.created_at})"
+        %tr
+          %td Estat de prioritat
+          %td
+            - if can? :update, @project
+              = best_in_place @project, :status, :type => :select, :collection => Project::STATUS_LIST
+            - else
+              = @project.status
+
+    .second-table
+      %table
+        %tr
+          %td Hores completades / Hores totals
+          %td #{@project.completed_hours}h / #{@project.calculate_total_hours}h
+        %tr
+          %td Pròxima fita
+          %td
+            - mile = @project.milestones.upcoming.first
+            - unless mile.blank?
+              = link_to mile, project_milestone_path(@project, mile)
+              = mile.friendly_date
+            - else
+              No n'hi ha
+        %tr
+          %td Fites completes / Fites pendents
+          %td= link_to "#{@project.milestones.marked_completed.size} / #{@project.milestones.marked_uncompleted.size} milestones", project_milestones_path(@project)
+        %tr
+          %td Tasques completes / Tasques pendents
+          %td= link_to "#{@project.tasks.completed.size} / #{@project.tasks.uncompleted.size} tasques", project_task_lists_path(@project)
+        %tr
+          %td Missatges escrits
+          %td= link_to pluralize(@project.messages.size, "missatge"), project_messages_path(@project)
+        %tr
+          %td Documents adjunts
+          %td= link_to pluralize(@project.attachments.size, "documents"), project_attachments_path(@project)
+    .clearboth
+  .one-half
+    %h2 Treballadors del projecte (#{@project.employees.size})
+    .project-members
+      - @project.employees.each do |e|
+        - klass = @project.manager == e ? "pm" : ""
+        = link_to gravatar_for(e, :size => 50), e, :class => klass
+  .one-half
+    = link_to "Històric", "#status-history", :rel => "facebox", :class => "button right"
+    %h2 Status del projecte
+    .project-status
+      - if can? :update, @project
+        = best_in_place @project, :status_description, :type => :textarea, :activator => ".project-status"
+      - else
+        = @project.status_description
+  .clearboth
+  %h2 Descripció del projecte
+  .project-description
+    - if @project.info
+      = raw markdown @project.info
+
+  = render "shared/feeds"
+
+  #status-history{:style => "display:none"}
+    %h1 Historic de l'estat del projecte
+    - foo = @project.previous_version
+    - 10.times do
+      - unless foo.nil?
+        %p
+          = "#{pretty_date foo.version.created_at}: "
+          %b= foo.status_description.blank? ? "Buit" : foo.status_description
+          %em= "per #{foo.version.whodunnit}"
+        - foo = foo.previous_version

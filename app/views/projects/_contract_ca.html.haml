@@ -1,0 +1,212 @@
+- I18n.locale = "ca"
+.page.shadow
+  %div{:style => "height:20em;"}
+  %div{:style => "margin-left:2em"}
+    %h1
+      Document #{@project}
+    %h2.right{:style => "margin-right:5em"} Pla Bàsic
+  %div{:style => "height:20em;"}
+  %div{:style => "font-size:1.3em;margin-left:3em;"}
+    %p
+      Itnig Solutions, S.L.
+      %br/
+    %p
+      Barcelona, #{l @project.starting_date, :format => :long}
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 1
+    Projecte #{@project}
+  %h2 Descripció Document
+  %p Aquest document presenta a nivell general la descripció del producte ofert i una guia de desenvolupament tant per Itnig com pel client.
+  %p En primer lloc es descriu les característiques generals del producte. S’explica la tecnologia usada per implementar les funcionalitats requerides i es detalla cadascuna d’aquestes funcionalitats a nivell descriptiu. Es separen les diferents fases d’implementació de l’aplicació web. S’expliquen les característiques dels servidors on s’allotjarà l’aplicació. S’especiﬁca els serveis adjunts al producte a part del propi desenvolupament iteratiu de la pàgina, el màrqueting i el disseny.
+  %p Per últim, s’especiﬁca el tipus de contracte realitzat i la forma de pagament d’aquest. S’especiﬁca el concepte de propietat del codi realitzat per Itnig i s’explicita les formes de contacte.
+  %h2 Descripció general del producte
+  %p
+    Es tracta d'un producte web integral ofert segons el nostre
+    = succeed "." do
+      %strong Pla Bàsic
+    Entenem per integral el fet que comprèn els serveis  i necessitats accessories que acompanyen la presència a Internet. Són els següents:
+  %ul
+    %li El disseny personalitzat a mida
+    %li L'enginyeria de software i de sistemes que hi ha darrere la creació de la pàgina
+    %li El manteniment tècnic de la pàgina
+    %li El monitoratge, seguiment i promoció en el seu mercat a la Xarxa.
+    %li Lloguer Màquines on s'allotja la pàgina
+    %li Lloguer domini
+  %p El seguiment de la pàgina és permanent. Es vetllarà perquè s'ofereixi la informació adequada, fàcilment trobable pels usuaris i comprovarem periòdicament que aquests realment hi arriben. Si quelcom falla, l'assessorem per modificar i actualitzar els seus continguts de forma que tinguin més sortida.
+  %h2 Tecnologia
+  %p
+    La tecnologia emprada és
+    = succeed "." do
+      %strong Ruby on Rails
+    Es tracta d'un dels frameworks de programació web més potents del món que treballa sobre el llenguatge Ruby. És una tecnologia lliure i oberta, amb una enorme comunitat que l'empara. Twitter.com, Basecamphq.com, Yellowpages.com i Github.com són només alguns exemples d’aplicacions web líders que usen aquesta tecnologia. Itnig és pionera a Espanya en l'ús d'aquesta tecnologia. Dissenyem les interfícies de les nostres aplicacions usant principalment l’entorn de treball
+    %strong jQuery
+    de Javascript. El sistema gestor de base de dades emprat serà
+    = succeed "." do
+      %strong MySQL
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 2
+    Projecte #{@project}
+  %h2 Servidors
+  %p
+    Els nostres servidors privats virtuals estan contractats a
+    %strong Linode
+    Europa. Linode és una de les empreses que ofereix infraestructura per executar aplicacions Ruby més
+    %strong ràpides
+    del món. Els temps de resposta dels llocs allotjats són dramàticament més petits que la seva competència. A més, el fet de situar infraestructura a Europa en comptes de centres de dades en altres continents ens beneficia perquè guanyem sobre un 30% de rapidesa en cada petició per proximitat geogràfica.
+  %p El nostre manteniment es concentra en que el servidor mai es quedi curt en respondre el volum de visites que sigui a la pàgina. Augmentem la contractació de memòria RAM o capacitat de transferència de les nostres màquines quan així ho considerem necessari
+  %h2 Disseny
+  %p
+    Som especialistes en el
+    = succeed "." do
+      %strong disseny funcional, usable i accessible
+    El nostre dissenyador revisarà els dissenys dels nostres clients per comprovar que siguin funcionals, usables i accessibles. De la mateixa manera, optimitzarem l’estructura de la pàgina de cara als motors de cerca. Si la mètrica d'usuari indica que alguna part del disseny no està orientant bé als usuaris, es modificarà immediatament.
+  %p
+    Els estàndards seguits són de moment
+    = succeed "." do
+      %strong XHTML 1.0 i CSS2
+    Estem a l'espera que evolucioni definitivament l'estàndard en tots els navegadors i puguem migrar les aplicacions a
+    = succeed "." do
+      %strong HTML5 i CSS3
+  %h2 Marketing online
+  %p
+    %strong 1.
+    Posar i renovar periòdicament anuncis en portals d’anuncis generalistes: És crearan i renovaran anuncis en directoris com Pàgines Amarillas o Classificats que permetin anunciar la web i els serveis de la nostres clients. La majoria d’aquests portals no admeten enllaços, però els que ho permetin serà important aconseguir-los.
+  %p
+    %strong 2.
+    Registrar la pàgina en directoris web generalistes: És registrarà el lloc web, amb informació corporativa i personal als directoris generalistes més importants, com DMOZ, Vulka o Hotfrog, entre d'altres. Els directoris que ho permetin s’afegirà informació gràfica i un enllaç.
+  %p
+    %strong 3.
+    Posar i renovar anuncis en directoris i portals específics del sector: La missió d’aquest punt es aconseguir enllaços de portals, fòrums, pàgines d’anuncis relacionades amb el lloc web, o sigui, del sector del nostre client. Aquests anuncis en pàgines relacionades s'hauran d'anar controlant per saber el nombre de visites, i en el cas que el portal ho permeti, quina valoració en fan els usuaris, o si han deixat comentaris positius o negatius respondre amb rapidesa sobre la pàgina del nostre client.
+  %p
+    %strong 4.
+    Assessorament dels nous continguts creats: Al llarg de la vida del lloc es pot anar actualitzant la informació relativa a projectes concrets, serveis o informació personal. Si es produeixen events concrets, podem usar-los per promocionar-los individualment per mitjà de pàgines dedicades que contribueixen a enrquir el contingut de la pàgina.  En el cas d’anuncis o directoris on existeix la possibilitat de mostrar imatges, s’aniran actualitzant en funció de la seva importància i qualitat.  A nivell d’optimització interna, és crearan les metadades (keywords, description, geotags, etc.) adients per posicionar adequadament tots els continguts nous.
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 3
+    Projecte #{@project}
+  %p
+    %strong 5.
+    Medir les visites i les respostes que tenen les pàgines i enviar-li informes mensuals al client. Mensualment (aproximadament el dia 30 de cada mes) el client rebrà els informes amb les conclusions generals. L’objectiu dels informes és:
+  %p
+    %strong 6.
+    Extreure totes les dades possibles que ajudin a fer-se una idea global de l’estat del lloc web.
+  %p
+    %strong 7.
+    Saber si els canvis que es van aplicant tenen èxit, per tal de perfeccionar les keywords, ajustar continguts, valorar les noves imatges de la galeria, etc. Un cop extretes les dades, és crearan unes conclusions que facilitin la comprensió dels diferents informes, que tot i ser molt visuals, presenten dificultats alhora de comprendre l’evolució  i el funcionament del lloc web.
+  %h2 Contracte
+  %p
+    Aquest producte s'ofereix per mitjà del nostre
+    = succeed "," do
+      %strong Pla Bàsic
+    que inclou tots els serveis anteriorment descrits però per una pàgina de dimensions reduides, com és el seu cas. Entenem com a pàgina de dimensions reduides aquella que no preveu abundant creació de contingut o que no permet la venta directa a la Xarxa. Evidentment, es pot canviar en qualsevol moment i ampliar les funcionalitats i serveis oferts a un pla més avançat.
+  %p
+    El contracte té un preu mensual de
+    %strong 65€ + IVA
+    al mes, la forma de pagament és personalitzable, tot i que recomanem domiciliació bancaria o pagament per blocs de 6 mesos. També és possible pagar en efectiu.
+  %p
+    Si no obté els resultats esperats i vol rescindir el contracte, pot fer-ho sense compromís passats 6 mesos des de la data de contractació. El codi de la seva pàgina és públic (pot veure el nostre repositori de codi a
+    = succeed ")" do
+      %a{:href => "http://github.com/itnig"} http://github.com/itnig
+    i vostè és lliure de reutilitzar-lo en un futur de la manera que vulgui. Té a la seva disposició el nostre pla d'allotjament + domini per ex-clients, que té un cost de
+    %em 20€/mes + IVA
+    i contempla el manteniment de la web a la Xarxa (domini i allotjament), però no inclou cap servei de seguiment, promoció, manteniment o re-disseny de la web. Ara bé, li dóna la oportunitat de tornar a contractar un pla bàsic en el moment que ho cregui oportú.
+  %h2 Forma de pagament
+  %p
+    El contracte d’un Pla Bàsic d’Itnig té un preu mensual de 65€ + IVA (18%)  al mes, la forma de pagament és adaptable, tot i que recomanem domiciliació bancaria o pagament per blocs de 6 mesos. A la factura es reté un 7% d’IRPF, per tant el preu final és 65 + 11,7 (IVA) - 4,55 (Retenció IRPF) =
+    = succeed "." do
+      %strong 72,15 € / mes
+  %p
+    Tanmateix,
+    = succeed ":" do
+      %u els primers sis mesos s’han d’abonar al principi amb un sol pagament
+  %p
+    L'import inicial exacte és: Pla bàsic x 6 mesos: 390€ + 70,2€ (IVA) - 27,3€ (Ret IRPF) =
+    %strong 432,9€
+  %p El compte on realitzar els pagaments és el següent:
+  .wrapped_box
+    %p
+      %strong Titular
+      Itnig Solutions
+      %br/
+      %strong Entitat
+      todo
+      %br/
+      %strong Compte
+      todo
+  %p Tan bon punt rebem el primer pagament li enviarem la factura per correu electrònic i començarem a treballar en el projecte.
+.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 3
+    Projecte #{@project}
+  %h2 Contacte amb Itnig
+  %p Pot contactar amb nosaltres sempre que vulgui dins dels nostres horaris de treball. El nostre mitjà de contacte preferit és el correu electrònic, tant aviat com tinguem disponibilitat respondrem el seu problema.
+  %p Les nostres adreces són:
+  .wrapped_box
+    %p
+      %strong info@itnig.net
+      \- Per qüestions generals
+      %br/
+      %strong design@itnig.net
+      \- Per qüestions de disseny
+      %br/
+      %strong it@itnig.net
+      \- Per qüestions d'enginyeria
+      %br/
+  %p
+    Horari de treball a Itnig:
+    %strong De 10 a 14h del matí i de 16 a 20h de la tarda.
+  %p
+    També pot parlar telefònicament amb el
+    %strong Sergi
+    al
+    = succeed "." do
+      %strong 668 819 184
+.last_page.page.shadow
+  .headnote
+    %div{:style => "float:right"}> 4
+    Projecte #{@project}
+  %h1 Contracte de serveis
+  %br/
+  %br/
+  %p
+    Per una part
+    %strong= @client.name
+    amb DNI/CIF #{raw @client.nif.blank? ? "....................................." : "<strong>" + @client.nif + "</strong>"} representant la part del client i per l’altra part
+    %strong Itnig solutions
+    amb DNI
+    %strong todo
+    representant la part de prestador del servei.
+  %h3.center CLÀUSULES
+  %p PRIMERA. Aquest contracte és vigent a partir del moment en que ambdues parts el signen i té una validesa mínima de sis mesos.
+  %p SEGONA. Totes les pàgines del document anterior han estat acceptades i signades per ambdues parts i formen part del present contracte.
+  %p TERCERA. El prestador de serveis es compromet a vetllar per l’interès de negoci del client i no actuarà en cap cas de forma negligent, amb mala fe o es sotmetrà a coacció o pressió de terceres parts.
+  %p
+    QUARTA. El client autoritza a carregar al seu compte la quantitat corresponent al
+    %strong
+      Pla #{t(@project.type).capitalize!}
+    que ha contractat.
+  %h3.center SERVEIS
+  %p
+    CINQUENA. Els serveis oferts que inclouen construcció de l’aplicació web, disseny, allotjament, domini i promoció a Internet en l’intensitat descrita al
+    %strong
+      Pla #{t(@project.type).capitalize!}
+    han estat descrits en l’anterior document i han estat acceptats i signats per ambdues parts.
+  %h3.center MODIFICACIONS
+  %p SISENA. Es podran fer modificacions d’aquest contracte en qualsevol moment. Tanmateix, aquestes seran especificades i negociades entre ambdues parts i resultaran en un document signat que s’annexarà a aquest.
+  %h3.center COMPLIMENT
+  %p SETENA. Les parts executaran i vetllaran perquè es compleixi tot allò especificat en el document.
+  %br/
+  %br/
+  %p
+    Signat a
+    %strong Barcelona
+    , el dia
+    %strong= I18n.l(Date.today, :format => :long)
+  %br/
+  %div{:style => "float:right;margin-right:12em"}
+    %p
+      %u El Client
+  %p{:style => "margin-left:5em;"}
+    %u El Prestador

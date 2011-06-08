@@ -1,0 +1,41 @@
+- unless f.error(:base).blank?
+  .notice= f.error :base
+
+= f.label :name, "Nom", :class => :label
+= f.text_field :name, :class => 'text_field'
+
+- if @milestone_id.blank?
+  = f.label :milestone_id, "Milestone", :class => :label
+  = f.select 'milestone_id', @project.milestones.marked_uncompleted.collect { |m| [m.name, m.id] }, { :include_blank => "Cap"}
+- else
+  = f.hidden_field :milestone_id, :value => @milestone_id
+
+= f.label :group_id, "Grup que desenvoluparà les tasques", :class => :label
+= f.select 'group_id', Group.all.collect { |m| [m.ref, m.id] }, { :include_blank => "Cap"}
+
+.right COMPTE! Les hores planificades cal pensar-les bé i no s'haurien de modificar mai més.
+= f.label :hours, "Hores previstes", :class => :label
+= f.text_field :hours, :class => 'text_field'
+
+.right El camp de descripció ha de comprendre tot el que caldrà fer sobre aquella tasca i no es podrà modificar.
+= f.label :description, "Descripció", :class => :label
+= f.text_area :description, :class => 'text_field', :style => "height: 4em;"
+
+- unless @task_list.new_record?
+  #change-concept{:style => "display:none"}
+    = f.label :concept, "Per què modifiques aquesta llista de tasques?"
+    = f.text_area :concept, :class => 'text_field', :style => "height: 2em;"
+
+.center= f.submit :class => "button"
+
+
+- content_for :custom_js do
+  :javascript
+    $(document).ready(function() {
+      var show_concept = function() {
+        $("#change-concept").fadeIn();
+        $("#task_list_concept").focus();
+      }
+      $("#task_list_hours").change(function(){show_concept()});
+      $("#task_list_description").change(function(){show_concept()});
+    });

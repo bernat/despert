@@ -1,0 +1,9 @@
+%hr/
+%p
+  This email was originally sent by
+  %b= @email.from
+  at #{I18n.l @email.date}, and automatically inserted here.
+- if @attachs.present?
+  %p
+    This email also has #{pluralize @attachs.length, "attachment"} you can find here:
+    \#{raw @attachs.map{|x| link_to x, [x.project, x]}.join(" | ")}

@@ -1,0 +1,91 @@
+$background-color: #444;
+
+#status {
+  #status-preheader {
+    background-color: $background-color;
+    font-size: 5em;
+    color: #EEE;
+    border-bottom: 1px solid #999;
+    padding: .1em .6em;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  font-size: 1.2em;
+  table
+  {
+    background: #F0F0F0;
+  	width:100%;
+  	tr {
+  	  border: 1px solid #AAA;
+  	  &.status_1 {
+    	  background-color: #DDD;
+    	}
+  	  &.status_2 {
+    	  background-color: #FF9999;
+    	}
+    	&.status_3 {
+    	  background-color: #FF5555;
+    	}
+
+  	}
+  	th {
+      background-color: $background-color;
+      color: #EEE;
+      font-weight: normal;
+      padding: .6em .2em .1em .2em;
+      text-align: center;
+      &:first-child {
+        width: 5em;
+      }
+      &:nth-child(2) {
+        width: 15em;
+      }
+      &:nth-child(3) {
+        width: 5em;
+      }
+      &:nth-child(4) {
+        width: 3em;
+        text-align: right;
+      }
+      &:nth-child(5) {
+        width: 6em;
+      }
+      &:nth-child(6) {
+        width: 28em;
+      }
+  	}
+
+  	td {
+      color: #111;
+      text-align: center;
+      vertical-align: top;
+      padding: .6em .2em .1em .2em;
+      &:first-child {
+        text-align: center;
+      }
+      &:nth-child(2) {
+        font-weight: bold;
+      }
+      &:nth-child(4) {
+        text-align: right;
+      }
+  	}
+
+  	textarea {
+  	  width: 100%;
+  	  height: 2em;
+  	  font-size: 1em;
+  	}
+  }
+  .best_in_place {
+    cursor: pointer;
+    cursor: hand;
+  }
+  #hours_project {
+    margin-top: 2em;
+  }
+  img {
+    margin-top: -2px;
+	}
+}

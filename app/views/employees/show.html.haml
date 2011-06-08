@@ -1,0 +1,26 @@
+- title "Perfil de " + @employee.name
+
+.user-show
+  - if can? :update, @employee
+    = link_to image_tag("editicon.png"), edit_polymorphic_path(@employee), :class => "button right"
+  %h1 Informació de #{@employee.name}
+
+  = render :partial => 'user_info', :locals => {:user => @employee}
+
+  - color = (@employee.group ? @employee.group.color : "AAAAAA")
+  - dades = ""
+  - i = 0
+  - @last_hours.each do |hour|
+    - dades = dades + (i == 0 ? "" : ",")
+    - dades = dades + hour.to_s
+    - i = i + 1
+  - grafic = "http://chart.apis.google.com/chart?chxr=0,0,10&chxs=0,676767,11.5,-1,lt,676767&chxt=y&chbh=a&chs=880x225&cht=bvg&chco=" + color + "&chds=0,10&chd=t:" + dades + "&chdlp=l&chma=|0,255&chtt=Hores+treballades+per+dia&chts=676767,14.5"
+  %hr
+  %h2 Hores treballades per dia
+  %img{:alt => "Gr\303\240fic de hores treballades per dia", :src => raw(grafic)}
+  - if @last_tasks
+    %h2 Últimes tasques realitzades
+    - @last_tasks.each do |task|
+      = render task
+  - if @events
+    = render "shared/feeds"

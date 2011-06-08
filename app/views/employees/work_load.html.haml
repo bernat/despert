@@ -1,0 +1,8 @@
+%h1 Tasques planejades per #{@employee}
+- @planned_tasks.each do |milestone, tasks|
+  %h3
+    = milestone
+    = milestone.friendly_date
+  - tasks.each do |task|
+    = render task, :task_list => task.task_list
+  .separator

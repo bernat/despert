@@ -1,0 +1,48 @@
+.comments-block {
+  h3 {
+    margin: 1em 0 1em 0;
+    font-size: 1.6em;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: .4em;
+  }
+  h2 {
+    margin-top: 1em;
+  }
+  .comment {
+    @include standard-lists;
+    border: 1px solid #DDD;
+    min-height: 5em;
+    margin-bottom: .5em;
+    padding: 1em;
+    background-color: #EEE;
+  }
+  .comments-gravatar {
+    float: right;
+    margin-bottom: 1em;
+  }
+  .comment-by {
+    font-style: italic;
+  }
+  .comment-body {
+    margin-top: 1em;
+  }
+  .comment-delete {
+    float: right;
+    display: none;
+    margin-right: 1em;
+  }
+  .comment:hover {
+    .comment-delete {
+      display: inline;
+    }
+  }
+  textarea {
+    width: 98.5%;
+    height: 10em;
+    padding: .5em;
+    font-size: 1.3em;
+    color: #333;
+    border: 1px solid #DDD;
+    margin-bottom: .5em;
+  }
+}

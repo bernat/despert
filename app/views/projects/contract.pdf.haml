@@ -1,0 +1,11 @@
+%html
+  %head
+    %title
+      Document #{@client.name}
+    %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
+    <link rel="stylesheet" type"text/css" href="#{root_url}stylesheets/pageable_print.css" media="screen">
+  %body
+    - if @lang.blank?
+      = render "contract_ca"
+    - else
+      = render :partial => (@lang.to_s == "es" ?  "contract_es" : "contract_ca").to_s + ".html"

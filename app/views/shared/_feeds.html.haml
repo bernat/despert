@@ -1,0 +1,24 @@
+#events
+  - if @events
+    %h2 Activitat
+    - @events.each do |subject, events|
+      - proj = subject.respond_to?(:project) ? subject.project : nil
+      - proj = subject if subject.is_a? Project
+      - author = events.first.actor
+      - color = "#FFF"
+      - if author && author.is_a?(Employee) && author.group
+        - color = soft_color author.group.color
+      .event{:style => "background-color:##{color}", :id => "event-#{subject.id}"}
+        - if proj
+          .right= project_link proj
+
+        - if subject.is_a?(Project) || proj
+          %h3
+            = link_to "#{t subject.class}: #{subject}", subject.is_a?(Project) ? subject : [proj, subject]
+            %span= " (Última activitat #{pretty_date events.last.created_at})"
+
+        .item-list{:id => "subject-#{subject.id}"}
+          = render :partial => 'events/event', :collection => events
+        - if subject.respond_to?(:comments)
+          = render :partial => 'comments/form', :locals => {:referer  => subject}
+

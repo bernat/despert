@@ -1,0 +1,39 @@
+= simple_form_for(@employee, :html => { :class => :form }) do |f|
+  - unless f.error(:base).blank?
+    .notice= f.error :base
+
+  %fieldset
+    %legend Dades personals
+
+    %sup.right El nom complet s'utilitza per identificar-te de manera "oficial"
+    = f.input :name, :label => "Nom complet"
+
+    %sup.right El nom curt es fa servir per les mencions, un "apodo"
+    = f.input :username, :label => "Nom curt"
+    = f.input :email
+    = f.association :group, :label => "Grup"
+    = f.input :password
+
+    - unless @employee.new_record?
+      = f.input :receive_emails, :label => "Rebre emails"
+
+  - if can? :update_variable_part, @employee
+    %fieldset
+      %legend Dades economiques
+      = f.input :variable_part, :as => :string, :label => "Part variable"
+      #change-concept{:style => "display:none"}
+        = f.label :concept, "Concepte de modificació de la part variable?"
+        = f.text_area :concept, :class => 'text_field', :style => "height: 2em;"
+
+
+  .group.navform
+    = f.button :submit
+
+- content_for :custom_js do
+  :javascript
+    $(document).ready(function() {
+      var show_concept = function() {
+        $("#change-concept").fadeIn();
+        $("#employee_concept").focus();
+      }
+    });

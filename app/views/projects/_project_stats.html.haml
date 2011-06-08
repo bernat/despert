@@ -1,0 +1,77 @@
+#stats.span-24
+  .span-15.column.first
+    %table
+      %tr.odd
+        %td
+          %b Manager:
+        %td= @project.manager
+      %tr.even
+        %td
+          %b Data d'inici:
+        %td
+          = (@project.starting_date ? I18n.l(@project.starting_date.to_date) : "(undefined)")
+      %tr.odd
+        %td
+          %b Client:
+        %td= link_to @project.client, @project.client
+      %tr.even
+        %td
+          %b Milestones pendents:
+        %td= @project.milestones.marked_uncompleted.count.to_s + "/" + @project.milestones.count.to_s
+      %tr.odd
+        %td
+          %b Tasques pendents:
+        %td= @project.tasks.uncompleted.count.to_s + "/" + @project.tasks.count.to_s
+      %tr.even
+        %td
+          %b Missatges:
+        %td= h @project.messages.count.to_s
+      %tr.odd
+        %td
+          %b Hores de treball previstes:
+        %td
+          = @project.calculate_total_hours.to_s
+          h
+      %tr.even
+        %td
+          %b Hores de treball realitzades:
+        %td
+          = @project.completed_hours.to_s
+          h
+      %tr.odd
+        %td
+          %b Contracte
+        %td= link_to @project.contract_filename, @project.contract_get_file_url if @project.contract?
+      - if @project.project_type
+        %tr.even
+          %td
+            %b Tipus de projecte:
+          %td
+            %b= t("#{@project.project_type}")
+        - if @project.project_type.name == "basic"
+          %tr.odd
+            %td
+              %b Prototip de contracte:
+            %td
+              = link_to "CAT", contract_project_path(@project, :lang => "ca")
+              = link_to "ESP", contract_project_path(@project, :lang => "es")
+    %br/
+  .span-8.column.last
+    %p
+      %b Persones assignades al projecte:
+    - @project.employees.each do |user|
+      .prepend-1.span-12
+        .span-5.first.colborder.column
+          = raw gravatar_for(user, :size => 35)
+        .span-15.column.last
+          = link_to user.name, user
+          - if @project.manager == user
+            = " (PM)"
+  .span-24
+    .prepend-2.span-10.column.first
+      %span{:style => "float:left;"}= link_to "<<", :date =>  (@date - 19).to_s
+      %span{:style => "float:right;margin-right:80px;"}= link_to ">>", :date => (@date + 19).to_s
+    #project_activity.span-12.column.first
+    #group_hours.span-10.column.last
+
+

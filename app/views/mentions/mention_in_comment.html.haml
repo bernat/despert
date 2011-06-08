@@ -1,0 +1,5 @@
+%p Hola, acabes de ser mencionat en el comentari següent:
+%p= @comment
+
+%a{:href => "http://#{APP_CONFIG['hostname']}#{url_for([@comment.commentable.project, @comment.commentable])}"}
+  Enllaç directe

@@ -1,0 +1,5 @@
+S'ha creat un nou milestone amb el nom [<%= @milestone.name %>] en el projecte <%= @milestone.project%> on tu participes. Pots consultar-lo en el seguent enllaç:
+
+<%= project_milestone_url(@milestone.project, @milestone) %>
+
+<%= render 'footer' %>

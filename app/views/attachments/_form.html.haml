@@ -1,0 +1,9 @@
+= form_for([@project, @attachment], :html => { :class => :form, :multipart => true }) do |f|
+  = render "shared/error_messages", :target => @attachment
+  .group
+    = f.label "File: "
+    = f.file_field :attach, :class => 'text_field'
+  = f.wmd_tag(:description)
+  .group.navform
+    = f.submit :class => "button"
+    or #{link_to 'Cancelar', project_attachments_path}

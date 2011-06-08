@@ -1,0 +1,242 @@
+body
+{
+  background-color: $background-body;
+  font-family: "Myriad Pro", "Trebuchet MS", Helvetica;
+  font-size: 0.8em;
+}
+
+.footer {
+  color: #555;
+  text-align: center;
+}
+
+.container {
+  background-color: #fff;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0;
+}
+
+/*********************************************/
+/***************** Projects  *****************/
+/*********************************************/
+
+a.project-label {
+  height: 1em;
+  color: #FFF;
+  text-decoration: none;
+  font-size: .9em;
+  padding: 2px 3px 2px 3px !important;
+  margin: 0;
+  font-weight: normal;
+  @include border-radius(3px);
+  @include opacity(0.8);
+  &:hover {
+    @include opacity(1);
+  }
+}
+
+#project-title {
+  background: $basic-project-color;
+  color: #FFF;
+  height: 4em;
+  padding: .2em .6em .6em .6em;
+  font-size: 1.3em;
+  h2 {
+    font-size: 1.6em;
+  }
+  a {
+    color: #DDD;
+  }
+}
+
+#project-menu {
+  nav {
+    background-color: $background-body;
+    margin: 0;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    border-top: 2px solid white;
+    a {
+      text-decoration: none;
+      color: #2b2922;
+      @include border-top-radius(3px);
+      padding: 1em 5em;
+    }
+    ul {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+      li {
+        background: #bab293;
+        display: table-cell;
+        float: none;
+        text-align: center;
+        padding: .5em 1em;
+        border: 1px solid #FFF;
+        border-bottom: none;
+        @include transition("background", "0.2s", "linear");
+        &:hover {
+          background-color: #efe4bd;
+        }
+        &.current {
+          background-color: #AAA;
+          color: #111;
+        }
+      }
+    }
+  }
+}
+
+.listing_projects {
+  tr.managed {
+    background-color: #C2C2D8;
+  }
+  tr.internal {
+    td, a {
+      color: #666;
+    }
+  }
+}
+
+#project-show {
+  .project-stats {
+    table {
+      background-color: #EEE;
+      margin: 0;
+      margin-bottom: .5em;
+      font-size: 1.1em;
+      tr {
+        &:hover {
+          background-color: #FDD;
+        }
+      }
+      td {
+        border: 1px solid #FFF;
+        padding-left: 1em;
+        text-align: left;
+        &:first-child {
+          width: 50%;
+          border: none;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .project-status {
+    font-size: 1.1em;
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    padding: .6em;
+    margin-bottom: 2em;
+    min-height: 3.1em;
+    textarea {
+      width: 98%;
+      background-color: transparent;
+      font-size: 1em;
+    }
+    &:hover {
+      background-color: #FFE;
+    }
+  }
+  .project-members {
+    background-color: #EEE;
+    padding: .3em;
+    border: 1px solid #DDD;
+    img {
+      @include opacity(0.7);
+      &:hover {
+        @include opacity(1);
+      }
+    }
+    a.pm {
+      border-bottom: 2px solid #333;
+      padding: 0;
+    }
+  }
+  .project-description {
+    @include standard-lists;
+    padding: 0 .5em .5em .5em;
+    margin-bottom: 1.5em;
+    background-color: #EEE;
+    margin-right: 2em;
+    border: 1px solid #DDD;
+    h1 {
+      margin-top: 1.5em;
+      font-size: 1.4em;
+    }
+    h2 {
+      margin-top: 1em;
+      font-size: 1.3em;
+    }
+    h3 {
+      margin-top: 1em;
+      font-size: 1.2em;
+    }
+  }
+}
+
+/*********************************************/
+/************ History of events  *************/
+/*********************************************/
+.show-history {
+  margin-top: 1em;
+  table {
+    th {
+      text-align: left;
+      color: #666;
+    }
+    tr {
+      background-color: #EEE;
+      td {
+        text-align: left;
+        padding-left: 1em;
+        border-top: 1px solid #FFF;
+      }
+      &:first-child {
+        td {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+.standard-form {
+  width: 80%;
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  margin: 1px auto;
+  padding: 1em;
+  label {
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+  input, textarea, select {
+    font-size: 1.2em;
+    padding: .5em;
+    border: 1px solid #CCC;
+    width: 95%;
+    margin: 1.2em 5% 1.2em .2em;
+    &:focus {
+      border: 1px solid #777;
+    }
+  }
+  .button {
+    width: 10em;
+    margin: 1em auto;
+  }
+  fieldset {
+    border: 1px solid #AAA;
+    margin: 1em 0;
+    padding: 1.5em;
+  }
+  legend {
+    background-color: #FFF;
+    padding: .5em;
+  }
+}

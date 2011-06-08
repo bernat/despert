@@ -1,0 +1,9 @@
+<p>
+Hola, t'informem de que <%= @comment.user %> acaba de crear un nou comentari:
+</p>
+
+<p>
+  <%= @comment %>
+</p>
+
+<a href="http://<%= APP_CONFIG["hostname"] %><%= url_for [@comment.commentable.project, @comment.commentable] %>">Enllaç directe</a>

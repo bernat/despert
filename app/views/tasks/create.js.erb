@@ -1,0 +1,36 @@
+<% if @task.errors.any? %>
+    $("<span><%= escape_javascript(@task.errors.full_messages.join("\n")) %></span>").purr();
+
+<% elsif !@task.completed? %>
+
+  var last_index = $("#task_list_uncompleted_<%=@task.task_list.id.to_s%>").children(".task-item").last().children(".position").html();
+
+  $("#task_list_uncompleted_<%=@task.task_list.id.to_s%>").append("<%= raw escape_javascript(render @task, :task_list => @task_list) %>").fadeIn("slow");
+  $("#task_list_<%= @task.task_list.id %>_add_text").fadeIn("slow");
+  $(".text_field").val("");
+  $("textarea[id*='_description']").val("");
+  $("span[id*='time_tracking_total_']").html("");
+  $("span[id*='task_user_display_']").html("");
+  $("input[id*='task_duration_']").val(0.0);
+  $(".selected").removeClass("selected");
+  $(".text_field")[0].focus();
+
+  $('a[rel*=facebox]').facebox();
+
+  if (isNaN(parseInt(last_index))) {
+    last_index = 0;
+  }
+  $('#task_position_<%= @task.id %>').html(parseInt(last_index)+1);
+<% else %>
+  $(".text_field").val("");
+  $("textarea[id*='_description']").val("");
+  $("span[id*='time_tracking_total_']").html("");
+  $("span[id*='task_user_display_']").html("");
+  $("input[id*='task_duration_']").val(0.0);
+  $(".selected").removeClass("selected");
+
+  var last_index = $("#comptasks_<%= @task.task_list.id %>").html();
+  $("#comptasks_<%= @task.task_list.id %>").html(parseInt(last_index)+1);
+
+  $("<span>Tasca creada i completada</span>").purr();
+<% end %>

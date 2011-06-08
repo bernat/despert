@@ -1,0 +1,7 @@
+- if @employee == current_user
+  %h1 Edita el teu perfil
+- else
+  %h1
+    Editant perfil de l'usuari #{@employee}
+.standard-form
+  = render 'form'

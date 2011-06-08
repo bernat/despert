@@ -1,0 +1,19 @@
+- title "Milestones"
+
+- if can? :create, @project.milestones.new
+  = link_to "+ Nou Milestone", new_project_milestone_path(@project), :class => "button right", :rel => "facebox"
+  - content_for :custom_js do
+    :javascript
+      $(".full-calendar td").dblclick(function() {
+        $(this).effect("highlight", {}, 3000);
+        var options = {}
+        options.ajax = "#{new_project_milestone_path(@project)}?date=" + $(this).attr('id');
+        $.facebox(options);
+      });
+
+%h2 Milestones dels proxims 40 dies
+- info = fill_calendar_info_with_milestones(@milestones)
+.full-calendar= calendar(Date.today, Date.today + 40.days, info)
+
+%h2 Milestones dels últims 40 dies
+.full-calendar= calendar(Date.today - 40.days, Date.today, info)

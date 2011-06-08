@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Itnig - Login</title>
+
+  <%= stylesheet_link_tag 'blueprint/screen.css' %>
+  <%= stylesheet_link_tag 'login' %>
+  <%= javascript_include_tag "vibrate", 'jquery-1.4.4.min', 'jquery-ui' -%>
+
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie.css' %><![endif]-->
+
+</head>
+
+<body>
+  <div id="content" class="span-12">
+    <div id="logo">
+      <a href="/"><img src="/images/intranet.png" alt="Logo Itnig Intranet" /></a>
+    </div>
+    <div id="loginbox">
+      <%= yield %>
+    </div>
+    <div style="text-align:center;margin-top:20px;">Visita'ns a <a class="homelink" href="http://itnig.net" title="Itnig Web">Itnig.net</a></div>
+  </div>
+</body>
+</html>

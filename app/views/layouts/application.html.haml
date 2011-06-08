@@ -1,0 +1,20 @@
+!!! 5
+%html
+  %head
+    %title Intranet Itnig #{yield(:title) || "Untitled"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    = include_stylesheets :screen, :media => :screen
+    = include_stylesheets :print, :media => :print
+    = csrf_meta_tag
+
+  %body
+    = render 'shared/preheader'
+    = render 'shared/header'
+    .container
+      - flash.each do |name, msg|
+        .notice= content_tag :div, msg, :id => "flash_#{name}"
+      .main
+        = yield
+    .footer #{Date.today.year} &copy; Itnig Solutions SL
+    = include_javascripts :intranet
+    = yield :custom_js

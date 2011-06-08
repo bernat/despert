@@ -1,0 +1,5 @@
+S'ha creat una nova llista de tasques amb el nom [<%= @task_list.name %>] en el projecte <%= @task_list.project%> on tu participes. Pots consultar-la en el seguent enllaç:
+
+<%= project_task_list_url(@task_list.project, @task_list) %>
+
+<%= render 'footer' %>

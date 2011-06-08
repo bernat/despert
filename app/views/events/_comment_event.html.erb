@@ -1,0 +1,6 @@
+<div class="comment">
+    <div class="left"><%= link_to gravatar_for(comment.user, :size => 30),  comment.user %></div>
+    <div style="color:#666"><%= link_to comment.user.name, comment.user %> ha escrit un comentari <%= pretty_date comment.created_at %>:</div> 
+    <%= comment.to_s %>
+    <div class="clearboth"></div>
+</div>

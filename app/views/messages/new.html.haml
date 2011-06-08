@@ -1,0 +1,8 @@
+- title "Nou missatge"
+.block
+  .content
+    %h3 Nou missatge
+    .inner
+      = form_for [@project, @message], :html => { :class => :form } do |f|
+        = render :partial => "form", :locals => {:f => f}
+      = link_to 'Cancelar', project_messages_path

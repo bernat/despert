@@ -1,0 +1,99 @@
+/* Milestones Big Calendar */
+
+.full-calendar {
+  table {
+  background:#FFFFFF none repeat scroll 0 0;
+  margin:15px 0;
+  width:100%;
+  }
+  table th {
+  background:#FFFFFF none repeat scroll 0 0;
+  color:#999999;
+  font-size:12px;
+  padding:1px;
+  text-align:center;
+  text-transform:uppercase;
+  }
+  table th.month {
+  font-size:14px;
+  font-weight:bold;
+  padding:1px 0 0;
+  text-align:center;
+  text-transform:uppercase;
+  vertical-align:top;
+  width:1%;
+  }
+  table th.month div {
+  background:#333333 none repeat scroll 0 0;
+  color:#FFFFFF;
+  padding:12px;
+  }
+  table td.blank {
+  background:#F5F5F5 none repeat scroll 0 0;
+  }
+  table td {
+  background:#E5E5E5 none repeat scroll 0 0;
+  color:#999999;
+  font-size:10px;
+  height:65px;
+  padding:10px 12px;
+  text-align:right;
+  vertical-align:top;
+  width:20%;
+  }
+  table td a {
+  font-weight:bold;
+  padding:0;
+  }
+  table td.weekend {
+  background:#D5D5D5 none repeat scroll 0 0;
+  width:1%;
+  }
+  table.weekends td, table.weekends td.weekend {
+  width:14%;
+  }
+  table td.with {
+  background:#FFFFFF none repeat scroll 0 0;
+  border:1px solid #999999;
+  color:#666666;
+  font-weight:normal;
+  }
+  table td.with span.date {
+  color:#000000;
+  float:right;
+  font-weight:bold;
+  margin:0 0 6px 6px;
+  }
+  table td.today {
+  background:#FFFFCC none repeat scroll 0 0;
+  border:1px solid #FFCC00;
+  color:#333333;
+  }
+  table td.today span.date {
+  background:#FFCC00 none repeat scroll 0 0;
+  color:#FFFFFF;
+  padding:1px 5px;
+  }
+  table ul {
+  margin:0;
+  padding:0;
+  text-align:left;
+  }
+  table li {
+  font-size:10px;
+  font-weight:normal;
+  line-height:13px;
+  margin-bottom:5px;
+  padding:0;
+  }
+  .milestone-event {
+    .completed {
+      text-decoration: line-through;
+    }
+    .action-img {
+      float: left;
+      padding-right: .5em;
+      display: none;
+    }
+  }
+}

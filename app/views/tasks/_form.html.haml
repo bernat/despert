@@ -1,0 +1,48 @@
+- uid = f.object.new_record? ? "new" : f.object.id.to_s
+.task-form
+  .user-selector
+    - if f.object.new_record? || can?(:reassign_user, f.object)
+      - @project.employees.each_with_index do |user, i|
+        - user == f.object.employee ? seluser = "selected" : seluser = ""
+        = link_to gravatar_for(user, :size => 30), "#", :tabindex => i + 3, :OnClick => "return false;", :class => "task_user_input_#{task_list.id}_#{uid} #{seluser}", :"data-id" => user.id, :title => user.to_s
+      = f.hidden_field :employee_id, :id => "task_user_id_#{task_list.id}_#{uid}"
+    .responsible
+      = image_tag("responsible.png")
+      %span{:id => "task_user_display_#{task_list.id}_#{uid}"}= f.object.employee.presence
+
+  - disabled = ( f.object.new_record? || can?(:edit_task_content, f.object) ) ? false : true
+  .title-input= f.text_field :title, :class => 'text_field', :maxlength => 80, :placeholder => "Títol de la tasca", :tabindex => 1, :disabled => disabled, :id => "task_title_#{task_list.id}_#{uid}"
+
+  .clearboth
+  .time-selector
+    %h3 Temps dedicat
+    - duration_tab_order = 2
+    - if f.object.new_record? || can?(:add_hours, f.object)
+      - duration_tab_order += @project.employees.size
+      = f.text_field :duration, :id => "task_duration_#{task_list.id}_#{uid}", :tabindex => duration_tab_order, :class => "task_duration_input"
+    .time-icon= image_tag("watch.png")
+
+  - disabled = ( f.object.new_record? || can?(:edit_task_content, f.object) ) ? false : true
+  .description-input
+    = f.text_area :description, :placeholder => "Descripció de la tasca", :tabindex => 2, :disabled => disabled, :id => "task_description_#{task_list.id}_#{uid}"
+    %p Autor: #{f.object.author || current_user}
+
+  .clearboth.separator
+  .submit-task-form
+    = f.submit "Publicar", :id => "task_list_#{task_list.id}_#{uid}_submit", :tabindex => duration_tab_order + 1
+    = f.submit "Publicar completada", :id => "task_list_#{task_list.id}_#{uid}_submit_and_close", :tabindex => duration_tab_order + 2
+
+
+- content_for :custom_js do
+  :javascript
+    /* User selector */
+    $(".task_user_input_#{task_list.id}_#{uid}").click(function() {
+      $("#task_user_id_#{task_list.id}_#{uid}").val($(this).attr("data-id"));
+      $("#task_user_display_#{task_list.id}_#{uid}").html($(this).attr("title"));
+      $(".selected").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    /* Time tracking */
+    $(".task_duration_input").live("click", function() {
+      $(this).select();
+    });

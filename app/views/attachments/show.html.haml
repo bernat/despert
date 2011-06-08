@@ -1,0 +1,14 @@
+- title "Arxiu"
+.block
+  .content
+    %h3
+      Arxiu #{@attachment}
+    .inner
+      File: #{link_to @attachment.filename, @attachment.get_file_url}
+      %br/
+      Desc: #{@attachment.description}
+      %br/
+      Author: #{@attachment.author}
+      %br/
+      %p More design for this page !!
+= link_to 'Back', project_attachments_path

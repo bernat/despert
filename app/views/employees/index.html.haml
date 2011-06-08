@@ -1,0 +1,38 @@
+- title "Usuaris"
+- if can? :read, Group
+  = link_to image_tag("group.png"), groups_path, :class => "button right", :title => "Grups"
+- if can? :create, User
+  = link_to '+ Nou usuari', new_employee_path, :class => "button right"
+
+%h1 Usuaris
+%p
+  #su
+- if can? :create, Employee
+  %p
+    Usuaris del sistema que poden utilitzar despert i tot normal, aquest son Employees. A continuació es mostren tots els usuaris organitzats per rols.
+
+- @employees.each do |role, list|
+  %h2= role.to_s.humanize.pluralize
+  %table
+    %tr
+      %th Avatar
+      %th Nom real
+      %th Nom curt
+      %th Email
+      %th Grup
+      %th
+    - list.each do |employee|
+      %tr{:class => cycle('odd', 'even')}
+        %td= raw gravatar_for employee if employee.email
+        %td= link_to employee.name, employee
+        %td
+          %b= employee.username
+        %td= maybe employee.email
+        %td= maybe employee.group
+        %td
+          - if can? :edit, employee
+            = link_to image_tag("editicon.png"), edit_employee_path(employee), :class => "button"
+          - if can? :destroy, employee
+            = link_to image_tag("deleteicon.png"), employee, :confirm => "N'estàs segur'?", :method => :delete, :class => "button"
+
+

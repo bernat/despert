@@ -1,0 +1,47 @@
+- title "Documents"
+
+.right
+  - if can? :create, @project.attachments.new
+    = link_to "+ Afegir arxiu", new_project_attachment_path, :class => "button"
+
+%h1 Documents
+
+- if @attachments.empty?
+  %em Aquest projecte no té documents
+  %br/
+  %br/
+- else
+  %table
+    %tr
+      %th Nom de l'arxiu
+      %th Descarrega
+      %th Autor
+      %th Data
+      %th Comentari
+      %th Tipus
+      %th
+    - @attachments.each do |attach|
+      %tr{:class => cycle("odd", "even")}
+        %td
+          = link_to attach.filename, [@project, attach]
+        %td
+          = link_to 'Descarrega', attach.get_file_url, :class => "button"
+        %td
+          - if attach.employee
+            = link_to attach.employee, attach.employee
+          - else
+            = attach.author
+        %td
+          = pretty_date attach.created_at
+        %td
+          - if !attach.description.blank?
+            = attach.description[0..30]
+            = (attach.description.size > 30) ? "..." : ""
+          - else
+            %em Sin comentarios
+        %td= attach.attach.file.content_type
+        %td
+          - if can? :update, attach
+            = link_to image_tag("editicon.png"), edit_project_attachment_path(@project, attach), :class => "button"
+          - if can? :destroy, attach
+            = link_to image_tag("deleteicon.png"), [@project, attach], :confirm => 'Segur?', :method => :delete, :class => "button"

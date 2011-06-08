@@ -1,0 +1,4565 @@
+@charset "UTF-8";
+/* line 14, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 10, ../../../app/stylesheets/partials/_grid.scss */
+.container {
+  *zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 105em;
+  max-width: 100%;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+}
+/* line 22, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 15, ../../../app/stylesheets/partials/_grid.scss */
+nav {
+  width: 100%;
+  margin-top: 2em;
+}
+
+/* line 20, ../../../app/stylesheets/partials/_grid.scss */
+.footer {
+  padding-top: .8em;
+}
+
+/* line 24, ../../../app/stylesheets/partials/_grid.scss */
+.main {
+  padding: 1em;
+}
+
+/* line 29, ../../../app/stylesheets/partials/_grid.scss */
+#task-lists .regular-task-lists {
+  display: inline;
+  float: left;
+  width: 75.238%;
+  margin-right: 0.952%;
+}
+
+/* line 34, ../../../app/stylesheets/partials/_grid.scss */
+.task-item {
+  clear: both;
+}
+/* line 36, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .position {
+  display: inline;
+  float: left;
+  width: 2.857%;
+  margin-right: 0.952%;
+}
+/* line 39, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .action-label {
+  display: inline;
+  float: left;
+  width: 6.667%;
+  margin-right: 0.952%;
+}
+/* line 42, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .completion-date {
+  display: inline;
+  float: left;
+  width: 18.095%;
+  margin-right: 0.952%;
+}
+/* line 45, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .task-title {
+  display: inline;
+  float: left;
+  width: 40.952%;
+  margin-right: 0.952%;
+}
+/* line 48, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .task-comments {
+  display: inline;
+  float: left;
+  width: 2.857%;
+  margin-right: 0.952%;
+}
+/* line 51, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .task-buttons {
+  display: inline;
+  float: left;
+  width: 6.667%;
+  margin-right: 0.952%;
+}
+/* line 54, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .duration {
+  display: inline;
+  float: left;
+  width: 2.857%;
+  margin-right: 0.952%;
+}
+/* line 57, ../../../app/stylesheets/partials/_grid.scss */
+.task-item .gravatar {
+  display: inline;
+  float: left;
+  width: 10.476%;
+  margin-right: 0.952%;
+}
+
+/* line 63, ../../../app/stylesheets/partials/_grid.scss */
+#dashboard .projects-pannel {
+  display: inline;
+  float: left;
+  width: 48.571%;
+  margin-right: 0.952%;
+}
+/* line 66, ../../../app/stylesheets/partials/_grid.scss */
+#dashboard .milestones-pannel {
+  display: inline;
+  float: left;
+  width: 48.571%;
+  margin-right: 0.952%;
+}
+
+/* line 72, ../../../app/stylesheets/partials/_grid.scss */
+.user-show .table-data {
+  display: inline;
+  float: left;
+  width: 75.238%;
+  margin-right: 0.952%;
+}
+/* line 75, ../../../app/stylesheets/partials/_grid.scss */
+.user-show .user-gravatar {
+  display: inline;
+  float: left;
+  width: 21.905%;
+  margin-right: 0.952%;
+}
+
+/* line 81, ../../../app/stylesheets/partials/_grid.scss */
+.project-stats .first-table {
+  display: inline;
+  float: left;
+  width: 48.571%;
+  margin-right: 0.952%;
+}
+/* line 84, ../../../app/stylesheets/partials/_grid.scss */
+.project-stats .second-table {
+  display: inline;
+  float: left;
+  width: 48.571%;
+  margin-right: 0.952%;
+}
+
+/* line 89, ../../../app/stylesheets/partials/_grid.scss */
+.one-half {
+  display: inline;
+  float: left;
+  width: 48.571%;
+  margin-right: 0.952%;
+}
+
+/* incase an inverted custom gradient isn't specified */
+/* line 177, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class, button, .button, button.small, .button.small, button.medium, .button.medium, button.big, .button.big {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('/images/button_bg.png?1307447265') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold;
+}
+/* line 165, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class::-moz-focus-inner, button::-moz-focus-inner, .button::-moz-focus-inner, button.small::-moz-focus-inner, .button.small::-moz-focus-inner, button.medium::-moz-focus-inner, .button.medium::-moz-focus-inner, button.big::-moz-focus-inner, .button.big::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 168, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class:focus, button:focus, .button:focus, button.small:focus, .button.small:focus, button.medium:focus, .button.medium:focus, button.big:focus, .button.big:focus {
+  outline: none;
+}
+
+/* line 40, ../../../app/stylesheets/partials/_base.scss */
+button, .button {
+  padding-top: .1em;
+  margin: 0 .2em;
+  min-height: 1.5em;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 1em;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #d5d5d5), color-stop(50%, #cecece), color-stop(100%, #e7e7e7));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  border-color: #b7b7b7;
+  text-shadow: white 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button, button:visited, .button, .button:visited {
+  color: #222222;
+}
+/* line 31, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #fcfcfc), color-stop(50%, #cecece), color-stop(50%, #c6c6c6), color-stop(100%, #e0e0e0));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  border-color: #afafaf;
+  text-shadow: white 0px 1px 1px;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button:hover, button:hover:visited, button:focus, button:focus:visited, .button:hover, .button:hover:visited, .button:focus, .button:focus:visited {
+  color: #222222;
+}
+/* line 36, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button:active, .button:active {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #cecece), color-stop(30%, #d3d3d3), color-stop(50%, #c9c9c9), color-stop(50%, #c1c1c1), color-stop(100%, #e2e2e2));
+  background-image: -moz-linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  background-image: linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  border-color: #a7a7a7;
+  text-shadow: white 0px -1px -1px;
+  -moz-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button:active, button:active:visited, .button:active, .button:active:visited {
+  color: #222222;
+}
+/* line 45, ../../../app/stylesheets/partials/_base.scss */
+button.small, .button.small {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #d5d5d5), color-stop(50%, #cecece), color-stop(100%, #e7e7e7));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  border-color: #b7b7b7;
+  text-shadow: white 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.small, button.small:visited, .button.small, .button.small:visited {
+  color: #222222;
+}
+/* line 31, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.small:hover, button.small:focus, .button.small:hover, .button.small:focus {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #fcfcfc), color-stop(50%, #cecece), color-stop(50%, #c6c6c6), color-stop(100%, #e0e0e0));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  border-color: #afafaf;
+  text-shadow: white 0px 1px 1px;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.small:hover, button.small:hover:visited, button.small:focus, button.small:focus:visited, .button.small:hover, .button.small:hover:visited, .button.small:focus, .button.small:focus:visited {
+  color: #222222;
+}
+/* line 36, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.small:active, .button.small:active {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #cecece), color-stop(30%, #d3d3d3), color-stop(50%, #c9c9c9), color-stop(50%, #c1c1c1), color-stop(100%, #e2e2e2));
+  background-image: -moz-linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  background-image: linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  border-color: #a7a7a7;
+  text-shadow: white 0px -1px -1px;
+  -moz-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.small:active, button.small:active:visited, .button.small:active, .button.small:active:visited {
+  color: #222222;
+}
+/* line 48, ../../../app/stylesheets/partials/_base.scss */
+button.medium, .button.medium {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #d5d5d5), color-stop(50%, #cecece), color-stop(100%, #e7e7e7));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  border-color: #b7b7b7;
+  text-shadow: white 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.medium, button.medium:visited, .button.medium, .button.medium:visited {
+  color: #222222;
+}
+/* line 31, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.medium:hover, button.medium:focus, .button.medium:hover, .button.medium:focus {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #fcfcfc), color-stop(50%, #cecece), color-stop(50%, #c6c6c6), color-stop(100%, #e0e0e0));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  border-color: #afafaf;
+  text-shadow: white 0px 1px 1px;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.medium:hover, button.medium:hover:visited, button.medium:focus, button.medium:focus:visited, .button.medium:hover, .button.medium:hover:visited, .button.medium:focus, .button.medium:focus:visited {
+  color: #222222;
+}
+/* line 36, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.medium:active, .button.medium:active {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #cecece), color-stop(30%, #d3d3d3), color-stop(50%, #c9c9c9), color-stop(50%, #c1c1c1), color-stop(100%, #e2e2e2));
+  background-image: -moz-linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  background-image: linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  border-color: #a7a7a7;
+  text-shadow: white 0px -1px -1px;
+  -moz-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.medium:active, button.medium:active:visited, .button.medium:active, .button.medium:active:visited {
+  color: #222222;
+}
+/* line 51, ../../../app/stylesheets/partials/_base.scss */
+button.big, .button.big {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #d5d5d5), color-stop(50%, #cecece), color-stop(100%, #e7e7e7));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #d5d5d5 50%, #cecece 50%, #e7e7e7 100%);
+  border-color: #b7b7b7;
+  text-shadow: white 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.867) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.big, button.big:visited, .button.big, .button.big:visited {
+  color: #222222;
+}
+/* line 31, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.big:hover, button.big:focus, .button.big:hover, .button.big:focus {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #fcfcfc), color-stop(50%, #cecece), color-stop(50%, #c6c6c6), color-stop(100%, #e0e0e0));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #fcfcfc 10%, #cecece 50%, #c6c6c6 50%, #e0e0e0 100%);
+  border-color: #afafaf;
+  text-shadow: white 0px 1px 1px;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.big:hover, button.big:hover:visited, button.big:focus, button.big:focus:visited, .button.big:hover, .button.big:hover:visited, .button.big:focus, .button.big:focus:visited {
+  color: #222222;
+}
+/* line 36, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.big:active, .button.big:active {
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #cecece), color-stop(30%, #d3d3d3), color-stop(50%, #c9c9c9), color-stop(50%, #c1c1c1), color-stop(100%, #e2e2e2));
+  background-image: -moz-linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  background-image: linear-gradient(top, #cecece 0%, #d3d3d3 30%, #c9c9c9 50%, #c1c1c1 50%, #e2e2e2 100%);
+  border-color: #a7a7a7;
+  text-shadow: white 0px -1px -1px;
+  -moz-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+  box-shadow: #b7b7b7 0 0.08em 0.1em 1px inset;
+}
+/* line 120, ../../../../../.rvm/gems/ruby-1.8.7-p249/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+button.big:active, button.big:active:visited, .button.big:active, .button.big:active:visited {
+  color: #222222;
+}
+
+/* line 56, ../../../app/stylesheets/partials/_base.scss */
+.center {
+  text-align: center;
+}
+
+/* line 60, ../../../app/stylesheets/partials/_base.scss */
+.right {
+  float: right;
+}
+
+/* line 64, ../../../app/stylesheets/partials/_base.scss */
+.alignright {
+  text-align: right;
+}
+
+/* line 68, ../../../app/stylesheets/partials/_base.scss */
+.left {
+  float: left;
+}
+
+/* line 72, ../../../app/stylesheets/partials/_base.scss */
+.alignleft {
+  text-align: left;
+}
+
+/* line 76, ../../../app/stylesheets/partials/_base.scss */
+h1 {
+  font-size: 2em;
+  margin-bottom: .8em;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  border-bottom: 1px solid #999;
+  padding-bottom: .3em;
+}
+
+/* line 84, ../../../app/stylesheets/partials/_base.scss */
+h2 {
+  font-size: 1.6em;
+  margin: .5em 0;
+}
+
+/* line 89, ../../../app/stylesheets/partials/_base.scss */
+h3 {
+  font-size: 1.3em;
+}
+
+/* line 93, ../../../app/stylesheets/partials/_base.scss */
+table {
+  width: 100%;
+  border: 1px solid #DDD;
+  margin-bottom: 2em;
+}
+/* line 99, ../../../app/stylesheets/partials/_base.scss */
+table tr:first-child, table tr:first-child:hover {
+  background-color: #EEE;
+}
+/* line 103, ../../../app/stylesheets/partials/_base.scss */
+table tr:hover {
+  background-color: #FFE;
+}
+/* line 107, ../../../app/stylesheets/partials/_base.scss */
+table th, table td {
+  text-align: center;
+  padding: .4em;
+  border-bottom: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+}
+/* line 112, ../../../app/stylesheets/partials/_base.scss */
+table th:first-child, table td:first-child {
+  border-left: none;
+}
+/* line 115, ../../../app/stylesheets/partials/_base.scss */
+table th:last-child, table td:last-child {
+  border-right: none;
+}
+/* line 119, ../../../app/stylesheets/partials/_base.scss */
+table th {
+  font-weight: bold;
+  border: 1px solid #DDD;
+  border-top: none;
+  border-left: none;
+}
+
+/* line 127, ../../../app/stylesheets/partials/_base.scss */
+a {
+  color: #222;
+}
+/* line 129, ../../../app/stylesheets/partials/_base.scss */
+a:hover {
+  color: #666;
+}
+
+/* line 134, ../../../app/stylesheets/partials/_base.scss */
+input {
+  border: 1px solid #AAA;
+}
+/* line 136, ../../../app/stylesheets/partials/_base.scss */
+input:focus {
+  border: 1px solid #666;
+}
+
+/* line 141, ../../../app/stylesheets/partials/_base.scss */
+.clearboth {
+  clear: both;
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  line-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 151, ../../../app/stylesheets/partials/_base.scss */
+.separator {
+  height: 2em;
+}
+
+/* Purr Flash Notices and Errors */
+/* line 157, ../../../app/stylesheets/partials/_base.scss */
+.flash, #error_explanation {
+  display: none;
+}
+
+/* line 161, ../../../app/stylesheets/partials/_base.scss */
+.notice {
+  position: fixed;
+  width: 20em;
+  top: 20em;
+  right: 39%;
+  padding: 3em;
+  background-color: #111;
+  color: #DDD;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 1px #666;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+  -moz-opacity: 0.9;
+}
+
+/* line 175, ../../../app/stylesheets/partials/_base.scss */
+.notice:hover .close {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background: url("/images/close-button.gif") no-repeat;
+}
+
+/* line 186, ../../../app/stylesheets/partials/_base.scss */
+.show_next_div {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* Pagination with Will Paginate */
+/* line 193, ../../../app/stylesheets/partials/_base.scss */
+.pagination {
+  background: #F1F1F1;
+  border: 1px solid #E5E5E5;
+  text-align: center;
+  padding: 0.5em;
+  position: relative;
+  height: 18px;
+}
+
+/* line 202, ../../../app/stylesheets/partials/_base.scss */
+.pagination a, .pagination span {
+  padding: .2em .3em;
+}
+
+/* line 206, ../../../app/stylesheets/partials/_base.scss */
+.pagination span.disabled {
+  color: #AAA;
+}
+
+/* line 210, ../../../app/stylesheets/partials/_base.scss */
+.pagination em {
+  font-weight: bold;
+  background: #C9C9C9;
+  padding: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 217, ../../../app/stylesheets/partials/_base.scss */
+.pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 222, ../../../app/stylesheets/partials/_base.scss */
+.pagination a:hover, .pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 226, ../../../app/stylesheets/partials/_base.scss */
+.best_in_place {
+  padding: .1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 229, ../../../app/stylesheets/partials/_base.scss */
+.best_in_place:hover {
+  background-color: #FFE;
+}
+/* line 234, ../../../app/stylesheets/partials/_base.scss */
+.best_in_place input {
+  background-color: transparent;
+  border: none;
+  padding: .3em;
+}
+
+/* line 241, ../../../app/stylesheets/partials/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 244, ../../../app/stylesheets/partials/_base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_header.scss */
+#preheader {
+  height: 1em;
+  color: #FFF;
+  padding: .5em 2em;
+  font-size: 1em;
+  border-bottom: 1px solid;
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  margin-bottom: 1em;
+  border-color: #FFF;
+}
+/* line 9, ../../../app/stylesheets/partials/_header.scss */
+#preheader a, #preheader, #preheader ul {
+  background-color: #222;
+  color: #FFF;
+}
+/* line 14, ../../../app/stylesheets/partials/_header.scss */
+#preheader a {
+  text-decoration: none;
+}
+/* line 16, ../../../app/stylesheets/partials/_header.scss */
+#preheader a:hover {
+  text-decoration: underline;
+}
+/* line 20, ../../../app/stylesheets/partials/_header.scss */
+#preheader.accountable {
+  border-color: #555;
+}
+/* line 21, ../../../app/stylesheets/partials/_header.scss */
+#preheader.accountable a, #preheader.accountable, #preheader.accountable ul {
+  color: #FFF;
+  background-color: #007e40;
+}
+/* line 27, ../../../app/stylesheets/partials/_header.scss */
+#preheader.admin {
+  border-color: #666;
+}
+/* line 28, ../../../app/stylesheets/partials/_header.scss */
+#preheader.admin a, #preheader.admin, #preheader.admin ul {
+  color: #FFF;
+  background-color: #bf0000;
+}
+/* line 34, ../../../app/stylesheets/partials/_header.scss */
+#preheader.administrative {
+  border-color: #666;
+}
+/* line 35, ../../../app/stylesheets/partials/_header.scss */
+#preheader.administrative a, #preheader.administrative, #preheader.administrative ul {
+  color: #111;
+  background-color: #FFCC00;
+}
+/* line 42, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu {
+  position: absolute;
+  z-index: 99;
+  top: -0.2em;
+  right: 2em;
+  /* dropdown */
+  /* level 2 list */
+  /* clearfix */
+  display: inline-block;
+}
+/* line 47, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu .current {
+  text-decoration: none;
+}
+/* line 51, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu li {
+  margin: 0 8px;
+  float: left;
+  list-style: none;
+  text-decoration: none;
+}
+/* line 58, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu a {
+  display: block;
+  padding: 8px 10px 4px 17px;
+  margin: 0;
+  text-align: center;
+}
+/* line 66, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu li:hover > ul {
+  display: block;
+  cursor: pointer;
+}
+/* line 72, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 165px;
+  position: absolute;
+  z-index: 99;
+  top: 2em;
+  right: .2em;
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+/* line 85, ../../../app/stylesheets/partials/_header.scss */
+#preheader #project-menu:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 96, ../../../app/stylesheets/partials/_header.scss */
+#preheader .upper-title {
+  position: absolute;
+  z-index: 99;
+  width: 15em;
+  left: 44%;
+  text-align: center;
+}
+
+/* line 105, ../../../app/stylesheets/partials/_header.scss */
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* line 109, ../../../app/stylesheets/partials/_header.scss */
+#header nav {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1em;
+}
+/* line 113, ../../../app/stylesheets/partials/_header.scss */
+#header nav a {
+  text-decoration: none;
+  color: #FFF;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -o-border-top-right-radius: 3px;
+  -ms-border-top-right-radius: 3px;
+  -khtml-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 2px solid #FFF;
+  border-bottom: none;
+  background-color: #333;
+  padding: .5em 1em;
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  padding: .5em 2em;
+  display: block;
+  display: inline-block;
+}
+/* line 122, ../../../app/stylesheets/partials/_header.scss */
+#header nav a:hover {
+  background-color: #666;
+}
+/* line 125, ../../../app/stylesheets/partials/_header.scss */
+#header nav a.current {
+  background-color: #FFF;
+  color: #111;
+  border: 2px solid #666;
+  border-bottom: none;
+}
+/* line 136, ../../../app/stylesheets/partials/_header.scss */
+#header nav ul li {
+  display: -moz-inline-box;
+  display: inline-block;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_style.scss */
+body {
+  background-color: #cfcfcf;
+  font-family: "Myriad Pro", "Trebuchet MS", Helvetica;
+  font-size: 0.8em;
+}
+
+/* line 8, ../../../app/stylesheets/partials/_style.scss */
+.footer {
+  color: #555;
+  text-align: center;
+}
+
+/* line 13, ../../../app/stylesheets/partials/_style.scss */
+.container {
+  background-color: #fff;
+}
+
+/* line 17, ../../../app/stylesheets/partials/_style.scss */
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0;
+}
+
+/*********************************************/
+/***************** Projects  *****************/
+/*********************************************/
+/* line 27, ../../../app/stylesheets/partials/_style.scss */
+a.project-label {
+  height: 1em;
+  color: #FFF;
+  text-decoration: none;
+  font-size: .9em;
+  padding: 2px 3px 2px 3px !important;
+  margin: 0;
+  font-weight: normal;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+/* line 37, ../../../app/stylesheets/partials/_style.scss */
+a.project-label:hover {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/* line 42, ../../../app/stylesheets/partials/_style.scss */
+#project-title {
+  background: #18485c;
+  color: #FFF;
+  height: 4em;
+  padding: .2em .6em .6em .6em;
+  font-size: 1.3em;
+}
+/* line 48, ../../../app/stylesheets/partials/_style.scss */
+#project-title h2 {
+  font-size: 1.6em;
+}
+/* line 51, ../../../app/stylesheets/partials/_style.scss */
+#project-title a {
+  color: #DDD;
+}
+
+/* line 57, ../../../app/stylesheets/partials/_style.scss */
+#project-menu nav {
+  background-color: #cfcfcf;
+  margin: 0;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  border-top: 2px solid white;
+}
+/* line 64, ../../../app/stylesheets/partials/_style.scss */
+#project-menu nav a {
+  text-decoration: none;
+  color: #2b2922;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -o-border-top-left-radius: 3px;
+  -ms-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -o-border-top-right-radius: 3px;
+  -ms-border-top-right-radius: 3px;
+  -khtml-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 1em 5em;
+}
+/* line 70, ../../../app/stylesheets/partials/_style.scss */
+#project-menu nav ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+/* line 74, ../../../app/stylesheets/partials/_style.scss */
+#project-menu nav ul li {
+  background: #bab293;
+  display: table-cell;
+  float: none;
+  text-align: center;
+  padding: .5em 1em;
+  border: 1px solid #FFF;
+  border-bottom: none;
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 83, ../../../app/stylesheets/partials/_style.scss */
+#project-menu nav ul li:hover {
+  background-color: #efe4bd;
+}
+/* line 86, ../../../app/stylesheets/partials/_style.scss */
+#project-menu nav ul li.current {
+  background-color: #AAA;
+  color: #111;
+}
+
+/* line 96, ../../../app/stylesheets/partials/_style.scss */
+.listing_projects tr.managed {
+  background-color: #C2C2D8;
+}
+/* line 100, ../../../app/stylesheets/partials/_style.scss */
+.listing_projects tr.internal td, .listing_projects tr.internal a {
+  color: #666;
+}
+
+/* line 108, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-stats table {
+  background-color: #EEE;
+  margin: 0;
+  margin-bottom: .5em;
+  font-size: 1.1em;
+}
+/* line 114, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-stats table tr:hover {
+  background-color: #FDD;
+}
+/* line 118, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-stats table td {
+  border: 1px solid #FFF;
+  padding-left: 1em;
+  text-align: left;
+}
+/* line 122, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-stats table td:first-child {
+  width: 50%;
+  border: none;
+  text-align: right;
+}
+/* line 130, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-status {
+  font-size: 1.1em;
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  padding: .6em;
+  margin-bottom: 2em;
+  min-height: 3.1em;
+}
+/* line 137, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-status textarea {
+  width: 98%;
+  background-color: transparent;
+  font-size: 1em;
+}
+/* line 142, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-status:hover {
+  background-color: #FFE;
+}
+/* line 146, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-members {
+  background-color: #EEE;
+  padding: .3em;
+  border: 1px solid #DDD;
+}
+/* line 150, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-members img {
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+/* line 152, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-members img:hover {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+/* line 156, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-members a.pm {
+  border-bottom: 2px solid #333;
+  padding: 0;
+}
+/* line 161, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-description {
+  padding: 0 .5em .5em .5em;
+  margin-bottom: 1.5em;
+  background-color: #EEE;
+  margin-right: 2em;
+  border: 1px solid #DDD;
+}
+/* line 30, ../../../app/stylesheets/partials/_base.scss */
+#project-show .project-description ul {
+  margin-left: 2.5em;
+  list-style: square;
+}
+/* line 33, ../../../app/stylesheets/partials/_base.scss */
+#project-show .project-description ul li {
+  padding-left: 1em;
+  line-height: 1.8em;
+}
+/* line 168, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-description h1 {
+  margin-top: 1.5em;
+  font-size: 1.4em;
+}
+/* line 172, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-description h2 {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+/* line 176, ../../../app/stylesheets/partials/_style.scss */
+#project-show .project-description h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+/*********************************************/
+/************ History of events  *************/
+/*********************************************/
+/* line 186, ../../../app/stylesheets/partials/_style.scss */
+.show-history {
+  margin-top: 1em;
+}
+/* line 189, ../../../app/stylesheets/partials/_style.scss */
+.show-history table th {
+  text-align: left;
+  color: #666;
+}
+/* line 193, ../../../app/stylesheets/partials/_style.scss */
+.show-history table tr {
+  background-color: #EEE;
+}
+/* line 195, ../../../app/stylesheets/partials/_style.scss */
+.show-history table tr td {
+  text-align: left;
+  padding-left: 1em;
+  border-top: 1px solid #FFF;
+}
+/* line 201, ../../../app/stylesheets/partials/_style.scss */
+.show-history table tr:first-child td {
+  border-top: none;
+}
+
+/* line 209, ../../../app/stylesheets/partials/_style.scss */
+.standard-form {
+  width: 80%;
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  margin: 1px auto;
+  padding: 1em;
+}
+/* line 215, ../../../app/stylesheets/partials/_style.scss */
+.standard-form label {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+/* line 219, ../../../app/stylesheets/partials/_style.scss */
+.standard-form input, .standard-form textarea, .standard-form select {
+  font-size: 1.2em;
+  padding: .5em;
+  border: 1px solid #CCC;
+  width: 95%;
+  margin: 1.2em 5% 1.2em .2em;
+}
+/* line 225, ../../../app/stylesheets/partials/_style.scss */
+.standard-form input:focus, .standard-form textarea:focus, .standard-form select:focus {
+  border: 1px solid #777;
+}
+/* line 229, ../../../app/stylesheets/partials/_style.scss */
+.standard-form .button {
+  width: 10em;
+  margin: 1em auto;
+}
+/* line 233, ../../../app/stylesheets/partials/_style.scss */
+.standard-form fieldset {
+  border: 1px solid #AAA;
+  margin: 1em 0;
+  padding: 1.5em;
+}
+/* line 238, ../../../app/stylesheets/partials/_style.scss */
+.standard-form legend {
+  background-color: #FFF;
+  padding: .5em;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+/* line 10, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .popup {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+
+/* line 21, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .content {
+  display: table;
+  width: 370px;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 31, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .content > p:first-child {
+  margin-top: 0;
+}
+
+/* line 34, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .content > p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 38, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 2px;
+  background: #fff;
+}
+
+/* line 45, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .close img {
+  opacity: 0.3;
+}
+
+/* line 48, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .close:hover img {
+  opacity: 1.0;
+}
+
+/* line 52, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .loading {
+  text-align: center;
+}
+
+/* line 56, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox .image {
+  text-align: center;
+}
+
+/* line 60, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+/* line 65, ../../../app/stylesheets/partials/_facebox.scss */
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 73, ../../../app/stylesheets/partials/_facebox.scss */
+.facebox_hide {
+  z-index: -100;
+}
+
+/* line 77, ../../../app/stylesheets/partials/_facebox.scss */
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2010 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+/* Layout helpers
+----------------------------------*/
+/* line 9, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-hidden {
+  display: none;
+}
+
+/* line 10, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-hidden-accessible {
+  position: absolute;
+  left: -99999999px;
+}
+
+/* line 11, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+/* line 12, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 13, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-clearfix {
+  display: inline-block;
+}
+
+/* required comment for clearfix to work in Opera \*/
+/* line 15, ../../../app/stylesheets/partials/_jquery-ui.scss */
+* html .ui-helper-clearfix {
+  height: 1%;
+}
+
+/* line 16, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-clearfix {
+  display: block;
+}
+
+/* end clearfix */
+/* line 18, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 23, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 30, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+/* line 37, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2010 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS,%20Tahoma,%20Verdana,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=12_gloss_wave.png&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=03_highlight_soft.png&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=02_glass.png&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=02_glass.png&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=03_highlight_soft.png&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=08_diagonals_thick.png&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=08_diagonals_thick.png&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=01_flat.png&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+*/
+/* Component containers
+----------------------------------*/
+/* line 50, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+/* line 51, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+/* line 52, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 53, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #eeeeee url(/images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+  color: #333333;
+}
+
+/* line 54, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-content a {
+  color: #333333;
+}
+
+/* line 55, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background: #f6a828 url(/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* line 56, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-header a {
+  color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+/* line 60, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #cccccc;
+  background: #f6f6f6 url(/images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #1c94c4;
+}
+
+/* line 61, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #1c94c4;
+  text-decoration: none;
+}
+
+/* line 62, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #fbcb09;
+  background: #fdf5ce url(/images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #c77405;
+}
+
+/* line 63, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-hover a, .ui-state-hover a:hover {
+  color: #c77405;
+  text-decoration: none;
+}
+
+/* line 64, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #fbd850;
+  background: white url(/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #eb8f00;
+}
+
+/* line 65, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #eb8f00;
+  text-decoration: none;
+}
+
+/* line 66, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget :active {
+  outline: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 70, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fed22f;
+  background: #ffe45c url(/images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
+  color: #363636;
+}
+
+/* line 71, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636;
+}
+
+/* line 72, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #b81900 url(/images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
+  color: #ffffff;
+}
+
+/* line 73, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #ffffff;
+}
+
+/* line 74, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #ffffff;
+}
+
+/* line 75, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+/* line 76, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal;
+}
+
+/* line 77, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 83, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(/images/ui-icons_222222_256x240.png);
+}
+
+/* line 84, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-content .ui-icon {
+  background-image: url(/images/ui-icons_222222_256x240.png);
+}
+
+/* line 85, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-header .ui-icon {
+  background-image: url(/images/ui-icons_ffffff_256x240.png);
+}
+
+/* line 86, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-default .ui-icon {
+  background-image: url(/images/ui-icons_ef8c08_256x240.png);
+}
+
+/* line 87, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+  background-image: url(/images/ui-icons_ef8c08_256x240.png);
+}
+
+/* line 88, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-active .ui-icon {
+  background-image: url(/images/ui-icons_ef8c08_256x240.png);
+}
+
+/* line 89, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-highlight .ui-icon {
+  background-image: url(/images/ui-icons_228ef1_256x240.png);
+}
+
+/* line 90, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+  background-image: url(/images/ui-icons_ffd27a_256x240.png);
+}
+
+/* positioning */
+/* line 93, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-n {
+  background-position: 0 0;
+}
+
+/* line 94, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-ne {
+  background-position: -16px 0;
+}
+
+/* line 95, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-e {
+  background-position: -32px 0;
+}
+
+/* line 96, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-se {
+  background-position: -48px 0;
+}
+
+/* line 97, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-s {
+  background-position: -64px 0;
+}
+
+/* line 98, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-sw {
+  background-position: -80px 0;
+}
+
+/* line 99, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-w {
+  background-position: -96px 0;
+}
+
+/* line 100, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-1-nw {
+  background-position: -112px 0;
+}
+
+/* line 101, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0;
+}
+
+/* line 102, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0;
+}
+
+/* line 103, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px;
+}
+
+/* line 104, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px;
+}
+
+/* line 105, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px;
+}
+
+/* line 106, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px;
+}
+
+/* line 107, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+/* line 108, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px;
+}
+
+/* line 109, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px;
+}
+
+/* line 110, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px;
+}
+
+/* line 111, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px;
+}
+
+/* line 112, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px;
+}
+
+/* line 113, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px;
+}
+
+/* line 114, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px;
+}
+
+/* line 115, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px;
+}
+
+/* line 116, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px;
+}
+
+/* line 117, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px;
+}
+
+/* line 118, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px;
+}
+
+/* line 119, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px;
+}
+
+/* line 120, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px;
+}
+
+/* line 121, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px;
+}
+
+/* line 122, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px;
+}
+
+/* line 123, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px;
+}
+
+/* line 124, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px;
+}
+
+/* line 125, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px;
+}
+
+/* line 126, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px;
+}
+
+/* line 127, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px;
+}
+
+/* line 128, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px;
+}
+
+/* line 129, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px;
+}
+
+/* line 130, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px;
+}
+
+/* line 131, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px;
+}
+
+/* line 132, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px;
+}
+
+/* line 133, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px;
+}
+
+/* line 134, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px;
+}
+
+/* line 135, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px;
+}
+
+/* line 136, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px;
+}
+
+/* line 137, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px;
+}
+
+/* line 138, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px;
+}
+
+/* line 139, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px;
+}
+
+/* line 140, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px;
+}
+
+/* line 141, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px;
+}
+
+/* line 142, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px;
+}
+
+/* line 143, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px;
+}
+
+/* line 144, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px;
+}
+
+/* line 145, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px;
+}
+
+/* line 146, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px;
+}
+
+/* line 147, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px;
+}
+
+/* line 148, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px;
+}
+
+/* line 149, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px;
+}
+
+/* line 150, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px;
+}
+
+/* line 151, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px;
+}
+
+/* line 152, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px;
+}
+
+/* line 153, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px;
+}
+
+/* line 154, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px;
+}
+
+/* line 155, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px;
+}
+
+/* line 156, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px;
+}
+
+/* line 157, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-4 {
+  background-position: 0 -80px;
+}
+
+/* line 158, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px;
+}
+
+/* line 159, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-extlink {
+  background-position: -32px -80px;
+}
+
+/* line 160, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-newwin {
+  background-position: -48px -80px;
+}
+
+/* line 161, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-refresh {
+  background-position: -64px -80px;
+}
+
+/* line 162, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-shuffle {
+  background-position: -80px -80px;
+}
+
+/* line 163, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px;
+}
+
+/* line 164, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px;
+}
+
+/* line 165, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px;
+}
+
+/* line 166, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-folder-open {
+  background-position: -16px -96px;
+}
+
+/* line 167, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-document {
+  background-position: -32px -96px;
+}
+
+/* line 168, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-document-b {
+  background-position: -48px -96px;
+}
+
+/* line 169, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-note {
+  background-position: -64px -96px;
+}
+
+/* line 170, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-mail-closed {
+  background-position: -80px -96px;
+}
+
+/* line 171, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-mail-open {
+  background-position: -96px -96px;
+}
+
+/* line 172, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-suitcase {
+  background-position: -112px -96px;
+}
+
+/* line 173, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-comment {
+  background-position: -128px -96px;
+}
+
+/* line 174, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-person {
+  background-position: -144px -96px;
+}
+
+/* line 175, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-print {
+  background-position: -160px -96px;
+}
+
+/* line 176, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-trash {
+  background-position: -176px -96px;
+}
+
+/* line 177, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-locked {
+  background-position: -192px -96px;
+}
+
+/* line 178, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-unlocked {
+  background-position: -208px -96px;
+}
+
+/* line 179, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-bookmark {
+  background-position: -224px -96px;
+}
+
+/* line 180, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-tag {
+  background-position: -240px -96px;
+}
+
+/* line 181, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-home {
+  background-position: 0 -112px;
+}
+
+/* line 182, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-flag {
+  background-position: -16px -112px;
+}
+
+/* line 183, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-calendar {
+  background-position: -32px -112px;
+}
+
+/* line 184, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-cart {
+  background-position: -48px -112px;
+}
+
+/* line 185, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-pencil {
+  background-position: -64px -112px;
+}
+
+/* line 186, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-clock {
+  background-position: -80px -112px;
+}
+
+/* line 187, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-disk {
+  background-position: -96px -112px;
+}
+
+/* line 188, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-calculator {
+  background-position: -112px -112px;
+}
+
+/* line 189, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-zoomin {
+  background-position: -128px -112px;
+}
+
+/* line 190, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-zoomout {
+  background-position: -144px -112px;
+}
+
+/* line 191, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-search {
+  background-position: -160px -112px;
+}
+
+/* line 192, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-wrench {
+  background-position: -176px -112px;
+}
+
+/* line 193, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-gear {
+  background-position: -192px -112px;
+}
+
+/* line 194, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-heart {
+  background-position: -208px -112px;
+}
+
+/* line 195, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-star {
+  background-position: -224px -112px;
+}
+
+/* line 196, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-link {
+  background-position: -240px -112px;
+}
+
+/* line 197, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-cancel {
+  background-position: 0 -128px;
+}
+
+/* line 198, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-plus {
+  background-position: -16px -128px;
+}
+
+/* line 199, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-plusthick {
+  background-position: -32px -128px;
+}
+
+/* line 200, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-minus {
+  background-position: -48px -128px;
+}
+
+/* line 201, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-minusthick {
+  background-position: -64px -128px;
+}
+
+/* line 202, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-close {
+  background-position: -80px -128px;
+}
+
+/* line 203, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-closethick {
+  background-position: -96px -128px;
+}
+
+/* line 204, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-key {
+  background-position: -112px -128px;
+}
+
+/* line 205, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-lightbulb {
+  background-position: -128px -128px;
+}
+
+/* line 206, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-scissors {
+  background-position: -144px -128px;
+}
+
+/* line 207, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-clipboard {
+  background-position: -160px -128px;
+}
+
+/* line 208, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-copy {
+  background-position: -176px -128px;
+}
+
+/* line 209, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-contact {
+  background-position: -192px -128px;
+}
+
+/* line 210, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-image {
+  background-position: -208px -128px;
+}
+
+/* line 211, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-video {
+  background-position: -224px -128px;
+}
+
+/* line 212, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-script {
+  background-position: -240px -128px;
+}
+
+/* line 213, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-alert {
+  background-position: 0 -144px;
+}
+
+/* line 214, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-info {
+  background-position: -16px -144px;
+}
+
+/* line 215, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-notice {
+  background-position: -32px -144px;
+}
+
+/* line 216, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-help {
+  background-position: -48px -144px;
+}
+
+/* line 217, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-check {
+  background-position: -64px -144px;
+}
+
+/* line 218, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-bullet {
+  background-position: -80px -144px;
+}
+
+/* line 219, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-radio-off {
+  background-position: -96px -144px;
+}
+
+/* line 220, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-radio-on {
+  background-position: -112px -144px;
+}
+
+/* line 221, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-pin-w {
+  background-position: -128px -144px;
+}
+
+/* line 222, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-pin-s {
+  background-position: -144px -144px;
+}
+
+/* line 223, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-play {
+  background-position: 0 -160px;
+}
+
+/* line 224, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-pause {
+  background-position: -16px -160px;
+}
+
+/* line 225, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-seek-next {
+  background-position: -32px -160px;
+}
+
+/* line 226, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-seek-prev {
+  background-position: -48px -160px;
+}
+
+/* line 227, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-seek-end {
+  background-position: -64px -160px;
+}
+
+/* line 228, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-seek-start {
+  background-position: -80px -160px;
+}
+
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+/* line 230, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-seek-first {
+  background-position: -80px -160px;
+}
+
+/* line 231, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-stop {
+  background-position: -96px -160px;
+}
+
+/* line 232, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-eject {
+  background-position: -112px -160px;
+}
+
+/* line 233, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-volume-off {
+  background-position: -128px -160px;
+}
+
+/* line 234, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-volume-on {
+  background-position: -144px -160px;
+}
+
+/* line 235, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-power {
+  background-position: 0 -176px;
+}
+
+/* line 236, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-signal-diag {
+  background-position: -16px -176px;
+}
+
+/* line 237, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-signal {
+  background-position: -32px -176px;
+}
+
+/* line 238, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-battery-0 {
+  background-position: -48px -176px;
+}
+
+/* line 239, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-battery-1 {
+  background-position: -64px -176px;
+}
+
+/* line 240, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-battery-2 {
+  background-position: -80px -176px;
+}
+
+/* line 241, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-battery-3 {
+  background-position: -96px -176px;
+}
+
+/* line 242, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-plus {
+  background-position: 0 -192px;
+}
+
+/* line 243, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-minus {
+  background-position: -16px -192px;
+}
+
+/* line 244, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-close {
+  background-position: -32px -192px;
+}
+
+/* line 245, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px;
+}
+
+/* line 246, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px;
+}
+
+/* line 247, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px;
+}
+
+/* line 248, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px;
+}
+
+/* line 249, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px;
+}
+
+/* line 250, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px;
+}
+
+/* line 251, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px;
+}
+
+/* line 252, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px;
+}
+
+/* line 253, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px;
+}
+
+/* line 254, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px;
+}
+
+/* line 255, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circle-check {
+  background-position: -208px -192px;
+}
+
+/* line 256, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px;
+}
+
+/* line 257, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px;
+}
+
+/* line 258, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px;
+}
+
+/* line 259, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px;
+}
+
+/* line 260, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px;
+}
+
+/* line 261, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px;
+}
+
+/* line 262, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px;
+}
+
+/* line 263, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px;
+}
+
+/* line 264, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px;
+}
+
+/* line 265, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px;
+}
+
+/* line 266, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px;
+}
+
+/* line 267, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+/* line 274, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-tl {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+/* line 275, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-tr {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* line 276, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-bl {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 277, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-br {
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 278, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-top {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* line 279, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-bottom {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 280, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-right {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 281, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-left {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 282, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-corner-all {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* Overlays */
+/* line 285, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-overlay {
+  background: #666666 url(/images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
+  opacity: .50;
+  filter: Alpha(Opacity=50);
+}
+
+/* line 286, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-widget-shadow {
+  margin: -5px 0 0 -5px;
+  padding: 5px;
+  background: black url(/images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;
+  opacity: .20;
+  filter: Alpha(Opacity=20);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+                                                                                                                                                                                                                                                             /* Resizable
+----------------------------------*/
+/* line 288, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable {
+  position: relative;
+}
+
+/* line 289, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  z-index: 99999;
+  display: block;
+}
+
+/* line 290, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+  display: none;
+}
+
+/* line 291, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0;
+}
+
+/* line 292, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+/* line 293, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 294, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 295, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px;
+}
+
+/* line 296, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px;
+}
+
+/* line 297, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px;
+}
+
+/* line 298, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px;
+}
+
+                                                                                       /* Selectable
+----------------------------------*/
+/* line 300, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-selectable-helper {
+  border: 1px dotted black;
+}
+
+/* Accordion
+----------------------------------*/
+/* line 303, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-header {
+  cursor: pointer;
+  position: relative;
+  margin-top: 1px;
+  zoom: 1;
+}
+
+/* line 304, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-li-fix {
+  display: inline;
+}
+
+/* line 305, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-header-active {
+  border-bottom: 0 !important;
+}
+
+/* line 306, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-header a {
+  display: block;
+  font-size: 1em;
+  padding: .5em .5em .5em .7em;
+}
+
+/* IE7-/Win - Fix extra vertical space in lists */
+/* line 308, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion a {
+  zoom: 1;
+}
+
+/* line 309, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion-icons .ui-accordion-header a {
+  padding-left: 2.2em;
+}
+
+/* line 310, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-header .ui-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 311, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  border-top: 0;
+  margin-top: -2px;
+  position: relative;
+  top: 1px;
+  margin-bottom: 2px;
+  overflow: auto;
+  display: none;
+  zoom: 1;
+}
+
+/* line 312, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-accordion .ui-accordion-content-active {
+  display: block;
+}
+
+                                                              /* Autocomplete
+----------------------------------*/
+/* line 314, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-autocomplete {
+  position: absolute;
+  cursor: default;
+}
+
+/* line 315, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-autocomplete-loading {
+  background: white url("/images/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+
+/* workarounds */
+/* line 318, ../../../app/stylesheets/partials/_jquery-ui.scss */
+* html .ui-autocomplete {
+  width: 1px;
+}
+
+/* without this, the menu expands to 100% in IE6 */
+/* Menu
+----------------------------------*/
+/* line 322, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-menu {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  display: block;
+}
+
+/* line 328, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-menu .ui-menu {
+  margin-top: -3px;
+}
+
+/* line 331, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+/* line 339, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: .2em .4em;
+  line-height: 1.5;
+  zoom: 1;
+}
+
+/* line 347, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: normal;
+  margin: -1px;
+}
+
+/* Button
+----------------------------------*/
+/* line 354, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-right: .1em;
+  text-decoration: none !important;
+  cursor: pointer;
+  text-align: center;
+  zoom: 1;
+  overflow: visible;
+}
+
+/* the overflow property removes extra width in IE */
+/* line 355, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-icon-only {
+  width: 2.2em;
+}
+
+/* to make room for the icon, a width needs to be set here */
+/* line 356, ../../../app/stylesheets/partials/_jquery-ui.scss */
+button.ui-button-icon-only {
+  width: 2.4em;
+}
+
+/* button elements seem to need a little more width */
+/* line 357, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-icons-only {
+  width: 3.4em;
+}
+
+/* line 358, ../../../app/stylesheets/partials/_jquery-ui.scss */
+button.ui-button-icons-only {
+  width: 3.7em;
+}
+
+/*button text element */
+/* line 361, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button .ui-button-text {
+  display: block;
+  line-height: 1.4;
+}
+
+/* line 362, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-text-only .ui-button-text {
+  padding: .4em 1em;
+}
+
+/* line 363, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+  padding: .4em;
+  text-indent: -9999999px;
+}
+
+/* line 364, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-text-icon .ui-button-text, .ui-button-text-icons .ui-button-text {
+  padding: .4em 1em .4em 2.1em;
+}
+
+/* line 365, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-text-icons .ui-button-text {
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+}
+
+/* no icon support for input elements, provide padding by default */
+/* line 367, ../../../app/stylesheets/partials/_jquery-ui.scss */
+input.ui-button {
+  padding: .4em 1em;
+}
+
+/*button icon element(s) */
+/* line 370, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 371, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-icon-only .ui-icon {
+  left: 50%;
+  margin-left: -8px;
+}
+
+/* line 372, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-text-icon .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary {
+  left: .5em;
+}
+
+/* line 373, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+  right: .5em;
+}
+
+/*button sets*/
+/* line 376, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-buttonset {
+  margin-right: 7px;
+}
+
+/* line 377, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-buttonset .ui-button {
+  margin-left: 0;
+  margin-right: -0.3em;
+}
+
+/* workarounds */
+/* line 380, ../../../app/stylesheets/partials/_jquery-ui.scss */
+button.ui-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* reset extra padding in Firefox */
+/* Dialog
+----------------------------------*/
+/* line 388, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog {
+  position: absolute;
+  padding: .2em;
+  width: 300px;
+  overflow: hidden;
+}
+
+/* line 389, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-titlebar {
+  padding: .5em 1em .3em;
+  position: relative;
+}
+
+/* line 390, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-title {
+  float: left;
+  margin: .1em 16px .2em 0;
+}
+
+/* line 391, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: .3em;
+  top: 50%;
+  width: 19px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  height: 18px;
+}
+
+/* line 392, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: block;
+  margin: 1px;
+}
+
+/* line 393, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+  padding: 0;
+}
+
+/* line 394, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-content {
+  border: 0;
+  padding: .5em 1em;
+  background: none;
+  overflow: auto;
+  zoom: 1;
+}
+
+/* line 395, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-buttonpane {
+  text-align: left;
+  border-width: 1px 0 0 0;
+  background-image: none;
+  margin: .5em 0 0 0;
+  padding: .3em 1em .5em .4em;
+}
+
+/* line 396, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  float: right;
+  margin: .5em .4em .5em 0;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  line-height: 1.4em;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 397, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-dialog .ui-resizable-se {
+  width: 14px;
+  height: 14px;
+  right: 3px;
+  bottom: 3px;
+}
+
+/* line 398, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}
+
+/* Slider
+----------------------------------*/
+/* line 401, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+/* line 402, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 2.4em;
+  height: 1.6em;
+  cursor: default;
+  cursor: move;
+}
+
+/* line 403, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+/* line 405, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-horizontal {
+  height: 1.8em;
+  z-index: 1;
+}
+
+/* line 406, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+/* line 407, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+/* line 408, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* line 410, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-vertical {
+  width: .8em;
+  height: 100px;
+}
+
+/* line 411, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-vertical .ui-slider-handle {
+  left: -0.3em;
+  margin-left: 0;
+  margin-bottom: -0.6em;
+}
+
+/* line 412, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+}
+
+/* line 413, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-vertical .ui-slider-range-min {
+  bottom: 0;
+}
+
+/* line 414, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-slider-vertical .ui-slider-range-max {
+  top: 0;
+}
+
+                                                    /* Tabs
+----------------------------------*/
+/* line 416, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs {
+  position: relative;
+  padding: .2em;
+  zoom: 1;
+}
+
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+/* line 417, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+
+/* line 418, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 1px;
+  margin: 0 .2em 1px 0;
+  border-bottom: 0 !important;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* line 419, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-nav li a {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+
+/* line 420, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+  margin-bottom: 0;
+  padding-bottom: 1px;
+}
+
+/* line 421, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+  cursor: text;
+}
+
+/* line 422, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+  cursor: pointer;
+}
+
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+/* line 423, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 1em 1.4em;
+  background: none;
+}
+
+/* line 424, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-tabs .ui-tabs-hide {
+  display: none !important;
+}
+
+/* Datepicker
+----------------------------------*/
+/* line 427, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+
+/* line 428, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+
+/* line 429, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+/* line 430, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+
+/* line 431, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+
+/* line 432, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+
+/* line 433, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+
+/* line 434, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+
+/* line 435, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 436, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+/* line 437, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+
+/* line 438, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker select.ui-datepicker-month-year {
+  width: 100%;
+}
+
+/* line 440, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%;
+}
+
+/* line 441, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+
+/* line 442, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker th {
+  background: none;
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+
+/* line 443, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+
+/* line 444, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+
+/* line 445, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+/* line 446, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 447, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+
+/* with multiple calendars */
+/* line 450, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+
+/* line 451, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+
+/* line 452, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+
+/* line 453, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+
+/* line 454, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+
+/* line 455, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+
+/* line 456, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+/* line 457, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+/* line 458, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+
+/* line 459, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+}
+
+/* RTL support */
+/* line 462, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+
+/* line 463, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+
+/* line 464, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+
+/* line 465, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+
+/* line 466, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+
+/* line 467, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+
+/* line 468, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+
+/* line 469, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: right;
+}
+
+/* line 470, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+
+/* line 471, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* line 472, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+/* line 475, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-datepicker-cover {
+  display: none;
+  /*sorry for IE5*/
+  display/**/: block;
+  /*sorry for IE5*/
+  position: absolute;
+  /*must have*/
+  z-index: -1;
+  /*must have*/
+  filter: mask();
+  /*must have*/
+  top: -4px;
+  /*must have*/
+  left: -4px;
+  /*must have*/
+  width: 200px;
+  /*must have*/
+  height: 200px;
+  /*must have*/
+}
+
+ /* Progressbar
+----------------------------------*/
+/* line 487, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+}
+
+/* line 488, ../../../app/stylesheets/partials/_jquery-ui.scss */
+.ui-progressbar .ui-progressbar-value {
+  margin: -1px;
+  height: 100%;
+}
+
+/* line 3, ../../../app/stylesheets/partials/_status.scss */
+#status {
+  font-size: 1.2em;
+}
+/* line 4, ../../../app/stylesheets/partials/_status.scss */
+#status #status-preheader {
+  background-color: #444444;
+  font-size: 5em;
+  color: #EEE;
+  border-bottom: 1px solid #999;
+  padding: .1em .6em;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 16, ../../../app/stylesheets/partials/_status.scss */
+#status table {
+  background: #F0F0F0;
+  width: 100%;
+}
+/* line 19, ../../../app/stylesheets/partials/_status.scss */
+#status table tr {
+  border: 1px solid #AAA;
+}
+/* line 21, ../../../app/stylesheets/partials/_status.scss */
+#status table tr.status_1 {
+  background-color: #DDD;
+}
+/* line 24, ../../../app/stylesheets/partials/_status.scss */
+#status table tr.status_2 {
+  background-color: #FF9999;
+}
+/* line 27, ../../../app/stylesheets/partials/_status.scss */
+#status table tr.status_3 {
+  background-color: #FF5555;
+}
+/* line 32, ../../../app/stylesheets/partials/_status.scss */
+#status table th {
+  background-color: #444444;
+  color: #EEE;
+  font-weight: normal;
+  padding: .6em .2em .1em .2em;
+  text-align: center;
+}
+/* line 38, ../../../app/stylesheets/partials/_status.scss */
+#status table th:first-child {
+  width: 5em;
+}
+/* line 41, ../../../app/stylesheets/partials/_status.scss */
+#status table th:nth-child(2) {
+  width: 15em;
+}
+/* line 44, ../../../app/stylesheets/partials/_status.scss */
+#status table th:nth-child(3) {
+  width: 5em;
+}
+/* line 47, ../../../app/stylesheets/partials/_status.scss */
+#status table th:nth-child(4) {
+  width: 3em;
+  text-align: right;
+}
+/* line 51, ../../../app/stylesheets/partials/_status.scss */
+#status table th:nth-child(5) {
+  width: 6em;
+}
+/* line 54, ../../../app/stylesheets/partials/_status.scss */
+#status table th:nth-child(6) {
+  width: 28em;
+}
+/* line 59, ../../../app/stylesheets/partials/_status.scss */
+#status table td {
+  color: #111;
+  text-align: center;
+  vertical-align: top;
+  padding: .6em .2em .1em .2em;
+}
+/* line 64, ../../../app/stylesheets/partials/_status.scss */
+#status table td:first-child {
+  text-align: center;
+}
+/* line 67, ../../../app/stylesheets/partials/_status.scss */
+#status table td:nth-child(2) {
+  font-weight: bold;
+}
+/* line 70, ../../../app/stylesheets/partials/_status.scss */
+#status table td:nth-child(4) {
+  text-align: right;
+}
+/* line 75, ../../../app/stylesheets/partials/_status.scss */
+#status table textarea {
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+}
+/* line 81, ../../../app/stylesheets/partials/_status.scss */
+#status .best_in_place {
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 85, ../../../app/stylesheets/partials/_status.scss */
+#status #hours_project {
+  margin-top: 2em;
+}
+/* line 88, ../../../app/stylesheets/partials/_status.scss */
+#status img {
+  margin-top: -2px;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_popup.scss */
+.popup {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 4, ../../../app/stylesheets/partials/_popup.scss */
+.popup .main {
+  padding: 1em;
+  width: 80em;
+}
+
+/**********************************************/
+/******************* Tasks ********************/
+/**********************************************/
+/* line 5, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form {
+  background-color: #EEE;
+  border: 10px solid #DDD;
+  margin-top: 1em;
+  padding: .5em;
+  text-align: left;
+  max-width: 80em;
+}
+/* line 12, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form input {
+  border: none;
+}
+/* line 15, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .title-input {
+  padding: .5em 1em .5em .1em;
+}
+/* line 17, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .title-input input {
+  padding: .4em .2em;
+  font-size: 1.2em;
+  width: 52%;
+}
+/* line 23, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector {
+  border: 1px solid #FFF;
+  float: right;
+  margin-top: .5em;
+  background-color: #FFF;
+  height: 30px;
+  width: 45%;
+}
+/* line 30, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector a {
+  border-bottom: 5px solid transparent;
+}
+/* line 32, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector a:focus, .task-form .user-selector a.selected {
+  border-bottom: 5px solid black;
+}
+/* line 36, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector .responsible {
+  margin-top: 1.5em;
+  height: 2em;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+/* line 42, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector .responsible span {
+  float: left;
+  padding-top: .5em;
+}
+/* line 46, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector .responsible img {
+  float: left;
+  padding-right: .5em;
+}
+/* line 51, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector img {
+  border: 1px solid transparent;
+}
+/* line 53, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .user-selector img:hover {
+  border: 1px solid #AAA;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease;
+}
+/* line 63, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .description-input textarea {
+  padding: .6em;
+  width: 50.5%;
+  height: 20em;
+  border: none;
+}
+/* line 69, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .description-input p {
+  color: #888;
+  margin-top: .5em;
+}
+/* line 74, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .time-selector {
+  margin-top: 2em;
+  margin-left: 1em;
+  float: right;
+  text-align: right;
+  width: 45%;
+}
+/* line 80, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .time-selector input {
+  width: 6em;
+  font-size: 1.5em;
+  float: right;
+  padding: .3em .3em;
+  margin-bottom: 1em;
+  text-align: right;
+}
+/* line 88, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .time-selector .time-icon {
+  width: 30px;
+  float: right;
+  height: 30px;
+  padding-top: .5em;
+}
+/* line 94, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .time-selector h3 {
+  color: #555;
+  margin-top: .6em;
+  font-size: 1.3em;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: .4em;
+  padding-top: .6em;
+}
+/* line 103, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .submit-task-form {
+  text-align: right;
+}
+/* line 105, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .submit-task-form input[type=submit] {
+  height: 2em;
+  width: 12em;
+  font-size: 1em;
+}
+/* line 109, ../../../app/stylesheets/partials/_tasks.scss */
+.task-form .submit-task-form input[type=submit]:hover {
+  background-color: #888;
+  color: #FFF;
+  cursor: hand;
+  cursor: pointer;
+}
+
+/* line 119, ../../../app/stylesheets/partials/_tasks.scss */
+.task-show {
+  width: 90%;
+  padding: 1em 2em 2em 2em;
+  margin: 1px auto;
+}
+
+/* line 122, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body {
+  padding: 1em 2em 2em 2em;
+  background-color: #CCC;
+  min-height: 10em;
+  border: 10px solid #DDD;
+}
+/* line 127, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body h2 {
+  border-bottom: 1px solid #999;
+  padding-bottom: .2em;
+}
+/* line 131, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body table {
+  width: 40%;
+  background-color: #DDD;
+  margin: 0 0 1em 0;
+  font-size: 1.1em;
+  border-top: 1px solid #FFF;
+}
+/* line 137, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body table tr {
+  background-color: transparent;
+  height: 3em;
+}
+/* line 140, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body table tr:hover {
+  background-color: #EEE;
+}
+/* line 144, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body table td {
+  border: 1px solid #FFF;
+  border-top: none;
+  text-align: left;
+}
+/* line 145, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body table td:first-child {
+  text-align: right;
+  width: 8em;
+  border-right: none;
+}
+/* line 155, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body .best_in_place input {
+  font-size: 1.1em;
+  width: 2.5em;
+}
+/* line 159, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body h3 {
+  border-bottom: 1px solid #999;
+  padding-bottom: .5em;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+/* line 165, ../../../app/stylesheets/partials/_tasks.scss */
+.task-body .action-buttons {
+  padding-right: 1.2em;
+  float: right;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block h3 {
+  margin: 1em 0 1em 0;
+  font-size: 1.6em;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: .4em;
+}
+/* line 8, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block h2 {
+  margin-top: 1em;
+}
+/* line 11, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block .comment {
+  border: 1px solid #DDD;
+  min-height: 5em;
+  margin-bottom: .5em;
+  padding: 1em;
+  background-color: #EEE;
+}
+/* line 30, ../../../app/stylesheets/partials/_base.scss */
+.comments-block .comment ul {
+  margin-left: 2.5em;
+  list-style: square;
+}
+/* line 33, ../../../app/stylesheets/partials/_base.scss */
+.comments-block .comment ul li {
+  padding-left: 1em;
+  line-height: 1.8em;
+}
+/* line 19, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block .comments-gravatar {
+  float: right;
+  margin-bottom: 1em;
+}
+/* line 23, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block .comment-by {
+  font-style: italic;
+}
+/* line 26, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block .comment-body {
+  margin-top: 1em;
+}
+/* line 29, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block .comment-delete {
+  float: right;
+  display: none;
+  margin-right: 1em;
+}
+/* line 35, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block .comment:hover .comment-delete {
+  display: inline;
+}
+/* line 39, ../../../app/stylesheets/partials/_comments.scss */
+.comments-block textarea {
+  width: 98.5%;
+  height: 10em;
+  padding: .5em;
+  font-size: 1.3em;
+  color: #333;
+  border: 1px solid #DDD;
+  margin-bottom: .5em;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard .button.small {
+  margin-top: 2em;
+  padding-bottom: 0;
+}
+/* line 6, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard h2 {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: .3em;
+  margin: 1em 0;
+}
+/* line 13, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard .projects-pannel table td:nth-child(3) {
+  width: 50%;
+}
+/* line 17, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard .projects-pannel table tr.status_1 {
+  background-color: #DDD;
+}
+/* line 20, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard .projects-pannel table tr.status_2 {
+  background-color: #FF9999;
+}
+/* line 23, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard .projects-pannel table tr.status_3 {
+  background-color: #FF5555;
+}
+/* line 29, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard h3 {
+  padding-left: .5em;
+  color: #666;
+  font-size: 1.2em;
+  margin: .9em 0 .8em 0;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: .3em;
+}
+/* line 36, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard h3 a {
+  color: #444;
+  text-decoration: none;
+}
+/* line 39, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard h3 a:hover {
+  color: #000;
+}
+/* line 43, ../../../app/stylesheets/partials/_dashboard.scss */
+#dashboard h3 img {
+  margin-top: -0.2em;
+  padding-right: .5em;
+}
+
+/* line 4, ../../../app/stylesheets/partials/_users.scss */
+.user-show .user-info table tr:first-child {
+  background-color: #FFF;
+}
+/* line 7, ../../../app/stylesheets/partials/_users.scss */
+.user-show .user-info table td {
+  padding-left: 1em;
+  text-align: left;
+}
+/* line 11, ../../../app/stylesheets/partials/_users.scss */
+.user-show .user-info table td:first-child {
+  text-align: right;
+  width: 30%;
+  background-color: #EEE;
+  padding: 0 .5em;
+}
+/* line 19, ../../../app/stylesheets/partials/_users.scss */
+.user-show h2 {
+  margin: 1em 0;
+}
+
+/* Milestones Big Calendar */
+/* line 4, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table {
+  background: #FFFFFF none repeat scroll 0 0;
+  margin: 15px 0;
+  width: 100%;
+}
+/* line 9, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table th {
+  background: #FFFFFF none repeat scroll 0 0;
+  color: #999999;
+  font-size: 12px;
+  padding: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 17, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table th.month {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  width: 1%;
+}
+/* line 26, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table th.month div {
+  background: #333333 none repeat scroll 0 0;
+  color: #FFFFFF;
+  padding: 12px;
+}
+/* line 31, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td.blank {
+  background: #F5F5F5 none repeat scroll 0 0;
+}
+/* line 34, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td {
+  background: #E5E5E5 none repeat scroll 0 0;
+  color: #999999;
+  font-size: 10px;
+  height: 65px;
+  padding: 10px 12px;
+  text-align: right;
+  vertical-align: top;
+  width: 20%;
+}
+/* line 44, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td a {
+  font-weight: bold;
+  padding: 0;
+}
+/* line 48, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td.weekend {
+  background: #D5D5D5 none repeat scroll 0 0;
+  width: 1%;
+}
+/* line 52, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table.weekends td, .full-calendar table.weekends td.weekend {
+  width: 14%;
+}
+/* line 55, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td.with {
+  background: #FFFFFF none repeat scroll 0 0;
+  border: 1px solid #999999;
+  color: #666666;
+  font-weight: normal;
+}
+/* line 61, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td.with span.date {
+  color: #000000;
+  float: right;
+  font-weight: bold;
+  margin: 0 0 6px 6px;
+}
+/* line 67, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td.today {
+  background: #FFFFCC none repeat scroll 0 0;
+  border: 1px solid #FFCC00;
+  color: #333333;
+}
+/* line 72, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table td.today span.date {
+  background: #FFCC00 none repeat scroll 0 0;
+  color: #FFFFFF;
+  padding: 1px 5px;
+}
+/* line 77, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+/* line 82, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar table li {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 13px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+/* line 90, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar .milestone-event .completed {
+  text-decoration: line-through;
+}
+/* line 93, ../../../app/stylesheets/partials/_calendar.scss */
+.full-calendar .milestone-event .action-img {
+  float: left;
+  padding-right: .5em;
+  display: none;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_milestones.scss */
+.milestone-show hr {
+  margin: 2em 0;
+}
+/* line 5, ../../../app/stylesheets/partials/_milestones.scss */
+.milestone-show h2 {
+  margin-top: 2em;
+  padding-bottom: .4em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_messages.scss */
+#message .message-header {
+  color: #000;
+  min-height: 8em;
+  padding: 1em;
+  border: 1px solid #DDD;
+}
+/* line 7, ../../../app/stylesheets/partials/_messages.scss */
+#message .message-header .button {
+  margin-right: 1em;
+}
+/* line 12, ../../../app/stylesheets/partials/_messages.scss */
+#message .message-body {
+  border: 1px solid #DDD;
+  border-top: none;
+  min-height: 4em;
+  padding: 1em;
+}
+
+/* line 23, ../../../app/stylesheets/partials/_messages.scss */
+#message-index textarea {
+  width: 98%;
+  height: 10em;
+  padding: .5em;
+  font-size: 1.3em;
+  color: #333;
+  border: 1px solid #DDD;
+}
+/* line 31, ../../../app/stylesheets/partials/_messages.scss */
+#message-index input[type=text] {
+  border: 1px solid #DDD;
+  font-size: 1.3em;
+  width: 20em;
+  margin-right: 1em;
+}
+/* line 37, ../../../app/stylesheets/partials/_messages.scss */
+#message-index input[type=submit] {
+  width: 10em;
+  margin-right: .7em;
+  font-size: 1.1em;
+}
+/* line 42, ../../../app/stylesheets/partials/_messages.scss */
+#message-index label {
+  font-size: 1.1em;
+  color: #666;
+}
+/* line 46, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message {
+  margin: 1em .1em;
+  padding: 1em;
+}
+/* line 49, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message .message-header {
+  height: 65px;
+  margin-left: 80px;
+  padding: .2em .6em;
+  line-height: 1.2em;
+}
+/* line 54, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message .message-header h2 {
+  font-size: 1.2em;
+}
+/* line 57, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message .message-header .comments-num {
+  background-color: #666;
+  float: right;
+  min-width: 2em;
+  padding: .4em;
+  padding-top: .7em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+/* line 24, ../../../app/stylesheets/partials/_base.scss */
+#message-index .message .message-header .comments-num:hover {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+/* line 65, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message .message-header .comments-num a {
+  font-size: 2em;
+  color: #EEE;
+  text-decoration: none;
+}
+/* line 72, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message img {
+  margin-top: .6em;
+}
+/* line 75, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message .message-body {
+  padding: 1em .4em;
+  background-color: #EEE;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 80, ../../../app/stylesheets/partials/_messages.scss */
+#message-index .message .separator {
+  height: 1.6em;
+}
+
+/**********************************************/
+/***************** Task Lists *****************/
+/**********************************************/
+/* line 6, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar {
+  border: 2px dashed #DDD;
+  min-height: 10em;
+  padding: .5em;
+  padding-bottom: 1em;
+  margin-bottom: .6em;
+  background-color: #FFF;
+  position: fixed;
+  width: 22%;
+  right: 2em;
+}
+/* line 16, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar .task {
+  cursor: move;
+  margin-top: .2em;
+  border: 1px dotted #EEE;
+  padding: .4em;
+}
+/* line 21, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar .task:hover {
+  border: 1px dotted #AAA;
+}
+/* line 25, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar .task-list-link {
+  padding: .5em;
+  margin: .5em 0;
+  width: 97%;
+}
+/* line 29, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar .task-list-link a {
+  text-decoration: none;
+}
+/* line 32, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar .task-list-link img {
+  float: left;
+  margin-top: -0.3em;
+  padding-right: .3em;
+}
+/* line 38, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar .button {
+  margin-top: .4em;
+}
+/* line 41, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar h3 {
+  border-bottom: 1px solid #EEE;
+}
+/* line 44, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists .sidebar input {
+  width: 98%;
+  font-size: 1em;
+  padding: .5em .3em;
+  border-color: #EEE;
+}
+/* line 51, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists h3 {
+  margin-top: .6em;
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: .5em;
+}
+/* line 57, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists h3 a, #task-lists h3 a:visited, #task-lists h3 a:hover {
+  text-decoration: none;
+  color: #111;
+}
+/* line 62, ../../../app/stylesheets/partials/_task_lists.scss */
+#task-lists #show-archived {
+  margin-bottom: 1em;
+}
+
+/* line 67, ../../../app/stylesheets/partials/_task_lists.scss */
+.task_list {
+  margin: 1em .4em;
+  padding: .5em;
+}
+/* line 68, ../../../app/stylesheets/partials/_task_lists.scss */
+.task_list:first-child {
+  margin-top: 0;
+}
+/* line 71, ../../../app/stylesheets/partials/_task_lists.scss */
+.task_list h4 {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+/* line 77, ../../../app/stylesheets/partials/_task_lists.scss */
+.task_list .task-data {
+  margin: 1em 0;
+  clear: both;
+  margin-bottom: 1em;
+  height: 2em;
+  border: 1px solid #DDD;
+  background-color: #EEE;
+  padding: 1em 1em 0 .5em;
+}
+/* line 85, ../../../app/stylesheets/partials/_task_lists.scss */
+.task_list .task-data img {
+  margin: 0 .4em;
+  margin-top: -0.2em;
+}
+
+/* line 92, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item {
+  border: 1px solid transparent;
+  height: 1.3em;
+  margin-bottom: .2em;
+  padding: .6em .1em .4em .2em;
+  background-color: #EEE;
+  font-size: 1em;
+}
+/* line 94, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item:hover {
+  border: 1px solid #CCC;
+  -moz-box-shadow: #555555 0.06em 0.06em 0.2em 0;
+  -webkit-box-shadow: #555555 0.06em 0.06em 0.2em 0;
+  -o-box-shadow: #555555 0.06em 0.06em 0.2em 0;
+  box-shadow: #555555 0.06em 0.06em 0.2em 0;
+}
+/* line 103, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item img {
+  margin-top: -0.3em;
+}
+/* line 106, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .button {
+  margin-top: -0.35em;
+}
+/* line 109, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .duration {
+  float: right;
+}
+/* line 113, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .action-label .button {
+  margin-top: -0.5em;
+  padding: .5em .3em 0 .3em;
+}
+/* line 119, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .task-buttons .button {
+  padding: .4em .2em 0 .2em;
+}
+/* line 124, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .task-comments .comment-globe {
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  background: url(/images/comments.png) no-repeat;
+  height: 20px;
+  width: 20px;
+  color: #FFF;
+  margin-top: -0.1em;
+  padding: .13em .2em 0 .45em;
+}
+/* line 134, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .completion-date {
+  color: #666;
+}
+/* line 137, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .position {
+  color: #777;
+  padding-left: .2em;
+}
+/* line 141, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .gravatar {
+  float: right;
+}
+/* line 143, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .gravatar img {
+  width: 20px;
+  height: 20px;
+}
+/* line 147, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .gravatar .author {
+  float: right;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  margin-right: 5px;
+}
+/* line 153, ../../../app/stylesheets/partials/_task_lists.scss */
+.task-item .project-label {
+  padding: .3em !important;
+  margin: -0.2em 0.5em 0.1em 0;
+  float: left;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_events.scss */
+#events h2 {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: .3em;
+}
+/* line 6, ../../../app/stylesheets/partials/_events.scss */
+#events h3 {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: .5em;
+  padding-bottom: .3em;
+}
+/* line 10, ../../../app/stylesheets/partials/_events.scss */
+#events h3 span {
+  color: #555;
+}
+/* line 14, ../../../app/stylesheets/partials/_events.scss */
+#events .event {
+  min-height: 5em;
+  border: 1px solid #EEE;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+/* line 19, ../../../app/stylesheets/partials/_events.scss */
+#events .event .item {
+  margin: 1em 1.5em;
+}
+/* line 20, ../../../app/stylesheets/partials/_events.scss */
+#events .event .item img {
+  margin-right: 1.2em;
+  margin-top: -0.35em;
+}
+/* line 27, ../../../app/stylesheets/partials/_events.scss */
+#events .comment {
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  padding: .4em 1em .3em 1em;
+  margin: .2em .4em;
+  line-height: 1.6em;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 28, ../../../app/stylesheets/partials/_events.scss */
+#events .comment img {
+  margin-right: 1.2em;
+  margin-top: .35em;
+}
+/* line 32, ../../../app/stylesheets/partials/_events.scss */
+#events .comment .left {
+  height: 40px;
+}
+/* line 42, ../../../app/stylesheets/partials/_events.scss */
+#events textarea {
+  margin: .5em 0 .2em 1em;
+  font-size: 1.1em;
+  width: 97%;
+  height: 4em;
+  padding: .5em;
+  border: 1px solid #EEE;
+}
+/* line 50, ../../../app/stylesheets/partials/_events.scss */
+#events input[type=submit] {
+  margin-left: 1em;
+}
+/* line 53, ../../../app/stylesheets/partials/_events.scss */
+#events .comment {
+  border: 1px solid #DDD;
+  margin-bottom: .4em;
+  background-color: #EEE;
+}
+/* line 58, ../../../app/stylesheets/partials/_events.scss */
+#events .comments-gravatar {
+  float: left;
+  margin-bottom: 1em;
+  width: 50px;
+}
+/* line 63, ../../../app/stylesheets/partials/_events.scss */
+#events .comment-body {
+  margin-top: .1em;
+}
+/* line 65, ../../../app/stylesheets/partials/_events.scss */
+#events .comment-body p {
+  margin: 0;
+}
+/* line 69, ../../../app/stylesheets/partials/_events.scss */
+#events .comment-by {
+  color: #555;
+}
+/* line 72, ../../../app/stylesheets/partials/_events.scss */
+#events .comment-delete {
+  float: right;
+  display: none;
+}
+/* line 76, ../../../app/stylesheets/partials/_events.scss */
+#events .item-list {
+  padding-bottom: .2em;
+}
+
+/* Code highlighting */
+/* line 2, ../../../app/stylesheets/partials/_code-highlight.scss */
+code {
+  font-size: 11px;
+  background: #d8d8d8;
+}
+
+/* line 6, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre code {
+  display: block;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+/* line 11, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre code[class]:after {
+  display: block;
+  text-align: right;
+  color: #CCC;
+  background: white;
+  border-top: solid 1px black;
+}
+
+/* line 18, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .keyword, pre .tag {
+  color: #E3CEAB;
+}
+
+/* line 20, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .django .tag, pre .django .keyword {
+  color: #E3CEAB;
+}
+
+/* line 22, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .css .class, pre .css .id {
+  color: #E3CEAB;
+}
+
+/* line 24, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .lisp .title {
+  color: #E3CEAB;
+}
+
+/* line 26, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .django .template_tag, pre .django .variable, pre .django .filter .argument {
+  color: #DCDCDC;
+}
+
+/* line 28, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .number, pre .date {
+  color: #8CD0D3;
+}
+
+/* line 30, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .dos .envvar, pre .dos .stream {
+  color: #EFDCBC;
+}
+
+/* line 32, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .variable, pre .apache .sqbracket {
+  color: #EFDCBC;
+}
+
+/* line 34, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .dos .flow, pre .diff .change {
+  color: #EFEFAF;
+}
+
+/* line 36, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .python .exception, pre .python .built_in {
+  color: #EFEFAF;
+}
+
+/* line 38, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .literal {
+  color: #EFEFAF;
+}
+
+/* line 40, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .diff .chunk, pre .ruby .subst {
+  color: #8F8F8F;
+}
+
+/* line 42, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .dos .keyword, pre .python .decorator, pre .class .title, pre .function .title, pre .ini .title, pre .diff .header, pre .ruby .class .parent, pre .apache .tag {
+  color: #efef8f;
+}
+
+/* line 44, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .dos .winutils {
+  color: #DCA3A3;
+}
+
+/* line 46, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .ruby .symbol, pre .ruby .string, pre .ruby .instancevar {
+  color: #DCA3A3;
+}
+
+/* line 48, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .diff .deletion, pre .string, pre .tag .attribute .value, pre .preprocessor, pre .built_in, pre .sql .aggregate, pre .javadoc {
+  color: #CC9393;
+}
+
+/* line 50, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .smalltalk .class, pre .smalltalk .localvars, pre .smalltalk .array {
+  color: #CC9393;
+}
+
+/* line 52, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .css .rules .value, pre .attr_selector, pre .pseudo, pre .apache .cbracket {
+  color: #CC9393;
+}
+
+/* line 54, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .shebang, pre .diff .addition, pre .comment, pre .java .annotation, pre .template_comment, pre .pi, pre .doctype {
+  color: #7F9F7F;
+}
+
+/* line 56, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre .html .css, pre .html .javascript {
+  opacity: 0.5;
+}
+
+/* line 58, ../../../app/stylesheets/partials/_code-highlight.scss */
+pre code {
+  font: 11px Monaco, "Bitstream Vera Sans Mono", monospace, Arial;
+  padding: 12px;
+  letter-spacing: 0.07em;
+}

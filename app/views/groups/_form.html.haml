@@ -1,0 +1,23 @@
+= form_for(@group, :html => { :class => :form } ) do |f|
+  = render "shared/error_messages", :target => @group
+  .group
+    = f.label :name, "Name"
+    = f.text_field :name, :class => 'text_field'
+  .group
+    = f.label :ref, "Referència"
+    = f.text_field :ref, :class => 'text_field'
+  .group
+    = f.label :email, "Email"
+    = f.text_field :email, :class => 'text_field'
+  = f.wmd_tag(:description)
+  .group
+    = f.label :color, "Color"
+    #colorbox_red.colorbox{"data-color" => "FF0000", :style => "background-color:#FF0000;"}
+    #colorbox_yellow.colorbox{"data-color" => "FFFF00", :style => "background-color:#FFFF00;"}
+    #colorbox_green.colorbox{"data-color" => "00FF00", :style => "background-color:#00FF00;"}
+    #colorbox_blue.colorbox{"data-color" => "0000FF", :style => "background-color:#0000FF;"}
+    #colorbox_cian.colorbox{"data-color" => "00FFFF", :style => "background-color:#00FFFF;"}
+    %br/
+    = f.text_field :color, :class => 'text_field', :id => 'color_text_field'
+  .group.navform
+    = f.submit :class => "button"

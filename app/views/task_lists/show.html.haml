@@ -1,0 +1,25 @@
+- title "Llista de tasques: " + @task_list.name
+
+= render @task_list, :object => @task
+
+%h3 Històric de canvis
+.show-history
+  %table
+    - foo = @task_list.previous_version
+    %tr
+      %th Data
+      %th Concepte
+      %th Hores planificades
+      %th Descripció
+      %th Autor modificació
+    - 10.times do
+      - unless foo.nil?
+        - unless foo.version.concept.blank?
+          %tr
+            %td= pretty_date foo.version.created_at
+            %td= foo.version.concept
+            %td= "#{foo.hours} h"
+            %td= foo.description
+            %td= foo.version.whodunnit
+        - foo = foo.previous_version
+

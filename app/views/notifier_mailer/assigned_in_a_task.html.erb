@@ -1,0 +1,6 @@
+<p>Hola, acabes de ser assignat/da a la seguent tasca de la llista [ <%= @task.task_list %> ]</p>
+<pre>
+  <%= @task %>
+</pre>
+
+<p>Consulta la llista en el següent <a href="<%= project_task_list_url(@task.project, @task.task_list) %>">enllaç</a></p>

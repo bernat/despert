@@ -1,0 +1,9 @@
+<%= @actor.name %> ha creat una nova tasca en el projecte <%= @task.project %>. Consulta-la en el següent enllaç:
+
+<%= project_task_list_url(@task.project, @task.task_list) %>
+
+La tasca pertany a la llista de tasques <%= @task.task_list %> i la seva descripció es:
+
+<%= @task.description %>
+
+<%= render 'footer' %>

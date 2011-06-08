@@ -1,0 +1,67 @@
+- title "Tasca " + @task.title
+
+.task-show
+  %h1 Detalls de la tasca
+  .task-body
+    .action-buttons
+      - if @task.closed
+        = link_to image_tag("archive.png"), archive_toggle_project_task_path(@project, @task), :class => "button"
+      - else
+        = link_to image_tag("emptyfolder.png"), archive_toggle_project_task_path(@project, @task), :class => "button"
+      = link_to image_tag("editicon.png"), edit_project_task_path(@task.project, @task), :rel => "facebox", :class => "button"
+      = link_to image_tag("deleteicon.png"), project_task_path(@task.project, @task), :confirm => 'Segur?', :method => :delete, :class => "button"
+    %h2
+      = @task.title
+      = " [ARXIVADA #{pretty_date @task.updated_at}]" if @task.closed
+
+    .clearboth
+    .right= raw gravatar_for(@task.employee, :size => 175) if @task.employee
+
+    %table
+      %tr
+        %td Llista
+        %td
+          = link_to @task.task_list.name, [@task.project, @task.task_list]
+          (#{@task.task_list.group.presence})
+      %tr
+        %td= image_tag("responsible.png")
+        %td
+          - if can? :reassign_user, @task
+            - employees = @project.employees.collect{ |e| [e.id, e.name.gsub(/['"]/, '')] }
+            = best_in_place @task, :employee_id, :type => :select, :path => [@task.project, @task], :collection => employees
+        -# %td= @task.employee.presence
+      %tr
+        %td= image_tag("watch.png")
+        %td
+          - if can? :update, @task
+            = best_in_place @task, :duration, :nil => 0, :path => [@task.project, @task]
+          - else
+            = @task.duration || "0"
+          hores
+      %tr
+        %td Estat
+        %td
+          - if @task.completed_at
+            %span{:style => "color:green"} Finalitzada
+            (#{link_to "reobrir", toggle_project_task_path(@project, @task)})
+          - else
+            %span{:style => "color:red"} Pendent
+            (#{link_to "completar", toggle_project_task_path(@project, @task)})
+
+    %h3 Descripció
+    = markdown(@task.description)
+
+  = render :partial => 'comments/comments_block', :locals => {:referer => @task }
+
+  .separator
+  %hr
+  %h2 Historial de la tasca
+  .show-history
+    %table
+      - @events.each do |event|
+        %tr
+          %td= event.subdescrip
+          %td= pretty_date event.created_at
+          %td per #{event.actor.name}
+
+  = will_paginate @events, :previous_label => "&laquo; Anterior", :next_label => "Següent &raquo;"

@@ -1,0 +1,62 @@
+/* Code highlighting */
+code {
+  font-size: 11px;
+  background: #d8d8d8;
+}
+pre code {
+  display: block;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+pre code[class]:after {
+  display: block;
+  text-align: right;
+  color: #CCC;
+  background: white;
+  border-top: solid 1px black;
+}
+pre .keyword, pre .tag {
+  color: #E3CEAB; }
+pre .django .tag, pre .django .keyword {
+  color: #E3CEAB; }
+pre .css .class, pre .css .id {
+  color: #E3CEAB; }
+pre .lisp .title {
+  color: #E3CEAB; }
+pre .django .template_tag, pre .django .variable, pre .django .filter .argument {
+  color: #DCDCDC; }
+pre .number, pre .date {
+  color: #8CD0D3; }
+pre .dos .envvar, pre .dos .stream {
+  color: #EFDCBC; }
+pre .variable, pre .apache .sqbracket {
+  color: #EFDCBC; }
+pre .dos .flow, pre .diff .change {
+  color: #EFEFAF; }
+pre .python .exception, pre .python .built_in {
+  color: #EFEFAF; }
+pre .literal {
+  color: #EFEFAF; }
+pre .diff .chunk, pre .ruby .subst {
+  color: #8F8F8F; }
+pre .dos .keyword, pre .python .decorator, pre .class .title, pre .function .title, pre .ini .title, pre .diff .header, pre .ruby .class .parent, pre .apache .tag {
+  color: #efef8f; }
+pre .dos .winutils {
+  color: #DCA3A3; }
+pre .ruby .symbol, pre .ruby .string, pre .ruby .instancevar {
+  color: #DCA3A3; }
+pre .diff .deletion, pre .string, pre .tag .attribute .value, pre .preprocessor, pre .built_in, pre .sql .aggregate, pre .javadoc {
+  color: #CC9393; }
+pre .smalltalk .class, pre .smalltalk .localvars, pre .smalltalk .array {
+  color: #CC9393; }
+pre .css .rules .value, pre .attr_selector, pre .pseudo, pre .apache .cbracket {
+  color: #CC9393; }
+pre .shebang, pre .diff .addition, pre .comment, pre .java .annotation, pre .template_comment, pre .pi, pre .doctype {
+  color: #7F9F7F; }
+pre .html .css, pre .html .javascript {
+  opacity: 0.5; }
+pre code {
+  font: 11px Monaco, "Bitstream Vera Sans Mono", monospace, Arial;
+  padding: 12px;
+	letter-spacing: 0.07em;
+}

@@ -1,0 +1,3 @@
+- title "Message"
+= render :partial => 'message', :locals => {:message => @message}
+= render :partial => 'comments/comments_block', :locals => {:referer => @message}

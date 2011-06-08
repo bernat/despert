@@ -1,0 +1,138 @@
+es:
+  date_ago: hace
+  date_future: dentro de
+  new_task: "Nueva tarea creada"
+  modified_task: "Tarea modificada"
+  destroyed_task: "Tarea eliminada"
+  completed_task: "Tarea completada"
+  reopened_task: "Tarea reabierta"
+  reordered_task: "Tarea reordenada"
+
+  new_milestone: "Nuevo milestone creado"
+  modified_milestone: "Milestone modificado"
+  destroyed_milestone: "Milistone eliminado"
+
+  new_task_list: "Lista de tareas creada"
+  modified_task_list: "Lista de tareas modificada"
+  destroyed_task_list: "Lista de tareas eliminada"
+
+  new_message: "Nuevo mensaje"
+  destroyed_message: "Mensaje eliminado"
+
+  new_comment: "Nuevo comentario"
+  destroyed_comment: "Comentario borrado"
+
+  new_attachment: "Nuevo adjunto"
+  modified_attachment: "Adjunto modificado"
+  destroyed_attachment: "Adjunto eliminado"
+
+  new_project: "Nuevo proyecto"
+  modified_project: "Proyecto modificado"
+  destroyed_project: "Proyecto eliminado"
+
+  new_client: "Nuevo cliente"
+  modified_client: "Cliente modificado"
+  destroyed_client: "Cliente eliminado"
+
+  tasks: "Tareas"
+  messages: "Mensajes"
+
+  basic: "básico"
+  standard: "estándar"
+  advanced: "avanzado"
+  noplan: "ningún plan"
+  maintenance: "mantenimiento"
+  custom: "personalizado"
+  internal: "interno"
+  closed: "cerrado"
+  plan: plan
+
+  project: proyecto
+  download: descarga
+  state: estado
+  date_label: fecha
+  name: nombre
+  main_email: "E-mail principal"
+  phone: "Teléfono"
+  secondary_phone: "Teléfono secundario"
+  address: Dirección
+  invoicing: "Facturación"
+  back_to_project: "Volver al proyecto"
+  workgroups: "Grupos de trabajo"
+  
+  flash:
+      actions:
+        create:
+          notice: "Nueva %{resource_name} creada"
+        update:
+          notice: "%{resource_name} modificado"
+        destroy:
+          notice: "%{resource_name} borrado"
+          alert: "%{resource_name} could not be destroyed"
+
+  helpers:
+      submit:
+          update: "Salvar"
+          create: "Salvar"
+
+      label:
+          project:
+              info: "Información del proyecto"
+          group:
+              description: "Descripción"
+          message:
+              body: "Texto del cuerpo"
+          client:
+              information: "Información"
+          attachment:
+              description: "Descripción del archivo"
+          user:
+            receive_emails: "Recibir e-mails"
+
+
+  preview: "Previsualización"
+
+  crm:
+    unpaid_invoices: "Tiene facturas por pagar. Por favor, haga el pago antes de continuar."
+    tasks:
+      show:
+        task_list: "Lista de tareas"
+        responsible: Responsable
+
+    client_users:
+      show:
+        your_data: "Tus datos"
+        click_to_modify: "Haga clic encima el dato incorrecto para modificar-lo"
+        change_photo: "¿Quieres cambiar la foto?"
+        company_info: "Información de la empresa"
+
+    invoices:
+      invoice:
+        invoice: Factura
+        way_of_payment_label: "Método de pago"
+        way_of_payment: "Mediante VISA, VISA ELECTRON o MASTER CARD desde la intranet de Itnig"
+        invoice_number: "Número de factura"
+        invoice_concept: "Concepto"
+      index:
+        your_invoices: "Tus facturas"
+        invoice_number: "Número de factura"
+        payed: Pagada
+        to_be_payed: "Pendiente de pagar"
+
+    projects:
+      index:
+        welcome_to_intranet: "Bienvenido a la Intranet de Itnig"
+        introduction: "Aquí podrás ver la evolución de los proyectos que tienes con nosotros. Puedes ver los proyectos a continuación:"
+        no_pending_invoices: "No hay factura pendiente de pago"
+        pay_invoices: "Pagar facturas"
+        invoice_payment: "Pago de facturas"
+        payment_terms: "<p><strong> Atención! Por favor, leed atentamente:</strong></p><p> Itnig pone a su disposición la pasarela segura de<strong>La Caixa</strong> para realizar los pagos de forma cómoda a través de Internet. Para hacerlo necesitará una tarjeta de crédito <strong>VISA, VISA ELECTRON o MASTER CARD</strong>. Si su tarjeta tiene activado el sistema de seguridad para el número CIP deberá tenerlo a mano en el momento de hacer la transacción. </p><p> La pasarela permite realizar pagos de dos tipo: Pagos puntuales y pagos por suscripción </p><p><strong> Pagos puntuales: </strong></p><p> Los pagos puntuales se pueden realizar mediante transferencia o tarjeta de crédito si son inferiores a <strong>500€</strong> y sólo por transferencia si son superiores a este valor. El procedimiento es igual que en los otros casos, pulsar el botón de pago y seguir los pasos de la interfície de La Caixa. El sistema le informará si tiene pagos puntuales a realizar. Estos pagos se producen sólo cuando se negocia con el cliente un proyecto personalizado, nada habitual en itnig.</p><p><strong> Pago por suscripción: </strong></p><p> La transacción para activar un pago por suscripción se realiza una vez, generalmente al inicio del proyecto, y se renueva automáticamente cada mes sin que requiera ninguna acción por parte del cliente. Las cuotas mensuales de Itnig se cargan el mismo día del mes en que se ha realizado la suscripción por primera vez. La suscripción se realiza por un periodo de 2 años todo y que <u> El cliente puede cancelarla en cualquier momento poniéndose en contacto con nosotros, una vez completada la permanencia mínima de su plan </u>. En dos años, la suscripción se cancelará automáticamente y el cliente le habrá de reactivar des de esta misma página.</p><p> Hay que tener presente que las cuotas mensuales son modificables por parte de Itnig con previa notificación y aceptación del cliente y siempre que se haya superado el periodo de permanencia mínima.</p>  <p> Tal y como se especifican los planes de Itnig, la primera cuota será superior a todas las otras porque incluye el pago de la entrada del proyecto (equivalente a 3 meses).</p>"
+        read_and_accepted: "He leído y acepto las condiciones"
+        projects_pending_to_subscribe: "Proyectos pendientes de suscripción"
+        remember_before_paying: "Cada mes recibirá su factura por correo electrónico. Recuerde que a pesar de que la suscripción se programa automáticamente durante 24 meses, la puede cancelar en cualquier momento pasados los meses de permanencia mínima poniéndose en contacto con nosotros."
+        pending_invoices: "Facturas pendientes"
+        invoices_will_be_emailed: "Una vez pagadas, recibirá las facturas por el correo electrónico."
+        subscribe: "Suscribirse"
+        pay_now: "Paga ahora"
+        cash_payment: "Cobrar"
+        months: "meses"

@@ -1,0 +1,54 @@
+#dashboard
+  = link_to image_tag("stats.png"), "#personal-stats", :class => "button right", :rel => "facebox"
+  = link_to image_tag("usericon.png"), current_user, :class => "button right"
+  %h1 Taulell personal
+
+  .projects-pannel
+    - if can? :create, Project
+      = link_to "+ Nou projecte", new_project_path, :class => "button small right"
+    %h2 Projectes que dirigeixes
+    %table
+      %tr
+        %th Projecte
+        %th Estat
+        %th Descripció estat
+      - @projects.each do |p|
+        %tr{:class => "status_#{p.status}"}
+          %td= project_link p
+          %td= best_in_place p, :status, :type => :select, :collection => Project::STATUS_LIST
+          %td= best_in_place p, :status_description, :type => :textarea
+  .milestones-pannel
+    = link_to "+ Nou milestone", "#", :class => "button small right"
+    %h2 Milestones propers
+    - info = fill_calendar_info_with_milestones(@milestones, true)
+    .full-calendar= calendar(Date.today, nil, info, :weeks => 2)
+
+  .clearboth
+
+  %h2 Tasques planificades
+  - @planned_tasks.each do |milestone, tasks|
+    %h3
+      .left= image_tag("calendar.png")
+      = link_to milestone, [milestone.project, milestone]
+      = milestone.friendly_date
+    - tasks.each do |task|
+      = render task, :task_list => task.task_list
+
+  %h2 Tasques no planificades
+  - @unplanned_tasks.each do |ut|
+    = render ut, :task_list => ut.task_list
+
+
+
+
+  #personal-stats{:style => "display:none"}
+    %h2 Estadístiques personals
+    %table
+      %tr
+        %td Saldo variable
+        %td Hores treballades AVUI
+        %td Hores treballades aquesta setmana
+        %td Hores totals treballades
+        %td Projectes que lideres
+      %tr
+        %td= number_to_currency current_user.variable_part

@@ -1,0 +1,19 @@
+- title "Tipus de projecte"
+= link_to '+ Nou tipus', new_project_type_path, :class => "button right"
+%h1 Tipus de projecte
+%table
+  %tr
+    %th Nom
+    %th Descripció
+    %th Quants projectes té?
+    %th Color
+    %th
+  - @project_types.each do |type|
+    %tr
+      %td= type.name
+      %td= type.description
+      %td= type.projects.size
+      %td{:style => "background-color: ##{type.color || 'FFF'}"} &nbsp;
+      %td
+        = link_to image_tag("editicon.png"), edit_project_type_path(type), :class => "button"
+        = link_to image_tag("deleteicon.png"), type, :confirm => 'Estàs segur?', :method => :delete, :class => "button"

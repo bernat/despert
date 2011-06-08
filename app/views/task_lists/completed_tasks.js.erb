@@ -1,0 +1,16 @@
+if ($("#completed_link_<%= @task_list.id %>").hasClass("display"))
+{
+  $("#completed_link_<%= @task_list.id %>").removeClass("display");
+  $("#full_task_list_<%= @task_list.id -%> .completed_tasks").fadeOut();
+}
+else
+{
+  $("#full_task_list_<%= @task_list.id -%> .completed_tasks").fadeIn();
+  $("#completed_link_<%= @task_list.id %>").addClass("display");
+  <% @tasks.each do |t| %>
+    if (jQuery.isEmptyObject($("#task_item_<%= t.id %>")[0]))
+    {
+      $("#task_list_completed_<%=t.task_list.id.to_s%>").append("<%= raw escape_javascript(render t, :task_list => @task_list) %>");
+    }
+  <% end %>
+}

@@ -1,0 +1,43 @@
+- title "Llistes de tasques"
+- if can? :create, @project.task_lists.new
+  = link_to "+ Nova llista de tasques", new_project_task_list_path(@project), :class => "button right", :rel => "facebox"
+%h1 Llistes de tasques
+
+#task-lists
+  .regular-task-lists
+    = render @task_lists
+    - if @archived_task_lists.size > 0
+      .center= link_to "Llistes arxivades", "#archived-task-lists", :id => "show-archived", :class => "button"
+      #archived-task-lists{:style => "display:none"}
+        = render :partial => "task_list", :collection => @archived_task_lists
+  .sidebar{:style => "#{@task_lists.size < 1 ? 'width:98%' : ''};"}
+    %h3 Llistes de tasques (#{@task_lists.size})
+    - @task_lists.each do |tl|
+      .task-list-link{:style => "background-color:##{tl.group ? soft_color(tl.group.color) : "FEFEFF"};"}
+        .right (#{tl.tasks.completed.size}/#{tl.tasks.size})
+        = link_to image_tag("calendar.png"), [@project, tl.milestone], :title => tl.milestone.to_s unless tl.milestone.blank?
+        = link_to tl.name, "#full_task_list_#{tl.id}"
+      -# %h3 Tasques no assignades
+      -# = render :partial => "unassigned", :locals => { :unassigned => @unassigned }
+
+= content_for :custom_js do
+  :javascript
+    $(document).ready(function() {
+      $("#show-archived").click(function() {
+        $("#archived-task-lists").fadeIn();
+      });
+    });
+    $(function() {
+      var $sidebar   = $(".sidebar"),
+          $window    = $(window),
+          offset     = $sidebar.offset();
+      $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+          $sidebar.css("position", "fixed");
+          $sidebar.css("top", ".3em");
+        } else {
+          $sidebar.css("position", "absolute");
+          $sidebar.css("top", "20em");
+        }
+      });
+    });

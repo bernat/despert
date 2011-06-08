@@ -1,0 +1,14 @@
+%nav
+  %ul
+    %li
+      = link_to 'Vista general', root_path, :class => controller.controller_name == "overview" && controller.action_name == "index" ? "current" : ""
+    %li
+      = link_to 'Taulell', dashboard_path, :class => controller.controller_name == "overview" && controller.action_name == "dashboard" ? "current" : ""
+    %li
+      = link_to 'Projectes', projects_path, :class => controller.controller_name == "projects" ? "current" : ""
+    %li
+      = link_to "Grups", groups_path, :class => controller.controller_name == "groups" ? "current" : ""
+
+    - if can? :read, Employee
+      %li
+        = link_to 'Usuaris', employees_path, :class => controller.controller_name == "employees" ? "current" : ""

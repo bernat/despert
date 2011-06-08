@@ -1,0 +1,5 @@
+- title "Nova llista de tasques"
+%h1 Nova llista de tasques
+.standard-form
+  = simple_form_for [@project, @task_list], :html => { :class => :form } do |f|
+    = render :partial => "form", :locals => {:f => f}

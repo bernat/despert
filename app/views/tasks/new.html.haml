@@ -1,0 +1,5 @@
+- title "Nova tasca"
+%h1 Modifica la tasca
+= form_for [@project, Task.new], :html => { :class => :form } do |f|
+  = render "shared/error_messages", :target => @task
+  = render :partial => "form", :locals => {:f => f, :task_list => @task_list}

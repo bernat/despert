@@ -1,0 +1,22 @@
+<% unless event.is_a? Comment %>
+  <div class="item">
+    <div class="left">
+      <% if event.actor %>
+        <%= link_to gravatar_for(event.actor, :size => 20),  event.actor %>
+      <% else %>
+        <%= event.author %>
+      <% end %>
+    </div>
+
+    <% if event.actor %>
+      <%= link_to event.actor, event.actor -%>:
+    <% else %>
+      <%= event.author %>
+    <% end %>
+
+    <%= "#{event.subdescrip} #{pretty_date event.created_at}" %>
+    <div class="clearboth"></div>
+  </div>
+<% else %>
+  <%= render 'events/comment_event', :comment => event %>
+<% end %>

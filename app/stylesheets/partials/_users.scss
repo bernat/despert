@@ -1,0 +1,22 @@
+.user-show {
+  .user-info {
+    table {
+      tr:first-child {
+        background-color: #FFF;
+      }
+      td {
+        padding-left: 1em;
+        text-align: left;
+      }
+      td:first-child {
+        text-align: right;
+        width: 30%;
+        background-color: #EEE;
+        padding: 0 .5em;
+      }
+    }
+  }
+  h2 {
+    margin: 1em 0;
+  }
+}

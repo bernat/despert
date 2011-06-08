@@ -1,0 +1,48 @@
+#dashboard {
+  .button.small {
+    margin-top: 2em;
+    padding-bottom: 0;
+  }
+  h2 {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: .3em;
+    margin: 1em 0;
+  }
+  .projects-pannel {
+    table {
+      td:nth-child(3) {
+        width: 50%;
+      }
+      tr {
+        &.status_1 {
+      	  background-color: #DDD;
+      	}
+    	  &.status_2 {
+      	  background-color: #FF9999;
+      	}
+      	&.status_3 {
+      	  background-color: #FF5555;
+      	}
+      }
+    }
+  }
+  h3 {
+    padding-left: .5em;
+    color: #666;
+    font-size: 1.2em;
+    margin: .9em 0 .8em 0;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: .3em;
+    a {
+      color: #444;
+      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+    }
+    img {
+      margin-top: -.2em;
+      padding-right: .5em;
+    }
+  }
+}

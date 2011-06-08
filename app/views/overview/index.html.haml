@@ -1,0 +1,20 @@
+- title "Vista General"
+%h1 Vista General
+= link_to "Calendari sencer", overview_milestones_path, :class => "button right"
+.calendar
+  %p.subheader
+    %b Activitat dels pròxims 14 dies
+  - info = fill_calendar_info_with_milestones(@milestones, true)
+  .full-calendar= calendar(Date.today, nil, info, :weeks => 3)
+%br
+#pagination_display_section
+  %img#loading{:src => "/images/ajax-loader.gif"}
+.actions-bar
+  .actions
+  .clear
+
+- content_for :custom_js do
+  :javascript
+    $(document).ready(function() {
+      $("#pagination_display_section").load("#{overview_list_path}");
+    });
